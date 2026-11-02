@@ -53,6 +53,8 @@ The user explicitly requested updating docs/proposals/ServiceNow_OMS_Project_Pro
 
 ## Pending product and delivery decisions
 
+November 2 proposed portals: user supplied Employee Portal (CafeNow), Vendor Dashboard, CafeNow Management and ServiceNow Admin Workspace responsibilities. Recorded in the detailed task guide for P01/P03/S01 review. This is a proposal, not approval of four deployments or expanded scope. Search/cart/nutrition details, registration approvals and complaints need include/defer and acceptance decisions. Refunds remain deferred with payments; sales summaries require a recorded-order-value definition. Technical admin tools and business-admin permissions remain distinct and unverified.
+
 November 2 documentation request: added the table reuse/extension recommendations, proposed field dictionary, relationships and catalog mapping investigation to the [detailed task guide](docs/planning/MVP-FEATURE-TASKS-AND-PROCESSES.md#proposed-table-design-for-team-review--november-2). Inclusion in planning does not approve Task extension, custom order ownership, vendor membership implementation or catalog structure. Resolve these in P03/D01/S01; preserve one authoritative order record.
 
 | Topic | Decision needed | Task |

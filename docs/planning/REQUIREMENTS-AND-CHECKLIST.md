@@ -20,6 +20,8 @@ Apply these refinements when reviewing existing requirements:
 
 ## MVP candidate requirements
 
+November 2 portal proposal: see the [detailed portal responsibilities](MVP-FEATURE-TASKS-AND-PROCESSES.md#proposed-portal-responsibilities--november-2) for Employee, Vendor, business Admin and technical administration experiences. Search/filter, ingredients/calories and cart behavior refine candidate R01/R02; vendor confirmation/rejection and history map to R04–R08; role-restricted sales-value/operational reports map to R09. Vendor registration approval and complaints require P01 include/defer decisions. Refunds remain deferred with payments unless explicitly promoted; simulated order value is not verified revenue. Four experiences do not imply four approved portal deployments.
+
 | ID | Requirement | Example acceptance evidence |
 | --- | --- | --- |
 | R01 | Employee browses published vendor menus and availability; authorized vendor managers maintain them | Employee sees eligible items, price, and vendor-provided dietary/allergen labels; unavailable items cannot be ordered |

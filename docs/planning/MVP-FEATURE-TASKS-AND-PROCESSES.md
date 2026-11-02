@@ -249,6 +249,31 @@ Conditional on P03. If custom ordering is selected, replace this section's tasks
 
 ### Employee Service Portal / chosen interface
 
+#### Proposed portal responsibilities — November 2
+
+Source: user's proposed service portals in chat. These define experiences for review, not approval of four separate portal deployments. P03 must verify interface technology, availability and feasibility; S01 defines access. Use the confirmed product spelling CafeNow. Existing task IDs remain the delivery units; do not create duplicate portal work-package cards.
+
+| Proposed experience | Audience and capabilities | Existing task mapping |
+| --- | --- | --- |
+| Employee Portal — CafeNow (primary) | Browse five vendor menus; search/filter food; view prices, ingredients, calories and allergens; add items to cart; submit with pickup selection; track status and view own order history | U01–U03, C01–C03 if used, D02–D04, B01–B05; BP03/BP05/BP07 |
+| Vendor Portal — Vendor Dashboard (primary) | View incoming orders grouped by pickup window; accept/confirm individually or in batches, or reject under agreed policy; update preparation and ready status; verify pickup and complete; maintain own menu/prices/availability; view own daily sales-value summaries and order history | V01–V03, B03–B05, S01–S04, A01–A02; BP01/BP04/BP06/BP10 |
+| Admin Portal — CafeNow Management | Manage all five vendors; proposed vendor registration approval; manage employee accounts/roles within delegated authority; monitor all orders; manage pickup schedules; view sales-value/operational reports; proposed complaint/refund management | S01–S04, D02/D04, A01–A02 for existing coverage; registration, complaints and refunds need separate scope decisions |
+| ServiceNow Admin Workspace | Technical administration: maintain tables, roles/ACLs, workflows/notifications, logs, reports and dashboards | P03, D01–D04, S01–S04, F01–F03, N01–N02, A01–A02; operational access/handoff under R10 |
+
+Scope and acceptance questions to resolve before committing these additions:
+
+- Search/filter, ingredient detail, calories and cart behavior are proposed refinements to R01/R02. Define filters, vendor-supplied nutrition provenance, missing-data display and whether calories are per serving. Allergen labels remain vendor information, not independent safety verification.
+- Keep one vendor per order. Define whether switching vendor clears the cart or requires a separate order; revalidate current prices, availability, capacity and cutoffs on submission. Captured historical prices remain unchanged.
+- Vendor rejection must use the agreed vendor-cancellation policy with reason, permitted states, capacity release and notification. Do not introduce an unapproved Rejected state. Preserve individual/batch confirmation, cancellation cutoff and delay handling already recorded in DECISIONS.md.
+- Sales reports represent recorded order value under simulated/non-payment checkout, not verified payments or revenue. Agree inclusion of cancelled, no-show and completed orders with A01; enforce vendor isolation and approved admin visibility.
+- Vendor registration approval and complaint management are proposed scope additions without dedicated tasks among the existing 47. P01 must include or defer them and define actors, data, workflow and acceptance before task creation.
+- Refund processing remains deferred with payments. If the team wants a simulated refund request/record, explicitly approve its limited scope and acceptance; this proposal does not promote financial transactions into the MVP.
+- Account/role administration requires an explicit delegated permission design. Business admins do not automatically receive unrestricted platform administration or log access. Separate business management from technical administration in S01.
+- “ServiceNow Admin Workspace” is a proposed functional label, not a verified installed product or commitment to build another portal. Use supported administrative tools selected under P03.
+- Test protected direct links, cross-user/vendor access, report visibility and desktop/tablet usability; hiding navigation is insufficient. Technical and business admin access must also be tested.
+
+Keep approval records in DECISIONS.md, requirement meanings in REQUIREMENTS-AND-CHECKLIST.md and live ownership/evidence in the MVP VTB.
+
 | ID  | Task                                    | Depends on                               | Acceptance output                                                                                   |
 | --- | --------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | U01 | Sketch browse/order/track journey       | P02, P03                                 | Desktop/tablet sketches include full slot, invalid input, cancellation and delay                    |
