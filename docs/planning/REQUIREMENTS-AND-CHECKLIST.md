@@ -13,9 +13,9 @@ Apply these refinements when reviewing existing requirements:
 | Requirements | Acceptance refinement / unresolved detail |
 | --- | --- |
 | R01, R02, R10 | Cover five vendors with distinct food items/prices and one vendor per order; exact catalog structure and authoritative order mapping remain open |
-| R03, R06 | Ordering closes 30 minutes before pickup-window start; employee cancellation closes 20 minutes before start. Show cancellation terms before submission; test server-side enforcement. Exact-boundary inclusivity, eligible cancellation states, capacity threshold/units and release rules remain open |
-| R04, R05, R08 | After employee submission, vendor confirms receipt/item availability and controls fulfillment; employees cannot advance status; define initial/confirmation states and authorized admin actions |
-| R05, R06, R07 | Define no-show terms, three reminder intervals, final disposal warning, end-of-business time/policy and terminal outcome; uncollected food must not be reported as picked up |
+| R03, R06 | Ordering closes 30 minutes before pickup-window start; employee cancellation closes 20 minutes before start. Show cancellation terms before submission; test server-side enforcement. Exact-boundary inclusivity, eligible cancellation states, capacity is 20 orders per vendor/window; reservation/release rules and window duration remain open |
+| R04, R05, R08 | Vendor service portal groups Submitted orders by window; vendor confirms individually or batch-confirms eligible orders and controls fulfillment; employees cannot advance status; define initial/confirmation states and authorized admin actions |
+| R05, R06, R07 | Three no-show notices at 30-minute intervals; final disposal warning one hour before vendor closing. Define initial trigger, scheduling conflicts, actual disposal and terminal outcome; uncollected food must not be reported as picked up |
 | R08, R09 | Admin view spans all vendors; vendor users remain restricted to their own vendor; define report/view permissions explicitly |
 
 ## MVP candidate requirements
