@@ -10,7 +10,7 @@ Core personas are employees, vendor staff, vendor managers and application admin
 
 ## Proposed MVP
 
-One building, multiple vendors, one vendor per order, with simulated/non-payment checkout. Candidate requirements are defined in [R01–R10](docs/planning/REQUIREMENTS-AND-CHECKLIST.md):
+One building, **five vendors** (team-reported November 2), one vendor per order, with simulated/non-payment checkout. Candidate requirements are defined in [R01–R10](docs/planning/REQUIREMENTS-AND-CHECKLIST.md):
 
 - Published menus, availability and vendor-provided dietary/allergen information.
 - Ordering and pickup-window selection with server-side input, cut-off and capacity enforcement.
@@ -19,7 +19,9 @@ One building, multiple vendors, one vendor per order, with simulated/non-payment
 - Event notifications, role/record/field access controls and basic operational reports.
 - Repeatable setup, testing, evidence and demonstration.
 
-Service Catalog coverage, scheduled execution and a bounded menu import require P01/P03/X01 clarification. The record model and interface are pending. Keep one authoritative order record.
+The team selected ServiceNow Studio and a Service Catalog presence for each vendor's food items/pricing, plus an all-vendor admin portal/view. Exact catalog structure, record model, scoped application decision and interface implementation remain pending. Scheduled execution and a bounded menu import require P01/P03/X01 clarification. Keep one authoritative order record.
+
+November 2 team direction: after employee submission, vendor confirmation acknowledges receipt and item availability; vendors progress Preparing → Ready for Pickup → Closed Complete after pickup. Employees may cancel subject to policy but cannot advance fulfillment status. Ordering closes 30 minutes before the pickup window starts; employee cancellation closes 20 minutes before it starts, with the cancellation rule shown in terms and conditions before submission. Exact confirmation labeling, cutoff boundary behavior, cancellation-eligible states, capacity threshold and no-show handling remain unresolved. EOB means end of business; its actual time and policy remain open. No-show direction includes terms and conditions and three notices, the last warning of disposal. See [the decision record](DECISIONS.md) for qualifications; these are team-reported choices, not verified implementation or blanket approval of all requirements.
 
 ## Deferred scope
 

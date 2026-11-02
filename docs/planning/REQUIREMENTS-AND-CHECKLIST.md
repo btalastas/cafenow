@@ -4,6 +4,20 @@ Candidate acceptance baseline as of November 1, 2026, for the proposed November 
 
 This file owns requirement meanings and class coverage. The [MVP breakdown](MVP-FEATURE-TASKS-AND-PROCESSES.md) owns task definitions, component examples and process guidance; the shared VTB owns live progress. Record approvals/deferrals in [DECISIONS.md](../../DECISIONS.md).
 
+## November 2 team direction
+
+The [team decision record](../../DECISIONS.md) narrows the candidate baseline: five vendors; vendor-specific Service Catalog food items/pricing; vendor receipt/availability confirmation; vendor-controlled Preparing → Ready for Pickup → Closed Complete after actual pickup; employee cancellation only; all-vendor admin portal/view; ServiceNow Studio. This is user-reported team agreement, not instructor sign-off or implemented behavior.
+
+Apply these refinements when reviewing existing requirements:
+
+| Requirements | Acceptance refinement / unresolved detail |
+| --- | --- |
+| R01, R02, R10 | Cover five vendors with distinct food items/prices and one vendor per order; exact catalog structure and authoritative order mapping remain open |
+| R03, R06 | Ordering closes 30 minutes before pickup-window start; employee cancellation closes 20 minutes before start. Show cancellation terms before submission; test server-side enforcement. Exact-boundary inclusivity, eligible cancellation states, capacity threshold/units and release rules remain open |
+| R04, R05, R08 | After employee submission, vendor confirms receipt/item availability and controls fulfillment; employees cannot advance status; define initial/confirmation states and authorized admin actions |
+| R05, R06, R07 | Define no-show terms, three reminder intervals, final disposal warning, end-of-business time/policy and terminal outcome; uncollected food must not be reported as picked up |
+| R08, R09 | Admin view spans all vendors; vendor users remain restricted to their own vendor; define report/view permissions explicitly |
+
 ## MVP candidate requirements
 
 | ID | Requirement | Example acceptance evidence |

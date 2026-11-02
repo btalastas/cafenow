@@ -1,10 +1,18 @@
-# Status as of November 1, 2026
+# Status as of November 2, 2026
+
+## Team decisions — November 2, 2026
+
+Table-planning update: incorporated the requested reuse/create/extend recommendations, field types, relationship diagram, integrity rules and catalog mapping investigation into the detailed task guide. Linked the review from DECISIONS.md; aligned D05's full-MVP seed scope to five vendors while retaining the two-vendor intermediate slice. Checked Markdown whitespace, local link/anchor targets and UTF-8 punctuation; task IDs and dependencies retained. Architecture approval and live instance verification remain pending. Next action: review P03/D01/S01 choices with the team before table creation.
+
+Recorded the user's team decisions in DECISIONS.md and aligned the project brief and requirements refinements: five vendors, vendor confirmation and fulfillment control, employee cancellation only, vendor catalog offerings, all-vendor admin view, three no-show notices and ServiceNow Studio. User clarified: vendor confirmation follows employee submission; ordering closes 30 minutes before pickup-window start; cancellation closes 20 minutes before pickup-window start, disclosed in terms and conditions before submission; EOB means end of business. Exact lifecycle labels, cutoff boundary inclusivity/cancellation-eligible states, capacity, business closing time/no-show outcome, scoped application and vendor table design remain unresolved. Instructor approval, account creation and implementation remain unverified. Next action: resolve these questions in P01–P03/S01/D01 and define acceptance examples/user stories before configuration. Documentation checked for consistency with the reported choices; retained proposals and PDF were not changed.
 
 ## Repository preparation - November 2, 2026
 
 User requested a public GitHub repository named `cafenow`. Prepared a local Git repository on `main`, with temporary files, diagnostic logs, credentials and machine-specific configuration excluded. Original planning documents and the team PDF are included. A scan found no matching common token/private-key or credential-assignment patterns in candidate text files; this is not a comprehensive security audit. GitHub creation and push remain pending authentication: no existing GitHub credential was available, and the GitHub plugin was not installed/connected. Next action: establish GitHub access, create the public repository and push, then verify the remote contents.
 
 ## Current evidence
+
+November 2 daily planning: created the [daily PM note](docs/planning/DAILY-PM-NOTE-2026-11-02.md) using the playbook template. User priorities are group member accounts and finalizing MVP requirements/checklists. Account creation and requirements approval remain unverified; next action is to confirm access inputs and review scope/class obligations with the appropriate decision authority. Checked the note against all eight template fields and local link targets.
 
 - CafeNow and NowServing Solutions naming is confirmed.
 - User reports P01–P03 created on the shared ServiceNow VTB. Screenshots show a P01 card, but also showed P03 content under its title; correction was advised and has not been verified.

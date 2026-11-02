@@ -158,13 +158,75 @@ These are task definitions, not live status. Preserve existing VTB ownership/pro
 
 These are logical entities, not approved custom table names. Map to native/custom records after P03; do not create custom copies automatically.
 
+#### Proposed table design for team review — November 2
+
+Source: the [proposal's preliminary data model](../proposals/ServiceNow_OMS_Project_Proposal.md#4-preliminary-data-model), refined during the November 2 table discussion. This is a recommendation for P03/D01/S01, not architecture approval or observed configuration. Actual scoped names, release support and table entitlements remain unverified. The [decision record](../../DECISIONS.md) governs confirmed team rules.
+
+**Extend** means inherit fields and behavior from a parent table. **Reference** means link to an existing record; an order references an employee rather than extending User. See ServiceNow's [table relationships](https://www.servicenow.com/docs/r/platform-administration/table-administration-and-data-management/table-relationships.html) and [data-model guidance](https://www.servicenow.com/docs/r/application-development/build-data-model.html). Validate against the target release during P03.
+
+| Entity | Proposed reuse/create/extend choice | Design qualification |
+| --- | --- | --- |
+| Employee, vendor staff, manager, admin | Reuse User (`sys_user`) records | Do not extend User to represent a vendor business; link people through membership or an agreed group model |
+| Organization / Building | Reuse an appropriate existing location record or minimal pilot configuration | One building does not require a new organization/subscription model |
+| Cafeteria Vendor | Create standalone table | Five vendor records, not five tables |
+| Menu Item | Create standalone table if custom menu data is authoritative | Settle catalog mapping first; avoid independent conflicting menu/price sources |
+| Food Order | Investigate a custom table extending Task, or reuse native Requested Item | Choose one authoritative order; Task inheritance is optional and requires review of inherited behavior, fields and ACLs |
+| Order Line Item | Create standalone table for the custom-order design | One record per ordered item/quantity/price snapshot |
+| Pickup Window | Create standalone table | Vendor-specific start/end and capacity |
+| Vendor Membership | Create linking table if needed | User/vendor references plus responsibility; an agreed group model may replace it |
+| Inventory, Waste Entry, Supplier, Purchase Record, Subscription | Defer | No MVP tables required for these future entities |
+
+Suggested field dictionary (logical names only):
+
+| Table | Fields and types |
+| --- | --- |
+| Vendor | name: String; active: Boolean; location: Reference if reusing locations; manager: User reference; operating-hours configuration if required |
+| Vendor Membership | vendor: Vendor reference; user: User reference; responsibility: Choice (staff/manager); active: Boolean; prevent duplicate membership for the same user/vendor under the agreed model |
+| Menu Item | vendor: Vendor reference; name/description: Text; price: agreed monetary type/currency; category: Choice or Reference; published/available: Boolean; vendor-maintained allergen information/dietary tags |
+| Pickup Window | vendor: Vendor reference; start/end: Date/Time; capacity: Integer once consumption units are agreed; ordering/cancellation deadlines: derive from start or store consistently under an agreed edit policy |
+| Food Order | employee: User reference; vendor: Vendor reference; pickup_window: Pickup Window reference; number/state: reuse inherited fields if appropriate; submitted/confirmed/preparing/ready/picked-up/cancelled timestamps: Date/Time; cancellation actor: User reference; cancellation reason: Text; delay flag: Boolean; delay reason: Text; estimated ready time: Date/Time; captured total: monetary value |
+| Food Order, proposed evidence fields | terms version: String; acknowledgement timestamp: Date/Time, if adopted; reminder/disposal tracking fields only after the no-show policy is defined |
+| Order Line | order: Food Order reference; menu_item: Menu Item reference; quantity: Integer; captured_unit_price: monetary value; item_name_snapshot: String; instructions: Text |
+
+Do not duplicate inherited number, state, assignment or audit fields automatically. Membership responsibility does not itself grant permissions; S01/S03/S04 must define and enforce access. Exact choice values, mandatory fields, indexes, deletion rules and currency precision belong in the reviewed D01 dictionary.
+
+```mermaid
+erDiagram
+    USER ||--o{ FOOD_ORDER : places
+    USER ||--o{ VENDOR_MEMBERSHIP : has
+    VENDOR ||--o{ VENDOR_MEMBERSHIP : authorizes
+    VENDOR ||--o{ MENU_ITEM : offers
+    VENDOR ||--o{ PICKUP_WINDOW : schedules
+    VENDOR ||--o{ FOOD_ORDER : receives
+    PICKUP_WINDOW ||--o{ FOOD_ORDER : groups
+    FOOD_ORDER ||--|{ ORDER_LINE : contains
+    MENU_ITEM ||--o{ ORDER_LINE : identifies
+```
+
+The reference belongs on the many side: Menu Item references Vendor, Order Line references Food Order, and Food Order references employee/vendor/window. A submitted order must have at least one line; creation must avoid leaving a partial accepted order. Keep historical lines when menus change; agree archive/delete behavior rather than silently removing referenced records.
+
+Server-side integrity and acceptance checks:
+
+- Every line's menu item and the selected window belong to the order's vendor; reject mixed-vendor input and forged references.
+- Capture unit prices and item names at submission; later menu edits must not rewrite order history. Compute totals from validated quantities and captured prices.
+- Ordering closes 30 minutes before pickup-window start; employee cancellation closes 20 minutes before start. Show the cancellation rule in terms before submission. Resolve exact-boundary inclusivity and cancellation-eligible states before implementation.
+- Vendor confirmation follows employee submission; vendors control subsequent fulfillment. Closed Complete means actual pickup. No-show end-of-business handling and three reminder intervals remain to be finalized.
+- Capacity units, thresholds, reservation timing and release rules remain open; test simultaneous last-unit booking and release exactly once.
+- Test employee ownership, cross-vendor denial and authorized all-vendor admin access beyond UI filters, including reports.
+
+**Catalog mapping investigation:** consider one CafeNow catalog with five vendor categories as a proposed presentation structure, not an approved choice. Native Catalog Items (`sc_cat_item`) and request records are distinct from custom menu/order records. A Record Producer can create an application-specific record; verify the supported interface and multi-line submission design in the target instance. See [Service Catalog guidance](https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/request-cat-use-case.html).
+
+The recommended feasibility investigation is one vendor ordering entry point selecting multiple menu items and producing one Food Order with lines. An alternative is one catalog item per food item, which requires defining how requested items are grouped into one vendor order. Compare against native request-centered ownership; do not maintain independently editable Requested Item and Food Order lifecycles. Confirm instructor acceptance of the selected Catalog approach.
+
+P03 supplies a feasible order/catalog/interface choice; D01 supplies the reviewed dictionary and relationships; S01 supplies the access matrix. D02–D04 implement only the approved model, S02 supplies personas, and D05/T01 cover five vendors in the full MVP seed/test plan (a two-vendor slice is an intermediate test).
+
 | ID  | Task                                       | Depends on   | Acceptance output                                                                                                                               |
 | --- | ------------------------------------------ | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | D01 | Review dictionary and relationship diagram | P02, P03     | Fields, mandatory values, references, ownership, units and scoped names agreed; minimal building configuration defined                          |
 | D02 | Configure vendor/menu data                 | D01          | Vendor/location, published/available flags, price and vendor-owned dietary/allergen fields                                                      |
 | D03 | Configure order/order lines                | D01          | Employee/vendor/window links, quantity, price snapshot, instructions, lifecycle timestamps, cancellation/delay fields; original window retained |
 | D04 | Configure pickup-window data               | D01          | Vendor/start/end/cut-off/capacity and consumption in agreed units/time zone; invalid configuration rejected                                     |
-| D05 | Create repeatable seed data                | D02–D04, S02 | Two vendors, multiple items/windows, open/full/late scenarios and known sample orders; setup/reset notes                                        |
+| D05 | Create repeatable seed data                | D02–D04, S02 | Five vendors for full MVP; two-vendor intermediate slice permitted; multiple items/windows, open/full/late scenarios, known orders and setup/reset notes |
 
 ### Users, roles, groups and access controls
 
