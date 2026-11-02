@@ -1,0 +1,524 @@
+﻿ServiceNow Team 7 Final Project Proposal
+
+Members
+
+• Colleen Gildea
+• Margaret Idika
+• Subha Suresh Kumar
+• Nayeemur Rahaman Basha Mohammed
+• Bjorn Talastas
+
+CaféFlow: Corporate Cafeteria Order Management System
+
+Project phase: Define Process
+Project type: Custom ServiceNow application
+Pilot scope: One corporate building and its on-site cafeteria vendors
+Business model concept: Business-to-business (B2B) subscription service for companies or building operators
+Future expansion: Educational institutions, subject to pilot results
+Purpose: Instructor review, group discussion, and project scope approval
+Status: Working proposal; technical approach and MVP pending instructor feedback
+
+1. Executive Summary
+
+CaféFlow is a proposed ServiceNow-based order management system for employees and food vendors in a corporate building. Employees place orders before or during their break, choose a vendor and pickup window, and receive order status updates. Vendors use a centralized, role-restricted queue to organize incoming orders by vendor, pickup window, and preparation status. This gives vendor staff a clearer view of the lunch rush and helps them coordinate preparation and handoff.
+
+The project focuses on the time employees lose across the lunch process: walking to the cafeteria, waiting in line, placing an order, waiting for food, and eating within a limited break. Preordering and organized pickup aim to reduce avoidable ordering and pickup delays. Operational dashboards can help vendors understand demand and plan inventory. With additional data and vendor participation, reports could also support waste-reduction efforts, dietary and allergen transparency, and relationships with local food suppliers.
+
+CaféFlow is also envisioned as a B2B subscription service sold to companies or building operators that manage corporate cafeterias. The subscribing organization would select a service tier, while its employees and participating food vendors use the ordering and operations features. Higher tiers could add dashboards, inventory tools, and proposed forecasting or AI-assisted capabilities. These tiers are a future commercial concept; the class pilot should establish the core workflow and demonstrate selected reporting without depending on a live subscription or payment system.
+
+2. Define Process
+
+2.1 Business Problem
+
+Employees may have a short, fixed break and spend much of it getting lunch. The process can include walking from their work area to the cafeteria, waiting in a line, deciding and ordering, waiting for food to be prepared, and then eating before returning to work. Long or unpredictable queues reduce the time available to eat and rest.
+
+Food vendors face a matching operational problem. Many employees arrive during the same lunch period, creating a rush of individual orders. Staff may have limited advance visibility into the number and type of meals to prepare, making it harder to prioritize orders, coordinate staff, estimate ingredients, and communicate delays.
+
+Problem statement: Employees in the pilot building lack a convenient way to order ahead and collect lunch predictably within a limited break, while cafeteria vendors lack one shared, timely view of incoming lunch demand and order status.
+
+2.2 Proposed Business Solution
+
+Build CaféFlow on ServiceNow as both an employee ordering workflow and a proposed B2B service for organizations operating corporate cafeterias. A company or building operator would subscribe to CaféFlow and choose a tier based on the operational features it needs. The organization administers the service for its building; employees order from participating vendors; vendor staff manage their own menus and order queues.
+
+The ServiceNow application would let employees:
+
+• Browse participating vendors, menus, prices, availability, and dietary/allergen information supplied by vendors.
+• Select meals, quantities, and any permitted customizations.
+• Choose an available pickup window and submit an order.
+• Review order status and receive confirmation, ready-for-pickup, or delay notifications.
+
+Authorized vendor staff would use a centralized operational queue to:
+
+• View orders assigned to their vendor, organized by pickup window and preparation status.
+• See order details and batch totals for similar menu items while retaining access to each individual order.
+• Coordinate work during peak lunch periods, update availability, and mark orders as preparing, ready, or completed.
+• Review demand and, where inventory data is collected, compare planned demand with stock and actual usage.
+
+The B2B subscription model would package additional capabilities into Basic, Professional, and Enterprise tiers. The tier table in Section 6 describes the proposed feature differences. Subscription billing, pricing, and production entitlement enforcement are future business-model work; they are not dependencies for the class MVP.
+
+Queue design: Group orders primarily by vendor, pickup window, and status. Batch totals can help staff organize preparation; employee details and special instructions remain available on the individual order to reduce fulfillment mistakes.
+
+2.3 Expected Outcomes and Measures
+
+Reduce ordering and pickup delays
+  How the system can support it: Preordering, pickup windows, capacity checks, and status updates
+  Suggested measure / data source: Time from order submission to handoff; compare with a baseline where available
+
+Help employees use breaks effectively
+  How the system can support it: Make pickup timing more predictable
+  Suggested measure / data source: Percent of orders handed off within the selected window; employee feedback on whether they had time to eat
+
+Organize vendor lunch rushes
+  How the system can support it: Central queue, slot-based grouping, batch totals, and status tracking
+  Suggested measure / data source: Orders by vendor and 15-minute slot; queue backlog; on-time-ready rate; preparation time
+
+Improve inventory planning
+  How the system can support it: Compare order demand with inventory levels, purchases, and actual usage
+  Suggested measure / data source: Forecast-versus-actual demand; stockouts; unused or expired inventory; inventory cost, if recorded
+
+Identify opportunities to reduce food waste
+  How the system can support it: Track leftover and discarded quantities with a consistent reason and measurement method
+  Suggested measure / data source: Quantity and estimated cost of leftovers/discards by item and day; trend over time against a baseline
+
+Support dietary and allergen transparency
+  How the system can support it: Display vendor-provided ingredient, allergen, and dietary labels at menu and order time
+  Suggested measure / data source: Menu items with complete information; dietary request volume; reported order corrections or incidents
+
+Encourage local community sourcing
+  How the system can support it: Record supplier and sourcing information for eligible menu items
+  Suggested measure / data source: Share of tracked purchases from local suppliers; number of participating local suppliers; spend or quantity by supplier, if provided
+
+Improve employee satisfaction
+  How the system can support it: Provide clearer menus, pickup expectations, and notifications
+  Suggested measure / data source: Employee survey or feedback score; order issue and cancellation rates
+
+The MVP can report on orders, demand, and fulfillment if those fields are implemented. Reliable waste, inventory-cost, dietary-safety, and local-sourcing measures require accurate data entry or supplier integration and agreed definitions. Dashboard trends alone do not prove that the system caused a change.
+
+2.4 Users and Stakeholders
+
+Corporate Employee
+  Needs and responsibilities: Browse menus, place or cancel eligible orders, choose pickup, review status, and provide feedback
+
+Vendor Staff
+  Needs and responsibilities: Review assigned orders, coordinate preparation, update availability and statuses, and confirm handoff
+
+Vendor Manager
+  Needs and responsibilities: Manage menu information, operating hours, pickup capacity, staff access, and available inventory data
+
+Cafeteria / Building Administrator
+  Needs and responsibilities: Coordinate participating vendors, resolve operational issues, and review building-level aggregate reports
+
+Company Management / Subscriber
+  Needs and responsibilities: Select service tier, review aggregate service and performance trends, and manage organizational participation
+
+Application Administrator
+  Needs and responsibilities: Maintain application configuration, access controls, data quality, workflows, and reporting
+
+Local Food Supplier (future participant)
+  Needs and responsibilities: Supply product and sourcing information through the vendor or an agreed data process
+
+2.5 Inputs and Outputs
+
+Employee identity and authorized access
+  Outputs: Employee-specific ordering view and protected order history
+
+Organization/building subscription tier (future commercial service)
+  Outputs: Feature access associated with the subscribed tier, if implemented
+
+Vendor, menu item, quantity, and customization
+  Outputs: Order record and itemized preparation details
+
+Requested pickup window
+  Outputs: Validated slot and vendor preparation queue
+
+Vendor capacity and item availability
+  Outputs: Available choices or a prompt to select another item/window
+
+Vendor status updates and timestamps
+  Outputs: Confirmation, ready, delay, and completion updates
+
+Menu ingredient, allergen, and dietary labels supplied by vendor
+  Outputs: Menu details visible before order submission
+
+Inventory on hand, purchases, and usage (optional/phase 2)
+  Outputs: Inventory summaries, low-stock alerts, and demand comparisons
+
+Leftover/discard quantities and reason (optional/phase 2)
+  Outputs: Waste and cost trend reports, if measurements are consistently recorded
+
+Supplier and sourcing details (optional/phase 2)
+  Outputs: Local sourcing and supplier participation reports
+
+Completed order and fulfillment history
+  Outputs: Operational dashboards and trend reports according to available features
+
+Scope assumption: Use a non-payment or simulated checkout for the MVP. Real payment processing and storage of payment-card information are outside the project scope. Subscription billing is also outside the class MVP.
+
+2.6 Proposed End-to-End Process
+
+1. Open the portal: An authenticated employee opens the corporate cafeteria ordering experience.
+2. Browse: The employee reviews participating vendors, menus, prices, availability, and vendor-provided dietary/allergen details.
+3. Build the order: The employee chooses one vendor, menu items, quantities, and permitted customizations.
+4. Choose pickup: The employee selects an available pickup window that fits their break.
+5. Validate and submit: ServiceNow checks required fields, item availability, and remaining slot capacity, then creates an order.
+6. Organize the rush: The order appears in the correct vendor's centralized queue, grouped by pickup window and status. Batch totals help staff plan similar items.
+7. Prepare: Vendor staff review individual order details, coordinate preparation, and update the order status.
+8. Notify: The employee receives confirmation and a ready-for-pickup or delay notice.
+9. Hand off: Vendor staff verify the order number and mark the order picked up/completed.
+10. Review: Order, timing, and optional inventory/waste/sourcing data feed the appropriate dashboard or report. The organization's subscription tier could determine access to additional reporting in a future commercial release.
+
+Example scenario: A vendor sees 25 orders for the 12:00–12:15 PM window before the lunch rush, including 15 sandwiches, 7 salads, and 3 hot meals. Staff can organize preparation around the known workload and review the individual orders for customizations before handoff.
+
+2.7 Order Status and Notifications
+
+Employees should be able to open My Orders to see the current status, order number, vendor, pickup location, selected pickup window, and latest update. The order record is the source of truth; email notifications direct the employee back to that record.
+
+Submitted
+  Meaning / trigger: The order passes validation and is created in the vendor queue
+  Employee notification: Confirmation with order number, vendor, pickup location, and pickup window
+
+Preparing
+  Meaning / trigger: Vendor staff begin preparing the order
+  Employee notification: Status visible in My Orders; no separate email required for the MVP
+
+Ready for Pickup
+  Meaning / trigger: Vendor staff confirm that the order is ready for handoff
+  Employee notification: Ready-for-pickup email with order number and pickup instructions
+
+Completed
+  Meaning / trigger: Vendor staff verify handoff and mark the order picked up
+  Employee notification: Completion visible in My Orders and order history
+
+Cancelled
+  Meaning / trigger: The employee cancels before preparation begins, or authorized vendor staff cancel an unfulfillable order with a reason
+  Employee notification: Cancellation email with the order number and reason
+
+Normal progression: Submitted → Preparing → Ready for Pickup → Completed. An eligible order can move to Cancelled; Completed and Cancelled are final states. Employees can cancel only their own Submitted orders before the configured cut-off. Vendor cancellations require a reason; application administrators handle exceptional corrections.
+
+Delay handling: Track a delay separately from the lifecycle status so an order can remain Preparing while delayed. Vendor staff enter a delay reason and revised estimated ready time. Show both in My Orders and send a delay email when the delay is first recorded or the estimate changes materially. Retain the originally selected pickup window for performance reporting.
+
+Proposed automation: Use Flow Designer and email notifications to send confirmation after successful order creation and ready/cancellation notices on the corresponding status transition. Trigger delay notices from changes to the delay fields. Send messages to the employee associated with the order, avoid duplicate notices on unrelated record edits, and record status-change timestamps for reporting. Notification content should include essential pickup details and a link to the protected order view.
+
+Acceptance checks: Verify the normal lifecycle, permitted cancellations, delay updates, and recipient access. Confirm that each qualifying event generates one intended notification, unrelated edits do not resend it, invalid status transitions are rejected server-side, and employees can view only their own orders. In the training instance, inspect generated email records and demonstrate delivery only if outbound email is enabled.
+
+2.8 Key Assumptions and Open Requirements
+
+• The pilot is limited to one corporate building and a manageable number of cafeteria vendors.
+• Employees and vendor staff can be identified and assigned appropriate roles.
+• Each order is associated with one vendor for the MVP.
+• Vendors maintain menu availability and provide accurate ingredient/allergen information; the application displays the information but does not independently verify it.
+• Pickup windows need configurable capacity and order cut-off rules.
+• Inventory, waste, supplier sourcing, and food-cost reports depend on reliable input data and may be staged after the core ordering workflow.
+• Employee arrival and eating duration may be difficult to measure directly. The pilot should avoid collecting unnecessary location or personal data; use order timestamps, opt-in feedback, and an agreed baseline where possible.
+• The B2B subscription model and tier packaging are future business design; implementing billing or tier enforcement is not required to demonstrate the workflow.
+• Payment processing, advanced forecasting, and integrations are not prerequisites for the MVP.
+
+3. ServiceNow Feature and Checklist Alignment
+
+Define Process
+  ServiceNow features to explore: Requirements, process mapping
+  Proposed CaféFlow use: Employee break journey, vendor rush, personas, outcomes, and exceptions
+
+Design & Build Data Model
+  ServiceNow features to explore: App Engine Studio, custom tables, reference fields
+  Proposed CaféFlow use: Organizations/buildings, vendors, menu items, food orders, line items, pickup windows, and optional inventory/supplier data
+
+Design & Create User Interface
+  ServiceNow features to explore: Service Portal, UI Builder, lists and forms
+  Proposed CaféFlow use: Employee menu/order experience and vendor queue
+
+Apply Security
+  ServiceNow features to explore: Users, groups, roles, ACLs
+  Proposed CaféFlow use: Employees see their own orders; vendor staff see their vendor's queue; managers see approved aggregate reports
+
+Automate
+  ServiceNow features to explore: Workflow Studio / Flow Designer
+  Proposed CaféFlow use: Validate, route, update status, and send notifications
+
+Automate
+  ServiceNow features to explore: Scheduled Script Execution
+  Proposed CaféFlow use: Optional upcoming-order summaries or scheduled reports
+
+Automate
+  ServiceNow features to explore: Email Notifications
+  Proposed CaféFlow use: Order confirmation, ready, and delay alerts
+
+Integrate
+  ServiceNow features to explore: REST APIs, import sets, CSV/Excel
+  Proposed CaféFlow use: Optional menu, inventory, or supplier data import
+
+Enhance User Interface
+  ServiceNow features to explore: Service Catalog, catalog items, order guides
+  Proposed CaféFlow use: Guided menu ordering, if appropriate for the training instance
+
+Test
+  ServiceNow features to explore: Automated Test Framework, impersonation
+  Proposed CaféFlow use: Order lifecycle, capacity, access, and exception testing
+
+Analyze
+  ServiceNow features to explore: Reports, dashboards, Platform Analytics
+  Proposed CaféFlow use: Lunch demand, fulfillment, inventory, waste, dietary-information completeness, and sourcing measures as data permits
+
+Optional Advanced
+  ServiceNow features to explore: Available AI / Now Assist capabilities
+  Proposed CaféFlow use: Future demand summaries or recommendations, subject to availability and instructor approval
+
+Confirm module availability, entitlements, and the expected interface technology with instructors before committing to a particular implementation.
+
+3.1 Employee-Facing Interface
+
+The employee view should make it easy to compare vendors and menus, understand item availability and vendor-provided dietary/allergen labels, choose a pickup window, and track an order. Keep the initial experience focused on the one corporate building and its participating vendors.
+
+3.2 Vendor-Facing Interface
+
+The vendor view should prioritize the next pickup windows and show order number, items, quantities, pickup time, permitted special instructions, and status. It should summarize quantities for batch preparation while preserving individual order details. Vendor staff should be able to mark an item unavailable and update order progress.
+
+3.3 Dashboards and Reports
+
+Dashboards should be designed for operational decisions, with separate views for vendors and building management. Vendor reports can show near-term workload, item demand, slot capacity, and—if the vendor records it—stock levels, purchases, usage, and leftovers. Building-level reports can show aggregate order volume, pickup performance, service issues, and participation by vendor. In a future B2B release, tier entitlements could determine which reporting and inventory features are available to each subscribing organization.
+
+Lunch operations
+  Example measures: Orders by vendor/time slot; queue backlog; slot capacity; ready-on-time rate; average preparation and handoff time
+  Data needed: Order, vendor, pickup slot, and status timestamps
+  Primary user: Vendor staff / vendor manager
+
+Inventory planning
+  Example measures: Demand by item; inventory on hand; purchases; usage; stockouts; estimated cost
+  Data needed: Menu item and consistent inventory/purchasing records
+  Primary user: Vendor manager
+
+Waste tracking
+  Example measures: Leftover/discard quantity, item, reason, date, and estimated cost
+  Data needed: Consistent end-of-day waste entry and agreed unit/cost definitions
+  Primary user: Vendor manager / building administrator
+
+Dietary information
+  Example measures: Menu coverage for allergen/ingredient labels; dietary request counts; order correction or issue counts
+  Data needed: Vendor-maintained menu attributes and carefully categorized issue records
+  Primary user: Vendor manager / administrator
+
+Community sourcing
+  Example measures: Local supplier count; tracked local purchase share or spend; items linked to suppliers
+  Data needed: Supplier records and sourcing/purchase information
+  Primary user: Vendor manager / building administrator
+
+Employee experience
+  Example measures: Pickup-window completion; cancellations; delays; feedback score
+  Data needed: Order timestamps, status, cancellation reason, optional survey
+  Primary user: Building administrator / management
+
+Measurement guidance: In the MVP, implement only the metrics supported by the available fields and time. Mark missing or estimated values clearly. A waste-reduction claim requires a comparable baseline and recorded waste measurements; local-sourcing results require supplier and purchase data. Dietary labels should be sourced from vendors and paired with a process for corrections; the dashboard is an information aid, not a food-safety certification.
+
+4. Preliminary Data Model
+
+Organization / Building
+  Possible columns: Organization Name, Building Name, Location, Status, Subscription Tier (future)
+  Relationship / purpose: Represents the B2B customer and pilot location
+
+Cafeteria Vendor
+  Possible columns: Name, Building, Location, Status, Manager, Operating Hours
+  Relationship / purpose: One vendor has many menu items and orders
+
+Menu Item
+  Possible columns: Name, Description, Price, Category, Available, Vendor, Ingredient/Allergen Labels, Dietary Tags
+  Relationship / purpose: References Vendor; labels maintained by vendor
+
+Food Order
+  Possible columns: Number, Employee, Vendor, Pickup Window, Status, Submitted/Preparing/Ready/Completed/Cancelled Timestamps, Delay Flag, Delay Reason, Estimated Ready Time, Cancellation Reason
+  Relationship / purpose: References employee, Vendor, and Pickup Window; supports status tracking and notification triggers
+
+Order Line Item
+  Possible columns: Food Order, Menu Item, Quantity, Price, Instructions
+  Relationship / purpose: One order has one or more line items
+
+Pickup Window
+  Possible columns: Vendor, Start, End, Capacity, Cut-off Time
+  Relationship / purpose: One window can contain many orders up to capacity
+
+Inventory (optional / phase 2)
+  Possible columns: Vendor, Menu Item, Quantity on Hand, Unit, Reorder Threshold, Updated At
+  Relationship / purpose: Supports stock visibility when maintained consistently
+
+Waste Entry (optional / phase 2)
+  Possible columns: Vendor, Menu Item, Quantity, Unit, Reason, Estimated Cost, Date
+  Relationship / purpose: Tracks leftovers or discarded food using agreed definitions
+
+Supplier (optional / phase 2)
+  Possible columns: Supplier Name, Location/Local Status, Contact, Product Categories
+  Relationship / purpose: Supports local-sourcing reports where purchase data is available
+
+Purchase Record (optional / phase 2)
+  Possible columns: Supplier, Menu Item/Product, Quantity, Unit Cost, Purchase Date
+  Relationship / purpose: Connects vendor purchasing to inventory and sourcing reports
+
+Subscription / Tier Entitlement (future)
+  Possible columns: Organization, Tier, Status, Start Date, Enabled Features
+  Relationship / purpose: Represents a future commercial subscription, not required for the class MVP
+
+Architecture decision for review:
+
+• Catalog-centered option: Use catalog items, order guides, and native request records such as sc_request and sc_req_item, with variables representing pickup details.
+• Custom application option: Use custom Food Order and Order Line Item tables for precise queue, pickup, and reporting behavior.
+
+Recommendation: Prototype with native Service Catalog capabilities where feasible, introducing custom tables only where the request model cannot represent requirements cleanly. Maintain one authoritative order record/source of truth.
+
+5. Security and Data Governance
+
+x_cafeflow.employee
+  Authorized actions: Browse published menus; create/read own orders; cancel own Submitted orders before the cut-off through a validated action
+
+x_cafeflow.vendor_staff
+  Authorized actions: Read/update orders assigned to their vendor; update preparation and handoff status
+
+x_cafeflow.vendor_manager
+  Authorized actions: Maintain their vendor's menu, availability, and optional operational data; view vendor reports
+
+x_cafeflow.building_admin
+  Authorized actions: Coordinate pilot configuration and view approved building-level aggregate reporting
+
+x_cafeflow.org_admin
+  Authorized actions: Manage organization/building configuration and future subscription-tier settings, if implemented
+
+x_cafeflow.admin
+  Authorized actions: Administer application data, workflows, access, and configurations
+
+Security and data-quality tests: An employee cannot read another employee's order; Vendor A staff cannot access Vendor B's queue or private records; only authorized managers can change menu/allergen and inventory data; aggregate reports avoid exposing unnecessary employee details. Apply server-side validation and table/record/field ACLs, then test by impersonating each role.
+
+Menu ingredient and allergen information must have a named vendor owner and an update process. Reports should identify incomplete menu information and data freshness. Do not imply that ServiceNow has independently validated vendor-supplied food information.
+
+6. B2B Subscription Model and Service Tiers (Future Commercial Model)
+
+CaféFlow could be offered to companies or building operators as a subscription service. The subscribing organization would select a tier based on the capabilities it needs for its corporate cafeteria operation. Employees and vendor teams would access the service through the subscribing organization. The proposed tiers describe feature packaging only; pricing, contract terms, and licensing are not defined in this project.
+
+Employee ordering and notifications
+  Basic: Yes
+  Professional: Yes
+  Enterprise: Yes
+
+Vendor fulfillment queue
+  Basic: Yes
+  Professional: Yes
+  Enterprise: Yes
+
+Operational dashboards and reports
+  Basic: —
+  Professional: Yes
+  Enterprise: Yes
+
+Inventory management tools
+  Basic: —
+  Professional: Yes
+  Enterprise: Yes
+
+Forecasting and demand recommendations
+  Basic: —
+  Professional: —
+  Enterprise: Proposed
+
+AI-assisted menu guidance
+  Basic: —
+  Professional: —
+  Enterprise: Proposed
+
+The Basic tier covers the core ordering and vendor queue. Professional adds operational visibility and inventory tools. Enterprise may add forecasting and AI-assisted guidance if sufficient data, suitable ServiceNow capabilities, and applicable licensing are available. These proposed higher-tier features are not requirements for the class MVP.
+
+7. Recommended Delivery Scope
+
+Phase 1 — Minimum Viable Product
+
+☐ Employee portal with vendor and menu browsing
+☐ Vendor-provided availability and dietary/allergen fields for menu items
+☐ One-vendor-per-order submission and pickup-window selection
+☐ Server-side capacity validation
+☐ Central vendor queue grouped by pickup window and status
+☐ My Orders view with Submitted, Preparing, Ready for Pickup, Completed, and Cancelled statuses
+☐ Confirmation, ready-for-pickup, delay, and cancellation email notifications
+☐ Validated status transitions, cancellation cut-off, delay details, and status timestamps
+☐ Employee/vendor roles and ACLs
+☐ Basic operational dashboard for order volume, pickup slots, and fulfillment status
+☐ Demonstration and testing of the end-to-end process and access rules
+
+Phase 2 — Operational and Measurement Enhancements
+
+☐ Vendor-specific demand and preparation reports
+☐ Optional inventory counts and low-stock indicators
+☐ Consistent waste/leftover recording and cost estimates
+☐ Supplier and purchase records to report local sourcing where data is available
+☐ Employee feedback and baseline/post-pilot comparison
+☐ CSV menu or inventory import, if supported and approved
+
+Phase 3 — Future Commercial Product and Expansion
+
+☐ Basic, Professional, and Enterprise tier packaging
+☐ Subscription status and feature entitlements for subscribing organizations
+☐ Expand to additional corporate buildings
+☐ Explore an educational-institution adaptation
+☐ Demand forecasting or AI-assisted recommendations
+☐ Payment, QR, mobile, or external inventory integrations
+
+8. Suggested Team Workstreams (Five Members)
+
+Business analysis and project coordination
+  Ownership: Member 1
+  Expected outputs: Requirements, scope, employee/vendor personas, process map, decision log
+
+Data model and security
+  Ownership: Member 2
+  Expected outputs: Tables, references, field definitions, roles, ACLs, data-quality rules
+
+Employee interface and ordering
+  Ownership: Member 3
+  Expected outputs: Portal/catalog experience, menus, order submission, employee order view
+
+Vendor operations and automation
+  Ownership: Member 4
+  Expected outputs: Vendor queue, pickup capacity, Flow Designer routing/status/notifications
+
+Reporting, testing, and demonstration
+  Ownership: Member 5
+  Expected outputs: Dashboard definitions, test cases, role-based validation, demo flow and findings
+
+All five members should review the process and data model, participate in integration testing, and contribute to the final presentation. Workstream assignments can be adjusted to match each member's experience and the instructors' expectations.
+
+9. Questions for Instructor Feedback
+
+1. Is the one-building corporate pilot appropriately scoped for the final project and available time?
+2. Should we build around native Service Catalog request tables or custom Food Order tables?
+3. Should the employee and vendor experiences use Service Portal, UI Builder, Workspace, or a combination?
+4. Which five workstreams best fit the team's skills and expected deliverables?
+5. Which application, reporting, and automation capabilities are available in the training instance?
+6. Is simulated checkout acceptable for the MVP?
+7. Which operational dashboard measures should be implemented in the MVP, and which should remain future-phase concepts?
+8. Should the B2B tier model remain a future business concept, or should we demonstrate a simple tier/entitlement record in the project?
+9. What level of testing, ACL validation, and documentation is expected?
+
+10. Sample Final Demonstration
+
+Scenario: An employee in the pilot building has a limited lunch break and wants a 12:15 PM pickup.
+
+1. Impersonate the employee and open the CaféFlow portal.
+2. Review vendor menus, availability, and supplied dietary/allergen information.
+3. Select a vendor, meal, quantity, and pickup window; submit the order.
+4. Show the order record and capacity validation.
+5. Impersonate vendor staff and locate the order in the centralized queue grouped by pickup time.
+6. Show how the vendor view summarizes batch quantities while preserving each order's instructions.
+7. Advance the order through Preparing and Ready for Pickup; show the employee notification.
+8. Mark the order picked up and show the update to operational reporting.
+9. Impersonate an unauthorized user to demonstrate record access restrictions.
+
+11. Define Process Completion Checklist
+
+☑ Business problem drafted for the corporate-building pilot
+☑ Proposed solution drafted
+☑ B2B subscription concept and feature tiers proposed for future commercial service
+☑ Expected outcomes, dashboard concepts, and KPIs proposed
+☑ Inputs and outputs drafted
+☑ Employee, vendor, and building stakeholder roles identified
+☑ Five team workstreams proposed
+☐ Confirm process steps and exception handling
+☐ Confirm MVP versus phase 2 reporting/data requirements
+☐ Confirm ordering architecture and payment assumptions
+☐ Review subscription tiers with instructors as future scope
+☐ Review with instructors and incorporate feedback
+
+Immediate next step: Review the corporate pilot process, MVP metrics, and future B2B tier concept with the instructor, then finalize the data model and field definitions before building the interface or automation.

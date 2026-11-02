@@ -1,0 +1,25 @@
+# Local scratch files, downloaded dependencies and PDF previews
+/tmp/
+
+# Local diagnostic logs
+/logs/
+*.log
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+/.aws/
+/.codex/
+/.agents/
+*.pem
+*.key
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+/.venv/
+/.idea/
+/.vscode/
+Thumbs.db
+.DS_Store
