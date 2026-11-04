@@ -23,3 +23,7 @@ __pycache__/
 /.vscode/
 Thumbs.db
 .DS_Store
+
+# Local EER reference and CafeNow screenshots excluded from publishing
+/assets/Cafe Flow EER.pdf
+/assets/cafenow_*.png

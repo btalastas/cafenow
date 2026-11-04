@@ -188,7 +188,19 @@ Suggested field dictionary (logical names only):
 | Food Order, proposed evidence fields | terms version: String; acknowledgement timestamp: Date/Time, if adopted; reminder/disposal tracking fields only after the no-show policy is defined |
 | Order Line | order: Food Order reference; menu_item: Menu Item reference; quantity: Integer; captured_unit_price: monetary value; item_name_snapshot: String; instructions: Text |
 
-Do not duplicate inherited number, state, assignment or audit fields automatically. Membership responsibility does not itself grant permissions; S01/S03/S04 must define and enforce access. Exact choice values, mandatory fields, indexes, deletion rules and currency precision belong in the reviewed D01 dictionary.
+Do not duplicate inherited number, state, assignment or audit fields automatically. Membership responsibility does not itself grant permissions; S01/S03/S04 must define and enforce access. Mandatory fields, indexes, deletion rules and currency precision belong in the reviewed D01 dictionary.
+
+**Food Order State reference - November 3, 2026:** user-selected mapping, retained for later configuration and testing. See [DECISIONS.md](../../DECISIONS.md). Confirmed replaces Preparing in the current lifecycle; earlier Preparing examples are superseded.
+
+| State label | Stored value |
+| --- | --- |
+| Submitted | -5 |
+| Confirmed | 1 |
+| Ready for Pickup | 2 |
+| Closed Complete | 3 |
+| Canceled | 4 |
+
+Normal flow: Submitted -> Confirmed -> Ready for Pickup -> Closed Complete after actual pickup. Verify the actual dictionary/choice records, default and active/terminal-state behavior before using this mapping in automation. Cancellation eligibility, no-show timing and transition authorization remain separate rules. This is documentation of the user's choice, not evidence of instance configuration, and does not change global Task choices.
 
 ```mermaid
 erDiagram

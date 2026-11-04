@@ -32,6 +32,8 @@ R IDs are requirements; BP IDs are business processes; P/D/S/C/U/V/B/F/N/X/I/A/T
 
 Daily path: VTB card → detailed task → requirement/process → acceptance evidence. Share documents through a team-accessible location; local disk links work only for people with the same files. Record the actual board and shared-document links in STATUS.md once available.
 
+Today's selection guide: [November 3 team to-do](docs/planning/TODO-2026-11-03.md), covering tables, role/module user stories and access/ACL work. This dated checklist supports the shared VTB; live assignments and progress remain on the board.
+
 ## Proposal and reference sources
 
 | Location | Purpose |

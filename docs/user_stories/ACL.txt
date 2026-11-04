@@ -1,0 +1,20 @@
+As a user, I need to access to all orders I've placed in the past for budgeting purposes
+As a user, I need to access my current order for a given pickup window so I can pickup my order accordingly
+As a user, I need to create an order at a given pickup window so I can eat my lunch
+As a user, I need to cancel my order before cancellation cutoff, 20 minutes before the pickup window if I don't plan on picking up the order at the alloted pickup window
+
+As a vendor, I need access to all orders assigned for my vendor within a given pickup window so that I can plan preparation for staff
+As a vendor, I need to update order statuses of orders my assigned vendor within a given pickup window from Confirmed -> Ready for Pickup -> Closed Complete
+As a vendor, I need to update order statuses of orders to "Canceled" from my assigned vendor in the event of no-show users
+
+As a vendor admin, I need access to all orders for my assigned vendor for reporting purposes at the end of the day
+As a vendor admin, I need to create or update menu items for my assigned vendor so users can place orders with our vendor
+As a vendor admin, I need to update order statuses of orders to "Canceled" from my assigned vendor in the event of a no-show user
+As a vendor admin, I need to deactivate old seasonal menu items so users don't order incorrect menu items
+
+As a facility admin, I need access to all orders from all vendors for budgeting and reporting purposes at the end of the month
+As a facility admin, I need to add a vendor's information so that users can place orders through that vendor
+As a facility admin, I need to modify a vendor's information so users can have the most up to date info
+As a facility admin, I need to deactivate vendor's information in the event that the vendor leaves
+
+As a sys admin, I need to access/create/update/delete all tables for configuration and security purposes

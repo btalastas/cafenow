@@ -51,9 +51,31 @@ The user explicitly requested updating docs/proposals/ServiceNow_OMS_Project_Pro
 - Batch acceptance checks: authorize vendor/window, recheck each order's current state, avoid duplicate effects, and report confirmed/skipped/failed results. A concurrently cancelled order must not be confirmed or resurrected. Whether a batch is atomic or permits partial success remains a design choice.
 - Consequence: these clarifications supersede earlier unknown capacity and access statements. No task completion, email delivery or automatic disposal is claimed. Record actual owners/evidence in the VTB.
 
+### November 3, 2026 - Food Order State labels and values
+
+- Source/approver: explicit user instruction to retain these values for later use, following clarification that Confirmed replaces Preparing.
+- Decision: use the following State mapping for CafeNow Food Order. This records the application's chosen values, not verified instance configuration or platform-wide Task defaults.
+
+| State label | Stored value |
+| --- | --- |
+| Submitted | -5 |
+| Confirmed | 1 |
+| Ready for Pickup | 2 |
+| Closed Complete | 3 |
+| Canceled | 4 |
+
+- Normal lifecycle: Submitted -> Confirmed -> Ready for Pickup -> Closed Complete. Closed Complete means actual pickup. Canceled is the cancellation outcome; timing, eligible source states and no-show rules require separate validation.
+- Consequence: these labels/values supersede earlier Preparing examples and unresolved label statements in the working documents. Use this mapping when planning conditions, ACL/action validation, flows, notifications, reports and tests. Apply choices to the CafeNow table; this does not authorize changing global Task choices.
+- Verification/next action: inspect the actual State choices, default, inherited behavior and active/terminal-state handling in the target instance. Numeric values alone do not prove any of those behaviors. Final catalog/order ownership and exact table scope remain pending P03/D01.
+- Revisit: explicit user/team change or a verified platform constraint. Record any approved remapping and treatment of existing records before changing values.
+
 ## Pending product and delivery decisions
 
-November 2 proposed portals: user supplied Employee Portal (CafeNow), Vendor Dashboard, CafeNow Management and ServiceNow Admin Workspace responsibilities. Recorded in the detailed task guide for P01/P03/S01 review. This is a proposal, not approval of four deployments or expanded scope. Search/cart/nutrition details, registration approvals and complaints need include/defer and acceptance decisions. Refunds remain deferred with payments; sales summaries require a recorded-order-value definition. Technical admin tools and business-admin permissions remain distinct and unverified.
+November 2 implementation progress (explicit user report): CafeNow app created in ServiceNow Studio; five roles and associated groups created for user, sys admin, vendor, vendor admin and facility admin. Exact identifiers, scope, role inheritance/assignments and access enforcement remain unverified. Do not assume the reported sys admin label means the platform `admin` role or that facility admin has unrestricted technical administration.
+
+The user reports beginning table creation and plans to import menu items into Catalog Items for Service Portal and is finalizing tables/fields named `u_cafeteria_vendor`, `u_cafeteria_order` and `u_order_line_item`. Preserve these as reported working names, not approved scoped identifiers or verified tables. User subsequently confirmed the vendor table name as `u_cafeteria_vendor`; live dictionary inspection remains pending. P03/D01 must still settle catalog request mapping, one authoritative order/lifecycle owner, line-to-order/item references, vendor membership and pickup-window representation. S01 must reconcile the created personas with allowed actions and record/field ACLs; role/group creation alone does not establish permissions. No import execution, table completion or task completion is inferred.
+
+November 2 interface sketches (clarified by the user November 3): initial ideas were sketched for two Service Portal views, for user and vendor, and an admin workspace. Earlier Employee Portal, Vendor Dashboard, CafeNow Management and ServiceNow Admin Workspace responsibility notes remain input in the detailed task guide for P01/P03/S01 review; they do not establish four separate deployments. These are sketches, not implemented interfaces or approval of expanded scope. Search/cart/nutrition details, registration approvals and complaints need include/defer and acceptance decisions. Refunds remain deferred with payments; sales summaries require a recorded-order-value definition. Technical admin tools and business-admin permissions remain distinct and unverified.
 
 November 2 documentation request: added the table reuse/extension recommendations, proposed field dictionary, relationships and catalog mapping investigation to the [detailed task guide](docs/planning/MVP-FEATURE-TASKS-AND-PROCESSES.md#proposed-table-design-for-team-review--november-2). Inclusion in planning does not approve Task extension, custom order ownership, vendor membership implementation or catalog structure. Resolve these in P03/D01/S01; preserve one authoritative order record.
 
@@ -61,14 +83,14 @@ November 2 documentation request: added the table reuse/extension recommendation
 | --- | --- | --- |
 | Authority | Select governing requirements source and priority/acceptance authority | P01 |
 | Scope and delivery | Approve R01–R10, simulated checkout, deferrals, deadline/demo requirements, team capacity | P01 |
-| Lifecycle and exceptions | Finalize state labels for submission/vendor confirmation and Preparing; cutoff boundary inclusivity and cancellation-eligible states; vendor cancellation/delay rules; end-of-business time/policy, three reminder intervals and no-show closure/disposal | P02 |
+| Lifecycle and exceptions | State labels/values recorded November 3; resolve cutoff boundary inclusivity and cancellation-eligible states; vendor cancellation/delay rules; end-of-business time/policy, three reminder intervals and no-show closure/disposal | P02 |
 | Capacity/time | 20-order/window capacity confirmed; window duration, concurrency-safe reservation/recovery, release rules, time zone and boundary behavior | P02, B02 |
 | Architecture | Scoped application decision; catalog structure for five vendors; catalog/native versus custom authoritative order source; vendor identity/membership model | P03, D01 |
 | Interface/environment | Release/modules/access, employee/vendor interfaces and configuration transfer/review | P03 |
 | Class checklist | Required catalog, scheduled execution and integration mechanisms; accepted demonstrations/deferrals | P01, P03, X01 |
 | Data/security | Scoped names, fields/relationships, vendor membership and building/management permissions | D01, S01 |
 
-The detailed Markdown is a candidate working reference; no proposal has been approved as the final specification. Lifecycle/capacity values and technical names in examples remain illustrative.
+The detailed Markdown is a candidate working reference; no proposal has been approved as the final specification. Explicitly recorded user choices, including the November 3 State mapping, govern older examples; other technical names and unresolved behavior remain illustrative or pending.
 
 ## Recording an agreement
 

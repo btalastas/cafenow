@@ -1,8 +1,48 @@
-# Status as of November 2, 2026
+# Status as of November 4, 2026
+
+## Team progress summary - November 3, 2026
+
+Recorded November 4 from the user's report and existing project notes. CafeNow by NowServing Solutions progressed in the following areas:
+
+- **Service Portal (`/cafe`):** Worked on the employee/user view, including a "Place Your Order Now" action that directs users to vendors.
+- **User stories and table ACLs:** Worked on role-based user stories and access controls for the application tables. Story approval, ACL completeness and enforcement have not been verified here.
+- **Navigation modules:** Created All - Orders, My Orders, Place New Order, All - Vendors and All - Menu, as previously reported.
+- **Tables and form configuration:** Created Order, Menu, Pickup Window and Vendor tables, as previously reported, and worked on table form configuration. Exact form layouts and fields have not been inspected here.
+- **Order states:** Recorded Submitted = -5, Confirmed = 1, Ready for Pickup = 2, Closed Complete = 3 and Canceled = 4. This records the chosen mapping; transition behavior has not been tested here.
+
+These are user-reported configuration activities and recorded decisions, not verified completion of acceptance criteria. Next action: review portal routing and form layouts, test module destinations and visibility, and verify employee ownership/vendor boundaries through record and field ACL tests. Record actual results and evidence on the shared MVP VTB. Documentation checked by UTF-8 readback and diff whitespace; no live instance configuration or application tests performed.
+
+## Table creation - November 3, 2026
+
+User reports creating four CafeNow tables: Order, Menu, Pickup Window and Vendor. This supersedes the earlier report that table creation had only begun. Exact current dictionary definitions, relationships, mandatory fields, inherited behavior and ACLs have not been live-inspected here. Order Line creation is not reported by this update. This is progress toward D02-D04, not completion of their acceptance checks or approval of catalog/order architecture. Next action: review the four dictionaries and relationships against D01/S01, confirm the order-line model and test access with the intended personas. Documentation checked by UTF-8 readback and diff whitespace; no instance configuration or tests performed.
+
+## Application navigation modules - November 3, 2026
+
+User reports creating five CafeNow navigation modules: All - Orders, My Orders, Place New Order, All - Vendors and All - Menu. Earlier screenshots show these module records under the CafeNow application menu. This is configuration progress toward the navigation work identified through P03/S01/U01; it does not establish task completion. Role-specific visibility, My Orders ownership filtering, the Place New Order catalog destination and underlying record/field ACL behavior have not been live-tested here. Next action: test each entry with the intended personas, verify destinations and own-order/vendor boundaries, and record evidence on the shared VTB. Documentation checked for UTF-8 readback and diff whitespace; no instance changes or tests performed.
+
+## Food Order State mapping - November 3, 2026
+
+Recorded the user's chosen State labels/values in DECISIONS.md and the detailed table-design guide: Submitted = -5; Confirmed = 1; Ready for Pickup = 2; Closed Complete = 3; Canceled = 4. Confirmed replaces Preparing in the current lifecycle; older examples are superseded by this record. Checked saved UTF-8 text and diff whitespace. No instance changes or tests performed. Next action: verify actual table choices/default and inherited active/terminal behavior before configuring transitions, ACL actions or flows.
+
+## Today's team to-do - November 3, 2026
+
+Menu-source update: user reports a team member created an Excel sheet with five vendors and various menu items. Added spreadsheet review, Catalog Item import investigation, catalog/vendor grouping clarification, source/target mappings and bounded trial/reconciliation tasks to today's to-do. One building catalog with vendor categories is a review option; separate vendor catalogs and the final hierarchy remain to be agreed. Workbook contents, instance capabilities and import execution have not been verified. Next action: assign the workbook review/import investigation and settle structure/order mapping before bulk import.
+
+Created the [November 3 to-do document](docs/planning/TODO-2026-11-03.md) at the user's request. It lists group workstreams for tables, five-role user stories, application-module needs, access planning, ACL configuration when prerequisites are met, and security testing. Includes story/module checklists and end-of-day review, linked to existing tasks rather than creating another status board. This is a task list, not completed stories or approved access rules. Checked local links, UTF-8 text and diff whitespace. No instance configuration or tests performed. Next action: team assigns owners in the VTB and reviews the model and access matrix before ACL configuration.
+
+## Studio setup and model progress - November 2, 2026
+
+November 3 documentation update: incorporated the user's clarification of November 2 progress, including the five role labels, table creation begun, and interface sketches. Checked the saved UTF-8 text and diff whitespace; no live instance verification performed. Next action: inspect the dictionary and permissions, and review the sketches with the team.
+
+User reports creating the CafeNow application in ServiceNow Studio and creating five roles with associated groups for user, sys admin, vendor, vendor admin and facility admin. These are reported persona labels; exact role/group identifiers, application scope, assignments and ACL behavior have not been inspected. This is progress toward P03/S02, not completion of architecture or security acceptance checks.
+
+Menu-item import into Catalog Items for Service Portal is planned, not executed or verified. Tables and fields are being finalized under the reported names `u_cafeteria_vendor`, `u_cafeteria_order` and `u_order_line_item`; the user reports table creation has begun; completed tables and final dictionary approval are not claimed. User confirmed the vendor table name as `u_cafeteria_vendor`. The authoritative order model and catalog-to-order mapping remain open.
+
+Next action: review the actual application scope and dictionary, map role/group identifiers to S01 permissions and vendor membership, and settle how catalog submissions produce one vendor order with lines before importing. Include vendor/window capacity and server-side validation in the design; record live owners/evidence in the VTB. Documentation checked locally; no instance access, import, ACL or application test performed.
 
 ## Team decisions — November 2, 2026
 
-Portal planning: documented the user's four proposed experiences and mapped responsibilities to existing task IDs in the detailed guide; linked candidate requirement refinements and pending scope decisions. Registration approvals, complaints, nutrition/cart details and financial scope remain for review; no new portal or workspace implementation is claimed. Next action: select MVP capabilities and verify interface feasibility/permissions through P01/P03/S01. Checked document links, UTF-8 text and diff whitespace; retained proposals/assets unchanged.
+Portal planning: the user clarified that initial ideas were sketched for two Service Portal views (user and vendor) and an admin workspace. Earlier responsibility sketches remain planning input in the detailed guide; they do not establish four separate interfaces. Registration approvals, complaints, nutrition/cart details and financial scope remain for review; no new portal or workspace implementation is claimed. Next action: select MVP capabilities and verify interface feasibility/permissions through P01/P03/S01. Checked document links, UTF-8 text and diff whitespace; retained proposals/assets unchanged.
 
 Latest user clarification: team access is reported established. Vendor service portal must group Submitted orders by pickup window and support individual/batch confirmation. Capacity is 20 orders per vendor/window. No-show notices have 30-minute intervals; final disposal warning is one hour before vendor closing. Pickup-window duration, initial notice trigger, scheduling conflicts, actual disposal timing and cancellation-state interaction remain open. Updated decision record, brief, requirements, task guide and daily note; no live application verification claimed. Next action: resolve policy edges and validate the model before configuration.
 
