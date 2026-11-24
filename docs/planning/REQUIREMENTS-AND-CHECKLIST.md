@@ -4,6 +4,10 @@ Candidate acceptance baseline as of November 1, 2026, for the proposed November 
 
 This file owns requirement meanings and class coverage. The [MVP breakdown](MVP-FEATURE-TASKS-AND-PROCESSES.md) owns task definitions, component examples and process guidance; the shared VTB owns live progress. Record approvals/deferrals in [DECISIONS.md](../../DECISIONS.md).
 
+November 5 refinement: same-day, one employee/vendor, multiple food quantities; current cart direction proposes individual food Catalog Items and linked RITMs under one CafeNow Order. R01-R03/R08/R10 acceptance must include recipient/vendor/window consistency, date-specific capacity, complete-checkout coordination and retry protection. Excel import and shared-variable/flow associations require bounded verification; no completion is claimed. Details live in the [task/component guide](MVP-FEATURE-TASKS-AND-PROCESSES.md#ordering-variables-and-menu-import---november-5-2026).
+
+November 6 user clarification: R01/R02 require browsing vendor categories, multiple food Catalog Items from one vendor, and one pickup-window selection at checkout. Derive vendor from Catalog Item -> Menu -> Vendor; store Pickup Window record sys_id in the existing Order reference. Per-food pickup questions are superseded as the intended UX. Exact checkout integration remains to be verified. See the [ordering review](ORDERING-REVIEW-2026-11-06.md).
+
 ## November 2 team direction
 
 The [team decision record](../../DECISIONS.md) narrows the candidate baseline: five vendors; vendor-specific Service Catalog food items/pricing; vendor receipt/availability confirmation; vendor-controlled Preparing → Ready for Pickup → Closed Complete after actual pickup; employee cancellation only; all-vendor admin portal/view; ServiceNow Studio. This is user-reported team agreement, not instructor sign-off or implemented behavior.
@@ -25,7 +29,7 @@ November 2 portal proposal: see the [detailed portal responsibilities](MVP-FEATU
 | ID | Requirement | Example acceptance evidence |
 | --- | --- | --- |
 | R01 | Employee browses published vendor menus and availability; authorized vendor managers maintain them | Employee sees eligible items, price, and vendor-provided dietary/allergen labels; unavailable items cannot be ordered |
-| R02 | Order contains one vendor, items/quantities, employee, and pickup window | Valid order is recorded once; mixed vendors, invalid quantities, and missing required inputs rejected |
+| R02 | Order contains one vendor, items/quantities, employee, and pickup window | One checkout pickup selection and one valid Order for multiple same-vendor foods; mixed vendors, invalid quantities, and missing required inputs rejected |
 | R03 | Capacity, availability, and cut-off enforced server-side | At the last capacity unit, competing submissions cannot both exceed capacity; late/unavailable orders rejected |
 | R04 | Vendor queue groups orders by pickup window/status | Vendor sees own queue and batch totals; individual instructions remain accessible |
 | R05 | Employee tracks own order and permitted lifecycle transitions | Normal journey succeeds; invalid transitions rejected; another employee's order cannot be read |

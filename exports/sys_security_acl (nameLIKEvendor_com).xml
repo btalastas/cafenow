@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-11-13 21:11:16">
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Allow CafeNow vendor administrators to create vendor complaints and requests.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants</name>
+<operation display_value="create">create</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-12 15:40:21</sys_created_on>
+<sys_id>dec2a1cd98a813107f4457b5222b7e17</sys_id>
+<sys_mod_count>8</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_dec2a1cd98a813107f4457b5222b7e17</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 21:06:41</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants">submitted_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item goto="false" or="false" field="submitted_by" endquery="false" value="90d1921e5f510100a9ad2572f2b477fe" operator="DYNAMIC" newquery="false"/>
+<item goto="false" or="false" field="" endquery="true" value="" operator="=" newquery="false"/>
+</condition>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Allow CafeNow vendor administrators to read only vendor complaints and requests where they are the Reporter.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 21:02:00</sys_created_on>
+<sys_id>05e5ff1df8a453107f4429c6840ee08b</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_05e5ff1df8a453107f4429c6840ee08b</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 21:06:23</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.submitted_by"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.submitted_by"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Allow vendors to read only their own submissions.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.submitted_by</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-12 15:40:22</sys_created_on>
+<sys_id>52c2a1cd98a813107f4457b5222b7e2c</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.submitted_by</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_52c2a1cd98a813107f4457b5222b7e2c</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:59:18</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.submitted_by"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.submitted_by">submitted_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item goto="false" or="false" field="" endquery="true" value="" operator="=" newquery="false"/>
+</condition>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Populate Reporter from the signed-in user.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.submitted_by</name>
+<operation display_value="create">create</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:26:08</sys_created_on>
+<sys_id>0f8da755f86453107f4429c6840ee00d</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.submitted_by</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_0f8da755f86453107f4429c6840ee00d</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:57:22</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.complaint_description"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.complaint_description"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Display submission details. The table read ACL still determines which records each user can access.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.complaint_description</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:33:01</sys_created_on>
+<sys_id>ed4f6399f86453107f4429c6840ee02f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.complaint_description</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_ed4f6399f86453107f4429c6840ee02f</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:33:01</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.complaint_summary"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.complaint_summary"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Display submission details. The table read ACL still determines which records each user can access.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.complaint_summary</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:32:34</sys_created_on>
+<sys_id>a22f2f59f86453107f4429c6840ee02d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.complaint_summary</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_a22f2f59f86453107f4429c6840ee02d</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:32:34</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.complaint_category"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.complaint_category"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Display submission details. The table read ACL still determines which records each user can access.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.complaint_category</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:32:07</sys_created_on>
+<sys_id>881f2b59f86453107f4429c6840ee01d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.complaint_category</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_881f2b59f86453107f4429c6840ee01d</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:32:07</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.vendor"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.vendor"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Display submission details. The table read ACL still determines which records each user can access.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.vendor</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:31:41</sys_created_on>
+<sys_id>55ee2359f86453107f4429c6840ee0bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.vendor</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_55ee2359f86453107f4429c6840ee0bf</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:31:41</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.submission_type"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.submission_type"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Display submission details. The table read ACL still determines which records each user can access.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.submission_type</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:30:52</sys_created_on>
+<sys_id>b0ceeb19f86453107f4429c6840ee04b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.submission_type</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_b0ceeb19f86453107f4429c6840ee04b</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:30:52</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.submitted_by"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.submitted_by"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Display submission details. The table read ACL still determines which records each user can access.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.submitted_by</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:30:22</sys_created_on>
+<sys_id>faaee719f86453107f4429c6840ee09b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.submitted_by</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_faaee719f86453107f4429c6840ee09b</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:30:22</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.sys_created_on"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.sys_created_on"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Display submission details. The table read ACL still determines which records each user can access.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.sys_created_on</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:29:57</sys_created_on>
+<sys_id>e09ee319f86453107f4429c6840ee0d3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.sys_created_on</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_e09ee319f86453107f4429c6840ee0d3</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:29:57</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.number"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.number"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Display submission details. The table read ACL still determines which records each user can access.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.number</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:29:30</sys_created_on>
+<sys_id>9b6eafd5f86453107f4429c6840ee014</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.number</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_9b6eafd5f86453107f4429c6840ee014</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:29:30</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.complaint_description"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.complaint_description"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Allow details up to 250 characters.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.complaint_description</name>
+<operation display_value="create">create</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:28:29</sys_created_on>
+<sys_id>2b3ee3d5f86453107f4429c6840ee017</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.complaint_description</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_2b3ee3d5f86453107f4429c6840ee017</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:28:29</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.complaint_summary"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.complaint_summary"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Allow a summary up to 40 characters.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.complaint_summary</name>
+<operation display_value="create">create</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:28:03</sys_created_on>
+<sys_id>df1eaf95f86453107f4429c6840ee0a7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.complaint_summary</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_df1eaf95f86453107f4429c6840ee0a7</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:28:03</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.vendor"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.vendor"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Populate the authorized vendor reference.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.vendor</name>
+<operation display_value="create">create</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:27:24</sys_created_on>
+<sys_id>ecfde795f86453107f4429c6840ee0f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.vendor</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_ecfde795f86453107f4429c6840ee0f5</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:27:24</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants.submission_type"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants.submission_type"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Allow Complaint or Request</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants.submission_type</name>
+<operation display_value="create">create</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>btalastas</sys_created_by>
+<sys_created_on>2026-11-13 20:26:47</sys_created_on>
+<sys_id>98dda395f86453107f4429c6840ee06e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants.submission_type</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_98dda395f86453107f4429c6840ee06e</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:26:47</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Facility managers read all vendor submissions in the single-building pilot.</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants</name>
+<operation display_value="read">read</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>colleen.gildea</sys_created_by>
+<sys_created_on>2026-11-12 20:47:07</sys_created_on>
+<sys_id>fbf8ee0198a453107f4457b5222b7e03</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_fbf8ee0198a453107f4457b5222b7e03</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:24:29</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>false</advanced>
+<applies_to table="x_1234_cafenow_cafenow_vendor_compliants"/>
+<condition table="x_1234_cafenow_cafenow_vendor_compliants"/>
+<controlled_by_refs/>
+<decision_type>allow</decision_type>
+<description>Allow authorized admins to delete Vendor Complaints records</description>
+<local_or_existing>Existing</local_or_existing>
+<name>x_1234_cafenow_cafenow_vendor_compliants</name>
+<operation display_value="delete">delete</operation>
+<script/>
+<security_attribute display_value=""/>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-12 15:40:22</sys_created_on>
+<sys_id>dac2a1cd98a813107f4457b5222b7e52</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_name>x_1234_cafenow_cafenow_vendor_compliants</sys_name>
+<sys_package display_value="CafeNow" source="x_1234_cafenow">ef71beb1011053107f448b63de6dd74b</sys_package>
+<sys_policy/>
+<sys_scope display_value="CafeNow">ef71beb1011053107f448b63de6dd74b</sys_scope>
+<sys_update_name>sys_security_acl_dac2a1cd98a813107f4457b5222b7e52</sys_update_name>
+<sys_updated_by>btalastas</sys_updated_by>
+<sys_updated_on>2026-11-13 20:00:48</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+</unload>

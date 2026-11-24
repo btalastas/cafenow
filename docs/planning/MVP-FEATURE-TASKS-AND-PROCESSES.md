@@ -59,7 +59,7 @@ flowchart TD
 
 Use this guide when refining the existing task cards. These examples describe proposed configuration, not installed components. Names, sample data, capacities and times below are illustrative; P02/P03 must settle business rules and architecture. Keep the existing task IDs and add the relevant components to each card's implementation notes and acceptance checks.
 
-Catalog, catalog item, request and portal are separate components. Choose whether a native Requested Item or custom Food Order is authoritative before building. Do not automatically create both as competing sources. Catalog coverage must still be agreed with the instructor if custom ordering is selected.
+Catalog, catalog item, request and portal are separate components. The November 5 direction uses CafeNow Order as fulfillment authority and linked food RITMs as item details; validate that mapping before building. Do not automatically create both as competing sources. Catalog coverage must still be agreed with the instructor if custom ordering is selected.
 
 ### Foundation, access and user experience
 
@@ -71,8 +71,8 @@ Catalog, catalog item, request and portal are separate components. Choose whethe
 | Tables, dictionary fields and references    | Logical Order references Employee A, Vendor A and the 12:00–12:15 window. Two Order Lines contain 2 sandwiches at a captured unit price of $8 and 1 salad at $7: sample total $23.                                                                           | D01–D04; BP02–BP04            | Core: later menu price changes do not rewrite this order's captured prices; map entities to chosen native/custom records                       |
 | Service Portal / chosen employee interface  | Employee A opens CafeNow, browses Vendor A's available menu, selects a pickup window, submits and opens My Orders to see a revised ready estimate.                                                                                                           | U01–U03; BP03, BP05, BP07     | Core employee experience; Service Portal technology conditional on P03. Verify desktop/tablet and protected direct links                       |
 | Service Catalog and category                | If catalog ordering is selected, expose a CafeNow catalog/category with a Place Meal Order entry for eligible employees.                                                                                                                                     | C01; BP03                     | Conditional architecture/checklist coverage: verify the intended audience and absence of a second competing ordering path                      |
-| Catalog item and variables                  | Place Meal Order captures vendor, menu lines/quantities, pickup window and permitted instructions such as No onions. Choose the supported multi-line input design during P03/C02.                                                                            | C02, U02; BP03                | Conditional on catalog design: correct inputs captured; mixed-vendor and invalid quantities still rejected server-side                         |
-| Request / Requested Item records            | In a catalog-centered design, the Request is the submission container and the selected Requested Item represents the authoritative meal order. Define where all line and fulfillment data belongs; do not create an independently managed custom order copy. | C03, D03; BP03–BP04           | Conditional on P03: one submission has one accepted fulfillment order and one lifecycle owner; native/custom state mapping explicitly reviewed |
+| Catalog item and variables                  | Current direction: food catalog items capture quantities, pickup window and instructions; derive vendor from trusted mapping. Generic multi-line ordering is a historical alternative.                                                                            | C02, U02; BP03                | Conditional on catalog design: correct inputs captured; mixed-vendor and invalid quantities still rejected server-side                         |
+| Request / Requested Item records            | Under the November 5 cart direction, Request is the submission container, food RITMs supply item details, and one linked CafeNow Order owns fulfillment. Define where all line and fulfillment data belongs; do not create an independently managed custom order copy. | C03, D03; BP03–BP04           | Conditional on P03: one submission has one accepted fulfillment order and one lifecycle owner; native/custom state mapping explicitly reviewed |
 | Vendor lists, forms and related order lines | Vendor A staff open an Upcoming Orders list grouped by pickup window/status and inspect an order's lines and instructions. A batch summary shows 15 sandwiches while preserving each order's customization.                                                  | V02–V03; BP04                 | Core: totals reconcile to known records, cancelled-order counting is defined, and Vendor B's records are inaccessible                          |
 | ACLs                                        | Employee A cannot read Employee B's order or lines, including through direct access. Vendor A staff cannot edit Vendor B's menu or change a protected captured price.                                                                                        | S03–S04, T07; BP01, BP03–BP07 | Core: test table/record/field permissions and report visibility; hiding a button or filtering a list is insufficient                           |
 
@@ -228,7 +228,7 @@ Server-side integrity and acceptance checks:
 
 **Catalog mapping investigation:** consider one CafeNow catalog with five vendor categories as a proposed presentation structure, not an approved choice. Native Catalog Items (`sc_cat_item`) and request records are distinct from custom menu/order records. A Record Producer can create an application-specific record; verify the supported interface and multi-line submission design in the target instance. See [Service Catalog guidance](https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/request-cat-use-case.html).
 
-The recommended feasibility investigation is one vendor ordering entry point selecting multiple menu items and producing one Food Order with lines. An alternative is one catalog item per food item, which requires defining how requested items are grouped into one vendor order. Compare against native request-centered ownership; do not maintain independently editable Requested Item and Food Order lifecycles. Confirm instructor acceptance of the selected Catalog approach.
+Historical alternative (superseded by the November 5 cart direction): investigate one vendor ordering entry point selecting multiple menu items and producing one Food Order with custom lines. An alternative is one catalog item per food item, which requires defining how requested items are grouped into one vendor order. Compare against native request-centered ownership; do not maintain independently editable Requested Item and Food Order lifecycles. Confirm instructor acceptance of the selected Catalog approach.
 
 P03 supplies a feasible order/catalog/interface choice; D01 supplies the reviewed dictionary and relationships; S01 supplies the access matrix. D02–D04 implement only the approved model, S02 supplies personas, and D05/T01 cover five vendors in the full MVP seed/test plan (a two-vendor slice is an intermediate test).
 
@@ -248,6 +248,78 @@ P03 supplies a feasible order/catalog/interface choice; D01 supplies the reviewe
 | S02 | Configure test users, roles, groups and vendor membership | S01, D01     | Two employees, staff for vendors A/B, manager/admin coverage; membership documented without credentials           |
 | S03 | Implement ownership and read/create ACLs                  | S02, D02–D04 | Orders/lines/references protected; direct access restricted; employee/vendor ownership cannot be forged           |
 | S04 | Protect updates, actions, menus and reports               | S03          | Unauthorized price/vendor/status changes denied; vendor/menu/report permissions match matrix                      |
+
+### Ordering, variables and menu import - November 5, 2026
+
+Source: user clarification and planning discussion; configuration is not live-verified. This is the current cart-based design direction, replacing the earlier generic ordering-item recommendation. Instructor acceptance and instance feasibility remain to be checked through P03/D01/S01.
+
+**User requirements:** one employee, one vendor, multiple different foods with individual quantities, one pickup window, same-day ordering, and automation that captures these inputs and creates one CafeNow Order. The user says Order Time Slot references Pickup Window and displays its slot label. Confirm the dictionary before coding. Screenshots show Menu and Pickup Window referencing Vendor, and Vendor identified as `x_1234_cafenow_vendor`; earlier `u_cafeteria_vendor` references are historical reports. Other technical names remain unconfirmed.
+
+**Proposed record mapping:** each distinct food is a Catalog Item linked to its Menu record and vendor. Checkout creates a Request and food RITMs with quantities. Create one CafeNow Order as the fulfillment authority, retain Source Request, and add a CafeNow Order reference on RITMs. Display linked RITMs on the Order. A separate custom Order Line table is not required for this proposed approach; validate pricing snapshots, reporting and access before finalizing. Older custom-line examples below are alternatives, not instructions to build both. Do not maintain competing RITM and Order fulfillment lifecycles; define any native status synchronization explicitly.
+
+#### Order-process follow-up - November 6, 2026
+
+Source: explicit user work requests; these changes are pending configuration and testing.
+
+- After selecting a menu item, limit subsequent menu browsing/selection for that order to items from the same vendor. Use the selected item's trusted Menu/vendor mapping; retain server-side mixed-vendor rejection. Decide how changing vendors and removing the last item reset the selection before implementation.
+- Remove the separate Vendor variable/variable set from the ordering experience: the user reports each menu item already belongs to a category representing its vendor. Retain the shared pickup-window, instructions and terms inputs below. Confirm category-to-Vendor mapping and handle missing or ambiguous associations; derive the order Vendor from trusted records rather than customer input.
+- Review and configure pickup-window times. Exact start/end times, window duration, vendor schedules and cafeteria timezone still need confirmation. Display eligible same-day windows for the selected vendor, with clear time labels, and validate the selected window, 30-minute ordering cutoff and 20-order capacity server-side. The 30-minute no-show notice interval does not define pickup-window duration.
+
+Acceptance: select a Vendor A food and see only Vendor A foods and eligible windows; no separate vendor question appears; multiple same-vendor foods retain consistent pickup selection. Check another vendor's direct item link/cart addition is rejected at submission, and test missing/ambiguous vendor mapping, empty-cart/vendor-switch behavior, unavailable/full windows and cutoff boundaries. No result is claimed yet. Existing C01-C03/U01-U02/B01/D04/T02-T03 own this work; track owners and progress on the shared VTB.
+
+#### Shared variables, checkout pickup and quantity - November 6 refinement
+
+The user clarified that pickup is chosen once when proceeding to checkout after selecting multiple same-vendor food Catalog Items. This supersedes the earlier recommendation to require pickup and terms separately on every food. Keep one shared definition for any retained item inputs; a variable set attached to each item does not itself create a cart-wide question.
+
+| Input | Level and proposed configuration |
+| --- | --- |
+| Pickup Window (`pickup_window`) | Once at checkout; filter Pickup Window records by the vendor derived from all cart items; show `time_slot_v2` and store the selected record sys_id |
+| Pickup date | Order-level, same-day only; derive/validate in the agreed cafeteria timezone and retain for daily capacity/history |
+| Special Instructions (`special_instructions`) | Optional food-level text; reuse a shared variable definition where appropriate |
+| Cancellation Policy / Accept Terms | Once at checkout; disclose ordering cutoff 30 minutes and employee cancellation cutoff 20 minutes before start; retain acceptance evidence. Exact boundaries/state eligibility remain open |
+| Quantity | Standard catalog/cart quantity as the single source; do not also collect a second independent quantity variable |
+| Vendor / Meal selection | Derive from selected Catalog Item -> `u_cafenow_menu_item` -> Menu.`vendor`; do not ask the employee to reselect either |
+
+Use the existing Order.`pickup_window` reference instead of adding another Time Slot V2 reference to Order. The exported Pickup Window Start/End are Time (`glide_time`) fields; no migration to dated window records is implied. Combine the selected date with these times for cutoffs and 20-order/vendor/date/window capacity. The precise storage/handoff for one checkout selection requires inspection of the actual catalog cart/checkout widgets. Do not treat a post-submission Get Catalog Variables action or an unverified hidden helper as that integration.
+
+The plus/minus quantity control remains a proposed UI enhancement. Validate positive integer quantities and an agreed maximum server-side. Retain submitter attribution and use a separately verified Requested for/employee field; do not write Requested for into `sys_created_by` or silently relabel inherited semantics. Employee browsing must not depend on vendor staff groups; reference filters are not ACLs.
+
+See the [November 6 ordering review](ORDERING-REVIEW-2026-11-06.md) for export evidence, the existing Menu import/order-flow mappings, duplicate variable/cart findings and the recommended checkout boundary. Checkout customization is a recommendation pending target-instance feasibility; the user's requested journey is confirmed. Existing catalog/cart architecture and one authoritative CafeNow Order remain the working direction.
+
+#### Direct add from category cards - November 6 follow-up
+
+User requests quantity/Add to Cart on the CafeNow category list before opening a food. Prepared the [CafeNow Category Items components](../servicenow/widgets/cafenow-category-items/README.md) as derivatives of the supplied SC Category Page source. Use the native catalog cart; do not create a separate session-storage cart. Keep View Details for food-specific questions, and move order-level pickup/terms input only when the checkout replacement actually captures/enforces them. Required unanswered inputs must not be silently skipped.
+
+The prepared quick-add handler validates references/access/quantity and existing-cart vendor compatibility, then requests native cart refresh. Source preparation and 31 mocked local checks do not verify live permissions, APIs, rendering, concurrent-tab isolation or checkout acceptance. Final checkout must revalidate all vendors/windows and capacity; adding a food is not a booking. This implements part of C02/U02/B01 with T02/T07/T09 follow-up, without changing task IDs/dependencies or the one-authoritative-Order design.
+
+#### Suggested ordering automation
+
+1. Gather the complete CafeNow checkout Request and its relevant RITMs. Choose a reliable completion signal/orchestration approach in the actual release; do not assume Request insertion means all child items exist.
+2. Validate one recipient, one vendor and one pickup window; reject mixed vendors/windows or inconsistent recipients. Define treatment of unrelated catalog items in the same cart.
+3. Resolve trusted Menu/vendor/price data; validate availability, quantities, same-day eligibility and ordering cutoff server-side.
+4. Atomically reserve capacity for the vendor, pickup date and window: 20 orders, not 20 meals. Handle simultaneous submissions and release/recovery exactly once.
+5. Create one CafeNow Order with Requested for, submitter attribution, Vendor, the existing Pickup Window reference, server-derived Pickup Date in the agreed cafeteria timezone, Source Request, validated Order Total and Submitted (-5).
+6. Link every relevant RITM to that Order; expose item quantities and instructions to the authorized vendor. Define whether prices are snapshots and how subsequent edits are controlled.
+7. Send one submission event/notification after acceptance. On failure, prevent a fulfillable partial order, recover capacity and record an actionable outcome.
+
+Catalog item flows run per RITM: do not independently create a parent for each food. Use persistent uniqueness/idempotency for the accepted checkout grouping, not just lookup-before-create. Test retries, concurrent item processing, incomplete checkout processing, failed linkage and recovery. The precise flow trigger/subflow/actions remain a design task, not a verified recipe. Preserve Submitted -> Confirmed -> Ready for Pickup -> Closed Complete, with Canceled separately governed by policy.
+
+#### Excel to Vendor, Menu and Catalog Item
+
+The user reports an Excel sheet of vendors/foods; workbook contents have not been inspected. Proposed columns: vendor_code, vendor_name, item_code, item_name, description, price, currency and active. Use stable, nonempty vendor/item keys; scope item codes by vendor if not globally unique.
+
+Load into an Import Set staging table. Resolve existing Vendors first, then transform Menu data, then create/update linked food Catalog Items through a second controlled transform/automation. Reject unknown/ambiguous vendors rather than creating typo vendors. Coalesce on agreed stable keys; reject empty keys. Define an authoritative source for shared price/availability data (Menu was recommended, not approved) and synchronization behavior.
+
+N foods require N Catalog Item definitions for this cart design, but shared automation can populate them. One shared variable set for retained food-level inputs and reusable flow/subflow logic can be associated with those items; these associations are not automatic merely because names/prices were imported. Configure catalog/category placement, Menu/vendor mapping, variable-set relationships, appropriate flow binding, quantity behavior and audience. Verify cross-scope permissions and target release before bulk operations. Preserve source workbook; handle images separately if needed.
+
+Trial two foods from each of two vendors. Reconcile counts, links, prices/currency, categories, inputs and access; repeat the import to demonstrate updates without duplicates. Then test a multi-food checkout, mixed-vendor rejection, cutoff, final-capacity competition and retry recovery. No import or ordering test has been executed here.
+
+#### Existing task and process mapping
+
+Use P03/D01 for feasibility/dictionary, S01/S03/S04 for access, C01-C03 and U02 for catalog/cart/order integration, B01-B03 for validation/capacity/lifecycle, I01-I02 for import, and T01/T02-T10 for applicable acceptance evidence. This refines R01/R02/R03/R08/R10 and BP01/BP03/BP04/BP09; it creates no new task IDs or duplicate VTB cards. Live ownership/status stays on the VTB.
+
+Official references reviewed in discussion: [Import Sets](https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetsKeyConcepts.html), [field maps/coalesce](https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/t_CreatingAFieldMap.html), [portal cart](https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/add-to-cart-portal.html), [Service Catalog flow trigger](https://www.servicenow.com/docs/r/build-workflows/workflow-studio/create-sc-flow.html). Validate against the target release.
+
 
 ### Service Catalog, catalog items and requests
 
@@ -364,3 +436,19 @@ Validation/commit happens before accepted-order follow-up. Assign one sender per
 5. Rehearse verified outputs and disclose remaining defects/requirements. Completing a small week-one slice does not complete the full MVP.
 
 The [board guide](WEEK-ONE-BOARD.md#w01w12-work-packages) owns the W01–W12 mapping; [BACKLOG.md](../../BACKLOG.md) provides a compact sequence. Keep the VTB as the sole live task tracker. Follow [PROJECT.md](../../PROJECT.md) for deferred scope and [DECISIONS.md](../../DECISIONS.md) for approved changes. No per-meal approval workflow is proposed without an explicit requirement.
+
+
+## Custom full cart and pickup checkout - November 9, 2026
+
+The user requested implementation of one pickup/terms step for the native catalog cart and confirmed America/New_York. [Prepared widget and setup guide](../servicenow/widgets/cafenow-cart-checkout/README.md) replace the failing full-cart clone with own HTML/client/server plus a same-scope service. Catalog Item -> Menu -> Vendor remains authoritative for vendor identity; existing Pickup Window label/sys_id pairs supply the checkout choices. A separate pickup date distinguishes days. No per-food order-level variable questions or hidden carrier variables are required by this prepared design.
+
+Prepared implementation components under existing tasks: C02/U02 cover the interface and item-question cleanup; C03 covers native Request submission and a technical Checkout-to-Order Flow action; D04/B02 cover the proposed capacity reservation ledger, indexes and migration; B01 covers vendor/window/date/terms/cutoff checks; S04 covers business-record ACLs and protected technical storage; T02/T03/T07/T09 cover acceptance/security/concurrency evidence. Preserve one authoritative CafeNow Order and food RITM detail links. Checkout states are technical processing outcomes, not a replacement fulfillment lifecycle.
+
+The new technical context/ledger, Order date/context fields, unique indexes and server rules are local implementation choices requiring instance setup/verification, not new task IDs or a changed live VTB status. Review mode works before submission enablement; submission defaults disabled. Earlier hidden-variable handoff notes remain historical alternatives for this implementation. Native parallel cart edits outside the custom widget and unknown submit outcomes require the documented guard/reconciliation path. Mocked tests do not prove live APIs, rendered layout, ACLs or simultaneous database booking.
+
+
+## Direct Vendor/Menu ordering implementation preparation - November 9, 2026
+
+Explicit user direction now replaces the catalog-based ordering journey with Vendor/Menu -> custom cart -> pickup/terms -> one ORD with Order Lines. [Fresh export review](DIRECT-MENU-EXPORT-REVIEW-2026-11-09.md) confirms the current model and page IDs. [Individual installation items](../servicenow/widgets/cafenow-direct-ordering/README.md) contain own scoped service/widget views, header/navigation changes, Order/Line security predicates and protected booking/retry fields on existing Order. No new technical tables or REQ/RITMs are required by this prepared direct service. The existing Task-based Order and confirmed fulfillment states remain.
+
+D01-D04 cover verified dictionary and six proposed Order metadata additions/two unique indexes; U01-U03 cover Vendor/Menu/cart/customer ORD views; V02-V03 cover own-vendor queues and line details; S01-S04 cover ownership, group and service-only writes; B01-B04 cover input/terms/cutoff/capacity/retries/cleanup and cancellation release; T02-T04/T07/T09 cover live acceptance/security/concurrency. Earlier catalog-specific component/transport sections remain historical alternatives; no task IDs or dependencies are removed. No live implementation or completion is inferred from the new export or mocked source checks. Record assignments/status/evidence on the shared VTB.

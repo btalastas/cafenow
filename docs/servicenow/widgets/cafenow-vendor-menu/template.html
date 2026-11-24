@@ -1,0 +1,62 @@
+<section class="cn-vendor-menu" aria-label="Vendor menu management" aria-busy="{{c.busy}}">
+  <header class="cn-menu-heading">
+    <div><p class="cn-eyebrow">CafeNow / Vendor</p><h2>My Menu</h2>
+      <p>Manage your food, prices and availability.</p></div>
+    <div class="cn-menu-actions" ng-if="c.data.authorized">
+      <button type="button" class="btn btn-default" ng-click="c.load(c.data.page)" ng-disabled="c.busy || !!c.form">Refresh</button>
+      <button type="button" class="btn btn-primary" ng-if="c.data.can_add" ng-click="c.add()" ng-disabled="c.busy || !!c.form">Add menu item</button>
+    </div>
+  </header>
+  <p ng-if="!c.data.signed_in">Sign in with your CafeNow vendor account.</p>
+  <div class="alert alert-danger" role="alert" ng-if="c.data.error || c.transportError">{{c.transportError || c.data.error}}</div>
+  <p role="status" ng-if="c.data.saved">Menu item saved.</p>
+  <p ng-if="c.data.authorized && !c.data.can_manage">Your account has view access. A vendor administrator can maintain this menu.</p>
+
+  <form class="cn-menu-editor" name="menuForm" ng-if="c.form" ng-submit="menuForm.$valid && c.save()" novalidate>
+    <h3>{{c.form.sys_id ? 'Edit menu item' : 'Add menu item'}}</h3>
+    <div class="cn-menu-image-preview" ng-if="c.form.sys_id">
+      <img class="cn-menu-preview" ng-if="c.form.image_url" ng-src="{{c.form.image_url}}" alt="{{c.form.item_name}}">
+      <p class="help-block" ng-if="!c.form.image_url">No image available.</p>
+    </div>
+    <label>Vendor
+      <select class="form-control" ng-model="c.form.vendor" ng-options="vendor.sys_id as vendor.name for vendor in c.data.vendors" ng-disabled="!!c.form.sys_id || c.busy" required></select>
+    </label>
+    <label>Item name
+      <input class="form-control" type="text" ng-model="c.form.item_name" maxlength="100" required ng-disabled="c.busy">
+    </label>
+    <label>Description
+      <textarea class="form-control" ng-model="c.form.description" maxlength="500" rows="3" ng-disabled="c.busy"></textarea>
+    </label>
+    <label>Price ({{c.form.currency || c.data.new_currency}})
+      <input class="form-control" type="text" inputmode="decimal" ng-model="c.form.price" ng-pattern="/^(0|[1-9][0-9]{0,6})(\.[0-9]{1,2})?$/" required ng-disabled="c.busy">
+    </label>
+    <p class="help-block">Enter a non-negative amount with up to two decimal places, for example 8.50.</p>
+    <label class="cn-check"><input type="checkbox" ng-model="c.form.active" ng-disabled="c.busy"> Published (active)</label>
+    <label class="cn-check"><input type="checkbox" ng-model="c.form.in_stock" ng-disabled="c.busy"> In stock</label>
+    <p class="help-block">Unpublished items are hidden from employee browsing. Out-of-stock items cannot be ordered.</p>
+    <div class="cn-menu-actions">
+      <button class="btn btn-primary" type="submit" ng-disabled="c.busy || menuForm.$invalid">{{c.busy ? 'Saving...' : 'Save item'}}</button>
+      <button class="btn btn-default" type="button" ng-click="c.form = null" ng-disabled="c.busy">Cancel</button>
+    </div>
+  </form>
+
+  <div class="table-responsive" ng-if="c.data.authorized">
+    <table class="table"><caption>Vendor menu items, including unpublished and out-of-stock items</caption>
+      <thead><tr><th scope="col">Item</th><th scope="col">Vendor</th><th scope="col">Price</th><th scope="col">Availability</th><th scope="col">Action</th></tr></thead>
+      <tbody><tr ng-repeat="item in c.data.items track by item.sys_id">
+        <td><div class="cn-menu-item-summary">
+          <img class="cn-menu-thumbnail" ng-if="item.image_url" ng-src="{{item.image_url}}" alt="">
+          <div><strong>{{item.item_name}}</strong><small>{{item.number}}</small><p class="cn-description">{{item.description}}</p></div>
+        </div></td>
+        <td>{{item.vendor_name}}</td><td>{{item.currency}} {{item.price}}</td>
+        <td><span class="cn-badge">{{item.active ? 'Published' : 'Unpublished'}}</span> <span class="cn-badge">{{item.in_stock ? 'In stock' : 'Out of stock'}}</span></td>
+        <td><button class="btn btn-default" type="button" ng-if="item.can_edit" ng-click="c.edit(item)" ng-disabled="c.busy || !!c.form" aria-label="Edit {{item.item_name}}">Edit</button></td>
+      </tr><tr ng-if="!c.data.items.length"><td colspan="5">No menu items on this page.</td></tr></tbody>
+    </table>
+    <nav class="cn-menu-actions" aria-label="Menu pages">
+      <button class="btn btn-default" type="button" ng-click="c.load(c.data.page - 1)" ng-disabled="c.busy || !!c.form || c.data.page <= 1">Previous</button>
+      <span>Page {{c.data.page}}</span>
+      <button class="btn btn-default" type="button" ng-click="c.load(c.data.page + 1)" ng-disabled="c.busy || !!c.form || !c.data.has_more">Next</button>
+    </nav>
+  </div>
+</section>

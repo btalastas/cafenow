@@ -1,0 +1,8 @@
+Variable Name,Variable Type,Purpose / Flow Usage
+vendor_ref,Reference (core_company / u_lunch_vendor),Maps the order to the correct Vendor and Vendor Fulfillment Group. (Can also be derived dynamically from the Catalog Category).
+pickup_date,Date,Defaults to javascript:gs.beginningOfToday(). Used for vendor daily batching.
+pickup_window,Select Box,"Choice options (e.g., 11:30 AM - 12:00 PM, 12:00 PM - 12:30 PM, 12:30 PM - 1:00 PM). Used by Flow to set preparation timers and cancellation cutoffs."
+meal_option,Lookup Select Box / Choice,Specifies the selected meal item (if using a consolidated Vendor Item) or specific choices/sides.
+quantity,Numeric / Select Box,Number of meals ordered. Multiplies item price.
+special_instructions,Single Line / Multi-Line Text,Allergy alerts or custom preparation notes for the vendor task.
+cutoff_datetime,Date/Time (Hidden/Calculated),Calculated via Catalog Client Script (pickup_date + pickup_window start time minus 20 minutes). Flow & UI Actions evaluate this to allow or block user cancellations.

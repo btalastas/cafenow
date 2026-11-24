@@ -1,0 +1,480 @@
+--- KB0001004-exported
++++ articles/register-and-access.html
+@@ -1,21 +1,7 @@
+-Instructions for accessing the CafeNow Employee Portal.
+-Employees need an authorized account to access CafeNow and place food orders
+-Steps to Access
+-Open the CafeNow Employee Portal.
+-Select Sign In.
+-Enter your authorized username and password.
+-Select Log In.
+-You will be redirected to the CafeNow homepage
+-First-Time Access
+-Contact your organization administrator if an account has not been provisioned.
+-Obtain authorized login credentials.
+-Sign in and verify your employee profile information.
+-Troubleshooting
+-Verify your username and password.
+-Check whether your account is active.
+-Contact the administrator if your account is locked.
+-Request password assistance through your organization's approved process.
+-Security
+-Do not share login credentials with other employees.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++CafeNow by NowServing Solutions connects employees and cafeteria vendors through the workplace Service Portal.
++Use the CafeNow portal address supplied by your organization or instructor.
++Sign in with your assigned account using the configured sign-in method.
++Open the menu to browse vendors. Your assigned roles determine which employee, vendor and administration tools are available.
++If access is missing, ask the CafeNow administrator to check your account, role and group assignments.
++An account does not automatically grant vendor or administration access. Contact the administrator for account provisioning; do not assume self-registration or a particular approval process is available.
++Do not share login credentials. If sign-in fails, verify your username and use your organization's approved password-assistance process. Ask the administrator to check whether the account is active or locked.
+--- KB0001010-exported
++++ articles/track-food-order.html
+@@ -1,18 +1,8 @@
+-Overview: Learn how to monitor your food order from submission to collection.
+-Steps
+-Log in to CafeNow and navigate to My Orders.
+-Select the order you want to track.
+-Review the order number, vendor, current status, and pickup time.
+-Order Status Definitions
+-Submitted – Your order has been successfully submitted.
+-Accepted – The vendor has accepted your order.
+-Preparing – The vendor is preparing your food.
+-Ready for Pickup – Your food is ready for collection.
+-Completed – Your order has been collected and closed.
+-Rejected – The vendor could not accept your order.
+-Cancelled – The order has been cancelled.
+-Notifications
+-CafeNow may notify employees when the vendor accepts the order, updates preparation status or marks the order ready.
+-Need Help?
+-If your order status does not change as expected, contact the vendor or CafeNow support team via Email CafeNowsupportstaff@example.com
+-.
++Open My Orders in the CafeNow portal.
++Find your order by its order number and open its details.
++Review the vendor, items, pickup details and current status.
++Refresh the page or use Refresh status where shown to obtain the latest saved status.
++Order statuses
++Submitted: the order has been recorded and awaits vendor acknowledgement. Confirmed: the vendor has acknowledged the order. Ready for Pickup: the order is ready to collect. Closed Complete: the order was collected. Canceled: the order was canceled.
++Status refresh is manual in the prepared employee views. Check My Orders rather than relying on automatic email or real-time updates. If the order is late, contact the vendor with your order number.
++Open My Orders
+--- KB0001001-exported
++++ articles/getting-started.html
+@@ -1,26 +1,10 @@
+-Introduction to the CafeNow Smart Cafeteria Ordering System.
+-CafeNow lets employees browse food vendors, explore menus, place orders, and pick up meals at scheduled pickup times. It is designed to reduce cafeteria queues and help employees make better use of their breaks.
+-Available Vendors
+-Pizza Store
+-Shawarma Store
+-Sandwich Store
+-Rice Bowl Store
+-Tim Hortons
+-Getting Started
+-Open the CafeNow Employee Portal.
+-Sign in using your authorized account.
+-Browse the available food vendors and select one.
+-Explore menu items and review descriptions, prices, ingredients and allergen information.
+-Add items to your shopping cart.
+-Select an available pickup time.
+-Submit your order.
+-Track your order until it is ready for pickup
+-Benefits
+-Avoid long cafeteria queues.
+-Order food before your scheduled break.
+-Browse multiple vendors in one place.
+-Review food information before ordering.
+-Select convenient pickup times.
+-Receive order status notifications.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Use CafeNow to select food from one vendor, choose a pickup window, and track your order.
++Browse the available vendors and menu items.
++Add foods and quantities from one vendor to your cart.
++Review prices, select the vendor pickup window and read the terms before submitting.
++After successful submission, keep the order number and check My Orders.
++Collect the order when it is Ready for Pickup during the selected window.
++The class pilot uses simulated checkout. No payment is collected through this ordering journey.
++Browse menus
++My Orders
++About CafeNow and NowServing Solutions
+--- KB0001008-exported
++++ articles/place-food-order.html
+@@ -1,23 +1,10 @@
+-Overview
+-Step-by-step instructions for submitting a food order
+-Steps
+-Log in to the Employee Portal.
+-Select a vendor and browse its menu.
+-Add items to your cart and review quantities.
+-Proceed to checkout.
+-Select your pickup date and time.
+-Add special instructions if applicable.
+-Review the order total and select Submit Order.
+-.
+-Order Confirmation
+-After successful submission, a unique order number is generated, the order is saved, the vendor is notified and the order appears under My Orders
+-Order Statuses
+-Submitted
+-Accepted
+-Preparing
+-Ready for Pickup
+-Completed
+-Rejected
+-Cancelled
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Browse a vendor menu and add available foods and quantities to your cart.
++Open the cart and review the foods, quantities, prices and total.
++Select an available pickup window for that vendor.
++Read and accept the terms. Ordering policy closes ordering 20 minutes before the window starts; for an 11:30 AM window, order before 11:10 AM.
++Select Place Order once and wait for the result.
++After success, note the order number and open My Orders to check the order and its items.
++One checkout creates one CafeNow Order containing its Order Lines. The current journey does not require separate Service Catalog requests or RITMs.
++The pilot does not collect payment. If checkout times out or the result is uncertain, check My Orders before trying again and ask support to review any unclear result. Repeated submissions can create duplicate orders.
++Open cart
++Check My Orders
+--- KB0001005-exported
++++ articles/browse-vendors-and-menus.html
+@@ -1,21 +1,7 @@
+-Overview
+-Learn how to explore participating food vendors and their menus.
+-CafeNow provides a centralized menu for participating cafeteria vendors
+-Steps
+-Log in to CafeNow.
+-Navigate to Vendors.
+-Browse the available vendor cards and select a vendor.
+-View its food categories.
+-Select a category or use search.
+-Select a food item to view its details.
+-Menu Information
+-Food item name and description.
+-Price and food image.
+-Calories, protein, carbohydrates and fat.
+-Sodium and sugar.
+-Ingredients and allergen information.
+-Availability status.
+-Important
+-Menu availability and prices may change. Review the latest information displayed before ordering.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Open Menu in the CafeNow portal.
++Choose a vendor and review its available menu items.
++Review the item description, price and any vendor-provided ingredient, nutrition or allergen information.
++Choose the quantity and add the item to your cart. Keep one vendor per order.
++Availability and prices may change before checkout. If an item is unavailable, choose an alternative or ask the vendor. Missing nutrition or allergen details do not mean an item is safe for a particular allergy.
++Browse menus
++Nutrition & Allergen information
+--- KB0001011-exported
++++ articles/cancel-order.html
+@@ -1,15 +1,8 @@
+-Overview: Instructions for requesting cancellation of a food order.
+-Employees may need to cancel an order due to a change in plans or an incorrect selection.
+-.
+-Steps
+-Log in and open My Orders.
+-Select the relevant order and review its status.
+-Select Cancel Order if cancellation is available.
+-Provide a cancellation reason and submit the request.
+-Check the updated order status.
+-Important
+-Cancellation availability depends on order status and vendor processing rules. If the order is already being prepared or marked ready, contact the vendor directly.
+-Refund Information
+-For the initial MVP, payment and refund processing may be handled outside CafeNow. Contact the administrator or vendor for assistance where applicable.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Cancellation policy applies to your own orders and closes 20 minutes before the pickup-window start. Eligible order states and exact cutoff-boundary behavior must be confirmed with the vendor or CafeNow administrator.
++Open My Orders and identify the order and its pickup window.
++Check whether the portal provides an authorized cancellation action for this order.
++If no cancellation action is available, contact the vendor or support promptly with the order number; do not assume a support request automatically cancels the order.
++Confirm the order actually shows Canceled before treating the cancellation as complete.
++Employees cannot use status fields to advance vendor fulfillment. The pilot has no payment/refund processing. Contacting support after the cutoff does not guarantee cancellation.
++My Orders
++Contact CafeNow support
+--- KB0001007-exported
++++ articles/add-items-to-cart.html
+@@ -1,19 +1,7 @@
+-Overview :
+-How to review ingredients, allergen information and nutritional details before ordering.
+-Steps
+-Log in and select your preferred food vendor.
+-Browse the menu and open a food item.
+-Select the required quantity and choose Add to Cart.
+-Repeat for additional items from the same vendor.
+-Open the cart to review your selection.
+-Managing Your Cart
+-Increase or decrease item quantities.
+-Remove unwanted items.
+-Review individual item prices and subtotal.
+-Continue browsing the vendor menu.
+-Before Checkout
+-Verify selected items, quantities, prices, vendor selection and total order amount
+-MVP Limitation
+-For the initial MVP, each order is associated with one vendor. To order from another vendor, submit a separate order.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Open a vendor menu.
++Select a whole-number quantity for an available item and add it to the cart.
++Add other foods from that same vendor.
++Open the full cart to review quantities, unit prices, item subtotals and the order total.
++Adjust or remove items before choosing a pickup window and submitting.
++Each order is limited to one vendor. Finish or clear the current cart before ordering from another vendor. Adding food to the cart does not place an order or guarantee availability.
++Open cart
+--- KB0001012-exported
++++ articles/submit-feedback-or-issue.html
+@@ -1,20 +1,8 @@
+-Overview: Learn how to submit feedback, complaints or application issues.
+-Steps
+-Log in to CafeNow and navigate to Feedback & Support.
+-Select a feedback category.
+-Enter a description and include the order number if applicable.
+-Submit your feedback.
+-Suggested Categories
+-Food quality
+-Order delay
+-Incorrect order
+-Vendor service
+-Application issue
+-Menu information
+-Other
+-What Happens Next?
+-Your feedback is recorded and made available to the authorized administrator for review.
+-Urgent Safety Concerns
+-For urgent food allergy or food safety concerns, contact the vendor directly rather than relying on a feedback submission.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++For a question about a food item, ingredients or pickup, contact the responsible vendor.
++For an order or portal issue, open Complaints and Requests when available to your role.
++Select the submission type and category. Provide a clear summary and details, including the vendor and order number when relevant.
++Submit once and check the confirmation or error message. If access is denied, ask the CafeNow administrator to review it.
++Do not include passwords, payment details or unnecessary personal information. Reported issues do not automatically cancel an order, issue a refund or prove a notification was delivered.
++For urgent food allergy or food-safety concerns, contact the responsible vendor directly rather than relying on a feedback submission.
++The prepared support form is enabled for CafeNow requesters. Vendor-only submission remains pending setup; vendor staff should use their agreed administrator/support contact if the form is not available.
++Complaints and Requests
+--- KB0001009-exported
++++ articles/select-pickup-time.html
+@@ -1,14 +1,6 @@
+-Overview: Instructions for choosing a convenient food pickup time
+-Pickup scheduling helps distribute cafeteria demand and reduce congestion during scheduled breaks.
+-.
+-Steps
+-Add food items to your cart and proceed to checkout.
+-Open the pickup scheduling section.
+-Select an available pickup date and time slot.
+-Verify the selected time and submit your order.
+-Pickup Slot Information
+-Pickup slots depend on availability and vendor preparation capacity. A slot may become unavailable when its maximum booking capacity is reached.
+-Important
+-Selecting a pickup time does not mean the order is automatically ready. Wait for the Ready for Pickup notification before collecting your meal.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Add food from one vendor and open the full cart.
++Choose one pickup window offered for that vendor.
++Review the selected window and the ordering terms before placing the order.
++Check the saved pickup details in My Orders and collect during the selected window when the order is Ready for Pickup.
++Ordering policy closes ordering 20 minutes before the pickup-window start. For example, an 11:30 AM start has an 11:10 AM ordering cutoff. Plan to submit before the cutoff.
++A visible window is not a capacity reservation. If the desired window is unavailable, select another offered window or contact the vendor. Do not assume that a recurring time-window label independently confirms a service date; ask the vendor if the date is unclear.
+--- KB0001006-exported
++++ articles/allergens-and-nutrition.html
+@@ -1,20 +1,9 @@
+-Overview
+-CaféNow displays ingredient, allergen, and nutritional information to help employees make informed food selections.
+-How to Review
+-Open the CaféNow Employee Portal.
+-Select a food vendor and open a food item.
+-Review ingredients and listed allergens.
+-Review calories, protein, carbohydrates, fat, sodium and sugar
+-Common Allergens
+-Milk
+-Eggs
+-Wheat and gluten-containing ingredients
+-Peanuts and tree nuts
+-Soy
+-Sesame
+-Fish and shellfish
+-Mustard
+-Important Food Safety Notice
+-Displayed allergen information is not a guarantee that an item is free from cross-contact. Employees with food allergies must contact the vendor directly to confirm ingredients, preparation methods and cross-contact risks. Never assume an item is allergen-free simply because an allergen is not listed.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Nutrition, ingredient and allergen information is supplied by vendors where available. CafeNow does not independently verify food safety and cannot guarantee an item is allergen-free.
++Review the available information for the food item before ordering.
++Confirm ingredients, substitutions and possible cross-contact directly with the vendor.
++Ask about shared utensils, equipment and preparation areas.
++If the vendor cannot confirm the information you need, do not assume the item meets your dietary requirements.
++Report missing or incorrect information to the vendor and CafeNow support.
++Common ingredients and allergens to ask about include milk, eggs, wheat and gluten-containing ingredients, peanuts, tree nuts, soy, sesame, fish, shellfish and mustard. This is not an exhaustive list.
++Nutrition values are estimates and may vary with portion size, recipe and preparation. Missing information is not a safety assurance.
++Read Nutrition & Allergen information
+--- KB0001017-exported
++++ articles/administrator-guide.html
+@@ -1,37 +1,14 @@
+-Overview: Administrative instructions for managing the CafeNow application.
+-Administrators oversee application operations, vendor access, employee accounts, order records, and system configuration.
+-Vendor Management
+-Create and review vendor records.
+-Activate or deactivate vendors.
+-Assign vendor managers.
+-Verify vendor-specific access
+-Menu Management
+-Review menu records and item details.
+-Monitor availability.
+-Ensure prices and allergen information are maintained
+-Order Management
+-Monitor submitted orders.
+-Review rejected and cancelled orders.
+-Investigate delayed orders.
+-Support vendors and employees.
+-Pickup Slot Management
+-Configure pickup slots and maximum booking capacity.
+-Monitor bookings.
+-Disable unavailable slots.
+-User and Security Management
+-Provision authorized accounts.
+-Assign appropriate roles.
+-Review access permissions.
+-Maintain table and record-level security.
+-Reporting
+-Total orders
+-Orders by vendor
+-Pending orders
+-Orders in preparation
+-Completed orders
+-Rejected orders
+-Pickup slot utilization
+-Security Guidelines
+-Ensure employees can access only their own orders and vendors can access only their own vendor records and orders. Follow organizational access control and change management policies.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++CafeNow by NowServing Solutions is a one-building, multi-vendor class pilot. Facility managers handle the business-administration information authorized for them; CafeNow administrators manage the application within their granted permissions. Business roles do not automatically grant platform administration.
++Access and knowledge
++Employees use the CafeNow user role; vendors use vendor admin/staff roles; facility managers use the facility manager role. CafeNow admins see all FAQ categories. Multiple personas combine visible categories. Apply knowledge-base and article user criteria separately: hiding a category does not protect direct article links, search results or attachments.
++Ordering and operations
++The current path is Vendor/Menu -> custom cart and pickup selection -> one authoritative CafeNow Order with Order Lines. Do not create a second fulfillment authority from historical Catalog Item/Request/RITM examples. Payments and refunds remain outside this pilot.
++Recorded states are Submitted, Confirmed, Ready for Pickup, Closed Complete and Canceled. Closed Complete means actual pickup. Ordering policy is 20 minutes before window start; cancellation policy is also 20 minutes, with eligible states and exact-boundary behavior still to confirm.
++Verification priorities
++Verify employee ownership and vendor isolation through portal pages, native records, direct URLs and APIs.
++Verify server-side cutoff, capacity and duplicate-submission handling before treating these as enforced. The simplified local checkout does not enforce cutoff or capacity and has no durable duplicate-request identity.
++Reconcile orders, lines and totals after failures or uncertain responses before advising a resubmission.
++Check saved state transitions and actual notification/email records. Prepared reminder text is not proof of automated delivery.
++Verify requester complaint submission and vendor support routing independently; vendor-only complaint submission remains pending configuration.
++Verify the FAQ/About pages, header/footer links and any fixed-footer clearance as each persona.
++The three-notice no-show direction has unresolved scheduling details. Do not infer a disposal time or automatically complete uncollected orders. Keep credentials out of project files and record evidence and unresolved issues in the agreed project tracking locations.
+--- KB0001016-exported
++++ articles/manage-menu.html
+@@ -1,22 +1,8 @@
+-Overview:Instructions for adding and maintaining food items in the CafeNow menu.
+-Menu Item Information
+-Item name and description
+-Price and image
+-Category
+-Ingredients and allergen information
+-Calories, protein, carbohydrates, and fat
+-Sodium and sugar
+-Availability status
+-Updating a Menu Item
+-Log in to the Vendor Portal and open Menu Management.
+-Select the required item.
+-Update relevant information and verify the price and description.
+-Save the changes.
+-Managing Availability
+-Open the menu item.
+-Change its availability to Unavailable and save.
+-When available again, update its status.
+-Important
+-Ingredient, allergen and nutrition information must be verified against actual recipes and supplier information.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Vendor administrators maintain menu items for their own vendor. Vendor staff have read-only access in the prepared menu widget.
++Sign in with the assigned vendor administrator account and open menu maintenance.
++Choose an existing item to edit, or use Add when authorized.
++Review the name, description, price, category, availability and any ingredient or dietary details.
++Save and verify the saved values. Check the employee menu using an authorized test account.
++If a picture already exists, confirm it displays. The prepared vendor widget displays existing images; it does not supply image upload.
++Keep allergen and nutrition information accurate and current. Check it against actual recipes, ingredient substitutions and supplier information. Missing details must not be described as allergen-free. Availability changes can affect food already in an employee's cart; checkout rechecks current availability and prices.
++Do not edit another vendor's items. If authorized Add/Edit controls are missing or saving fails, ask the administrator to check role, group and field permissions.
+--- KB0001013-exported
++++ articles/vendor-getting-started.html
+@@ -1,18 +1,8 @@
+-Overview: Introduction to the CafeNow Vendor Portal.
+-The Vendor Portal allows cafeteria vendors to manage incoming food orders, update preparation statuses, and maintain menu availability.
+-Vendor Responsibilities
+-Monitor incoming orders.
+-Accept or reject orders.
+-Prepare food according to order details.
+-Update preparation status and mark completed orders.
+-Maintain accurate menu information and item availability.
+-Getting Started
+-Open the CafeNow Vendor Portal.
+-Sign in using your authorized vendor account.
+-Access the Vendor Dashboard.
+-Review incoming orders and select an order to view its details.
+-.
+-Important
+-Vendor accounts must only access their own vendor's records. Do not share account credentials with other vendors.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++CafeNow vendor tools are intended for assigned vendor administrators and vendor staff. Access must remain limited to the vendor records associated with your authorized vendor group.
++Sign in using your assigned vendor account.
++Open the vendor tools available in your CafeNow portal.
++Review incoming orders and their pickup windows.
++Open an order to review all items, quantities and any available instructions.
++Confirm eligible orders, mark them Ready for Pickup when ready, and complete them only after collection.
++Use menu maintenance according to your role: vendor administrators can maintain menu items in the prepared widget; vendor staff have read-only menu access.
++If no vendor is found or another vendor's records appear, contact the administrator. Do not work around access restrictions or use an employee account to process vendor orders.
+--- KB0001015-exported
++++ articles/update-order-status.html
+@@ -1,15 +1,9 @@
+-Overview: Instructions for updating the preparation and collection status of an order.
+-Steps
+-Log in to the Vendor Portal and open Incoming Orders.
+-Select an accepted order.
+-When preparation begins, select Start Preparing.
+-When preparation is complete, select Mark Ready for Pickup.
+-When the employee collects the food, select Complete Order.
+-Status Sequence
+-Submitted → Accepted → Preparing → Ready for Pickup → Completed.
+-Notifications
+-When an order is marked Ready for Pickup, the system can automatically notify the employee.
+-Important
+-Only mark an order Ready for Pickup when the food is fully prepared and available for collection.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Recorded lifecycle
++Submitted -> Confirmed -> Ready for Pickup -> Closed Complete. Canceled is a separate outcome. Preparing and Delayed are not additional approved normal state labels in the recorded mapping.
++Open an order belonging to your vendor and review its current saved status.
++Confirm an eligible Submitted order when acknowledging receipt and availability.
++Set Ready for Pickup only when the food is ready to collect.
++Set Closed Complete only after the customer actually collects the order.
++Refresh and check that the intended status was saved.
++Use authorized actions only. If an action is unavailable, an order is canceled or the state changes unexpectedly, stop and ask the administrator to review it. Record delays through the agreed delay process rather than inventing a new state. Automatic reminders and disposal scheduling must not be assumed to be active.
++An uncollected order is not Closed Complete. Ask the manager how to handle no-shows under the agreed policy.
+--- KB0001014-exported
++++ articles/accept-incoming-orders.html
+@@ -1,19 +1,8 @@
+-Overview: Instructions for reviewing and accepting employee food orders
+-Steps
+-Log in to the Vendor Portal and open Incoming Orders.
+-Review new orders and select an order.
+-Review food items, quantities, and requested pickup time.
+-Select Accept Order if it can be fulfilled.
+-Select Reject Order if it cannot be fulfilled.
+-Provide a reason when rejecting an order
+-Order Information
+-Order number
+-Employee information
+-Ordered items and quantities
+-Special instructions
+-Pickup date and time
+-Order status
+-Important
+-Review orders promptly so employees receive timely confirmation.
+-Need Help?
+-Contact the CafeNow support team  via Email CafeNowsupportstaff@example.com  or consult the relevant knowledge articles.
++Open the vendor order queue and choose the relevant pickup window.
++Review each order and its items before acknowledging it.
++Confirm eligible Submitted orders using the authorized vendor action.
++If batch confirmation is available, review which orders succeeded, were skipped or failed; do not assume every selected order changed.
++Refresh the queue to see current saved states, especially after another vendor user changes an order.
++Act only on your own vendor's orders. Do not confirm an order that is already canceled, and do not repeatedly apply an action because the screen has not refreshed.
++The planned capacity is 20 orders per vendor pickup window, not 20 meals. The simplified ordering service has not established simultaneous-booking protection; administrators must verify capacity enforcement before relying on that limit.
++If food cannot be supplied, follow the agreed vendor exception process and record a reason for any authorized vendor cancellation. Do not invent a replacement state or mark an uncollected order complete.

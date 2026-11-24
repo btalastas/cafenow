@@ -1,0 +1,20 @@
+.cafenow-cart { border: 1px solid #d9e1df; border-radius: 6px; overflow: hidden; }
+.cafenow-cart .cn-cart-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; background: #f2f7f5; }
+.cafenow-cart .panel-title { font-size: 18px; font-weight: 600; }
+.cafenow-cart .badge { margin-left: 5px; background: #176c5b; }
+.cafenow-cart .cn-cart-items { margin-bottom: 0; }
+.cafenow-cart .cn-cart-item { padding: 14px 0; border-bottom: 1px solid #e1e7e5; }
+.cafenow-cart .cn-cart-item:first-child { padding-top: 0; }
+.cafenow-cart .cn-cart-item:last-child { border-bottom: 0; padding-bottom: 0; }
+.cafenow-cart .cn-cart-name { font-size: 15px; font-weight: 600; margin: 0 0 10px; overflow-wrap: anywhere; }
+.cafenow-cart .cn-cart-quantity label { font-size: 12px; margin-bottom: 4px; }
+.cafenow-cart .cn-cart-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.cafenow-cart .cn-cart-controls input { width: 76px; }
+.cafenow-cart .cn-cart-controls .btn-link { padding-left: 0; }
+.cafenow-cart .cn-cart-confirm { margin-top: 10px; padding: 10px; border: 1px solid #e1e7e5; border-radius: 4px; }
+.cafenow-cart .cn-cart-confirm p { margin-bottom: 8px; }
+.cafenow-cart .cn-cart-summary { font-weight: 600; }
+.cafenow-cart .btn-primary { background: #176c5b; border-color: #125648; white-space: normal; }
+.cafenow-cart .btn-primary:hover, .cafenow-cart .btn-primary:focus { background: #125648; }
+.cafenow-cart .cn-cart-menu { display: block; text-align: center; margin-top: 10px; }
+.cafenow-cart .alert { margin-bottom: 10px; }

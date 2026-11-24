@@ -1,0 +1,5 @@
+.cn-support-link { background: #eef2f3; color: #0c0910; border: 1px solid #d3dfe0; border-radius: 12px; padding: 24px; margin: 20px 0; }
+.cn-support-link h2 { margin-top: 0; font-size: 24px; }
+.cn-support-link .btn-primary { background: #04aa6d; border-color: #04aa6d; color: #0c0910; white-space: normal; }
+.cn-support-link .btn-primary:hover { background: #039660; border-color: #039660; }
+.cn-support-link a:focus { outline: 3px solid #006b45; outline-offset: 3px; }

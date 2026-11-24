@@ -1,0 +1,47 @@
+<section class="cn-checkout" aria-label="${CafeNow shopping cart}" ng-attr-aria-busy="{{c.busy}}">
+  <header class="cn-header">
+    <div><h2>${Your order}</h2><p ng-if="c.data.vendor_name">{{c.data.vendor_name}}</p></div>
+    <button type="button" class="btn btn-default" ng-click="c.refresh()" ng-disabled="c.busy || c.uncertain" ng-if="!c.data.submitted">${Refresh}</button>
+  </header>
+  <p ng-if="!c.data.signed_in">${Sign in to view your cart.}</p>
+  <p class="alert alert-danger" role="alert" ng-if="c.data.error">{{c.data.error}}</p>
+  <p class="alert alert-danger" role="alert" ng-if="c.transportError">${The response could not be confirmed.}</p>
+  <p class="alert alert-warning" ng-if="c.uncertain">${Submission status is uncertain. Check status before placing another order.}</p>
+  <button class="btn btn-default" type="button" ng-if="c.uncertain || c.data.pending" ng-click="c.checkStatus()" ng-disabled="c.busy">${Check submission status}</button>
+  <div class="alert alert-success" role="status" ng-if="c.data.submitted">
+    <strong>${Request submitted:} {{c.data.request_number}}</strong>
+    <p>${Your pickup selection was saved. CafeNow order processing may take a moment.}</p>
+    <a href="?id=cafenow_my_orders">${My Orders}</a>
+  </div>
+  <div ng-if="c.data.signed_in && !c.data.submitted">
+    <p ng-if="!c.data.items.length && !c.data.error">${Your cart is empty.}</p>
+    <ul class="cn-items">
+      <li ng-repeat="item in c.data.items track by item.sys_id">
+        <div class="cn-item-title"><h3>{{item.name}}</h3><span ng-if="item.unit_price">${Unit price:} {{item.unit_price}}</span></div>
+        <form name="quantityForm" class="cn-controls" ng-submit="c.update(item)">
+          <label ng-attr-for="cn-quantity-{{$id}}">${Quantity}</label>
+          <input ng-attr-id="cn-quantity-{{$id}}" class="form-control" type="number" min="1" max="99" step="1" required ng-model="item.edit_quantity" ng-disabled="c.busy || c.uncertain || !item.can_update">
+          <button type="submit" class="btn btn-default" ng-disabled="c.busy || c.uncertain || !item.can_update || quantityForm.$invalid || item.edit_quantity === item.quantity">${Update}</button>
+          <button type="button" class="btn btn-link" ng-click="c.confirmRemove = item.sys_id" ng-disabled="c.busy || c.uncertain || !item.can_remove">${Remove}</button>
+        </form>
+        <div ng-if="c.confirmRemove === item.sys_id"><p>${Remove this food?}</p><button type="button" class="btn btn-danger" ng-click="c.remove(item)" ng-disabled="c.busy">${Remove}</button> <button type="button" class="btn btn-default" ng-click="c.confirmRemove = ''">${Keep}</button></div>
+      </li>
+    </ul>
+    <p class="cn-total" ng-if="c.data.total_display">${Total:} <strong>{{c.data.total_display}}</strong></p>
+    <p class="alert alert-info" ng-if="c.data.setup_message">{{c.data.setup_message}}</p>
+    <div class="cn-footer" ng-if="!c.reviewing"><a href="?id=cafe_menu">${Continue ordering}</a><button class="btn btn-primary" type="button" ng-click="c.proceed()" ng-disabled="c.busy || c.uncertain || !c.data.can_checkout">${Proceed to checkout}</button></div>
+    <form name="checkoutForm" class="cn-pickup" ng-if="c.reviewing && c.data.can_checkout" ng-submit="c.submit()">
+      <h3>${Pickup details}</h3>
+      <p>${Today:} {{c.data.pickup_date}} · {{c.data.timezone}}</p>
+      <label for="cn-pickup-window">${Pickup window}</label>
+      <select id="cn-pickup-window" class="form-control" required ng-model="c.choice.window_id" ng-disabled="c.busy || c.uncertain" ng-options="w.sys_id as w.label for w in c.data.windows"><option value="">${Select a pickup window}</option></select>
+      <p ng-if="!c.data.windows.length">${No pickup windows are currently available for this vendor.}</p>
+      <label for="cn-instructions">${Order instructions (optional)}</label>
+      <textarea id="cn-instructions" class="form-control" maxlength="1000" rows="3" ng-model="c.choice.instructions" ng-disabled="c.busy || c.uncertain"></textarea>
+      <p ng-if="c.data.terms_url"><a ng-href="{{c.data.terms_url}}" target="_blank" rel="noopener">${Read Terms & Conditions}</a></p>
+      <label class="cn-terms"><input type="checkbox" required ng-model="c.choice.accept_terms" ng-disabled="c.busy || c.uncertain"> ${I agree to the Terms & Conditions.}</label>
+      <p>${Ordering closes 30 minutes before pickup begins. Employee cancellation closes 20 minutes before pickup begins, subject to the published policy.}</p>
+      <div class="cn-footer"><button type="button" class="btn btn-default" ng-click="c.reviewing = false" ng-disabled="c.busy">${Back to cart}</button><button type="submit" class="btn btn-primary" ng-disabled="c.busy || c.uncertain || !c.data.can_submit || checkoutForm.$invalid || !c.data.windows.length">{{c.busy ? '${Submitting...}' : '${Submit order}'}}</button></div>
+    </form>
+  </div>
+</section>

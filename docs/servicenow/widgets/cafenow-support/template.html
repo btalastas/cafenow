@@ -1,0 +1,43 @@
+<section class="cn-support" aria-label="CafeNow complaints and requests" ng-attr-aria-busy="{{c.busy}}">
+  <h2>Complaints &amp; Requests</h2>
+  <p>Tell the CafeNow team about an issue or improvement you need.</p>
+  <p ng-if="!c.data.authorized">Sign in with an authorized CafeNow requester or vendor account.</p>
+  <p class="alert alert-danger" role="alert" ng-if="c.data.error || c.transportError">{{c.transportError || c.data.error}}</p>
+  <div class="alert alert-success" role="status" ng-if="c.data.saved">
+    <p>Your complaint or request was submitted<span ng-if="c.data.number">. Reference: <strong>{{c.data.number}}</strong></span>.</p>
+    <p ng-if="!c.data.number">The reference number could not be displayed. Your submission was saved; do not submit it again.</p>
+    <a ng-href="{{c.data.history_url}}">View My Requests &amp; Complaints</a>
+  </div>
+  <form name="supportForm" ng-if="c.data.authorized && c.data.ready && !c.data.saved" ng-submit="supportForm.$valid && c.submit()" novalidate>
+    <fieldset ng-disabled="c.busy || c.locked">
+      <legend>Submission details</legend>
+      <label for="cn-support-audience">Submit as</label>
+      <select id="cn-support-audience" class="form-control" ng-model="c.form.audience" ng-change="c.changeAudience()" required>
+        <option value="requester" ng-if="c.data.canRequester">Requester</option>
+        <option value="vendor" ng-if="c.data.canVendor">Vendor</option>
+      </select>
+      <label for="cn-support-kind">Submission Type</label>
+      <select id="cn-support-kind" class="form-control" ng-model="c.form.kind" required><option value="complaint">Complaint</option><option value="request">Request</option></select>
+      <div ng-if="c.form.audience === 'vendor'">
+        <label for="cn-support-vendor">Your vendor</label>
+        <select id="cn-support-vendor" class="form-control" ng-model="c.form.vendor" ng-options="v.sys_id as v.name for v in c.data.vendors" required><option value="">Select your vendor</option></select>
+        <p ng-if="!c.data.vendors.length">No authorized vendor found. Contact your administrator to check group membership and Vendor mapping.</p>
+      </div>
+      <label for="cn-support-category">Category</label>
+      <select id="cn-support-category" class="form-control" ng-model="c.form.category" ng-options="choice.value as choice.label for choice in c.data.categoryOptions[c.form.audience]" required>
+        <option value="">Select a category</option>
+      </select>
+      <div ng-if="c.form.audience === 'requester'">
+      <label for="cn-support-order">Order number (optional)</label>
+      <input id="cn-support-order" class="form-control" type="text" maxlength="40" ng-model="c.form.order_number" aria-describedby="cn-support-order-help">
+      <p id="cn-support-order-help" class="help-block">You may link only your own order. Leave blank for general requests.</p>
+      </div>
+      <label for="cn-support-summary">Summary (required)</label>
+      <input id="cn-support-summary" class="form-control" type="text" ng-attr-maxlength="{{c.form.audience === 'vendor' ? 40 : 160}}" ng-maxlength="c.form.audience === 'vendor' ? 40 : 160" ng-model="c.form.summary" required>
+      <label for="cn-support-description">Details (required)</label>
+      <textarea id="cn-support-description" class="form-control" rows="6" ng-attr-maxlength="{{c.form.audience === 'vendor' ? 250 : 4000}}" ng-maxlength="c.form.audience === 'vendor' ? 250 : 4000" ng-model="c.form.details" required></textarea>
+      <p class="help-block">Describe what happened and the help you need. Do not include passwords or payment information.</p>
+      <button class="btn btn-primary" type="submit" ng-disabled="supportForm.$invalid || c.busy || c.locked">{{c.busy ? 'Submitting...' : 'Submit'}}</button>
+    </fieldset>
+  </form>
+</section>

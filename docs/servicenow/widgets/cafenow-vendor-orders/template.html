@@ -1,0 +1,23 @@
+<section class="vendor-queue" aria-label="Vendor open orders" ng-attr-aria-busy="{{c.loading}}">
+  <header class="queue-header">
+    <div><h2>${Open orders}</h2><p>${Grouped by pickup window}</p></div>
+    <button type="button" class="btn btn-default" ng-if="c.data.signed_in" ng-click="c.refresh()" ng-disabled="c.loading">{{c.loading ? '${Refreshing...}' : '${Refresh}'}}</button>
+  </header>
+  <p ng-if="!c.data.signed_in">${Sign in with your vendor account to view orders.}</p>
+  <p class="alert alert-danger" role="alert" ng-if="c.data.error">{{c.data.error}}</p>
+  <p class="alert alert-danger" role="alert" ng-if="c.refreshError">${Refresh failed. Try again.}</p>
+  <div ng-if="c.data.signed_in && !c.data.error && !c.refreshError">
+    <p class="queue-note">${All open orders are included; this view is not filtered to today.}</p>
+    <p role="status" aria-live="polite">{{c.data.count}} ${open orders shown}</p>
+    <p ng-if="!c.data.count">${No open orders for your authorized vendors.}</p>
+    <p class="alert alert-warning" ng-if="c.data.truncated">${Showing the first 200 orders. Window counts reflect only the orders shown.}</p>
+    <section class="window-group" ng-repeat="window in c.data.groups track by window.key">
+      <h3>{{window.vendor_name}} &mdash; {{window.label}} <span class="window-count">{{window.orders.length}} ${orders}</span></h3>
+      <ul class="order-list">
+        <li ng-repeat="order in window.orders track by order.sys_id">
+          <strong>{{order.number}}</strong><span class="order-state">{{order.state_label}}</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+</section>

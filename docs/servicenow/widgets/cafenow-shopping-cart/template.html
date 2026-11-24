@@ -1,0 +1,47 @@
+<section class="cafenow-cart panel panel-default" aria-label="${Your Cart}" ng-attr-aria-busy="{{c.busy}}">
+  <div class="panel-heading cn-cart-heading">
+    <h2 class="panel-title"><span class="fa fa-shopping-cart" aria-hidden="true"></span> ${Your Cart}
+      <span class="badge" ng-if="c.data.signed_in">{{c.data.quantity_count}}</span>
+    </h2>
+    <button type="button" class="btn btn-default btn-sm" ng-if="c.data.signed_in" ng-click="c.refresh()" ng-disabled="c.busy" aria-label="${Refresh cart}">
+      <span class="fa fa-refresh" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="panel-body">
+    <div aria-live="polite" aria-atomic="true">
+      <p ng-if="!c.data.signed_in">${Sign in to view your cart.}</p>
+      <p class="alert alert-danger" ng-if="c.data.error">{{c.data.error}}</p>
+      <p class="alert alert-danger" ng-if="c.transportError">${The cart could not be refreshed. Refresh before trying again.}</p>
+      <p class="text-success" ng-if="c.data.notice && !c.data.error">{{c.data.notice}}</p>
+      <p ng-if="c.data.signed_in && !c.data.error && !c.transportError && !c.data.items.length">${Your cart is empty. Add food from a vendor menu.}</p>
+      <span class="sr-only" ng-if="c.busy">${Updating cart}</span>
+    </div>
+    <ul class="list-unstyled cn-cart-items" ng-if="c.data.items.length">
+      <li class="cn-cart-item" ng-repeat="item in c.data.items track by item.sys_id">
+        <h3 class="cn-cart-name">{{item.name}}</h3>
+        <form name="quantityForm" class="cn-cart-quantity" ng-submit="c.updateQuantity(item)">
+          <label ng-attr-for="cn-qty-{{$id}}">${Quantity}</label>
+          <div class="cn-cart-controls">
+            <input type="number" name="quantity" class="form-control input-sm" ng-attr-id="cn-qty-{{$id}}"
+                   ng-model="item.edit_quantity" min="1" max="2147483647" step="1" required
+                   ng-disabled="c.busy || !item.can_update" aria-label="${Quantity for} {{item.name}}">
+            <button type="submit" class="btn btn-default btn-sm" ng-if="item.can_update"
+                    ng-disabled="c.busy || quantityForm.$invalid || item.edit_quantity === item.quantity">${Update}</button>
+            <button type="button" class="btn btn-link btn-sm" ng-if="item.can_remove" ng-click="c.askRemove(item)" ng-disabled="c.busy" aria-label="${Remove} {{item.name}}">${Remove}</button>
+          </div>
+        </form>
+        <div class="cn-cart-confirm" ng-if="c.confirmRemove === item.sys_id">
+          <p>${Remove this item from your cart?}</p>
+          <button type="button" class="btn btn-danger btn-sm" ng-click="c.removeItem(item)" ng-disabled="c.busy">${Remove item}</button>
+          <button type="button" class="btn btn-default btn-sm" ng-click="c.confirmRemove = null" ng-disabled="c.busy">${Keep item}</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="panel-footer" ng-if="c.data.signed_in">
+    <p class="cn-cart-summary" ng-if="c.data.items.length">{{c.data.summary}}</p>
+    <p class="small text-muted" ng-if="c.data.items.length">${Review pricing in the full cart.}</p>
+    <a class="btn btn-primary btn-block" ng-if="c.data.items.length && !c.busy && !c.data.error && !c.transportError" ng-href="{{c.data.cart_url}}">${Review cart and checkout}</a>
+    <a class="cn-cart-menu" ng-href="{{c.data.menu_url}}">${Continue ordering}</a>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+{
+  "note": "Minimal setup manifest, not an importable ServiceNow update set. Supersedes advanced field/index prerequisites.",
+  "required_order_fields": [
+    "opened_by",
+    "vendor",
+    "time_slot_v2",
+    "order_total",
+    "location",
+    "state",
+    "active",
+    "number"
+  ],
+  "required_line_fields": [
+    "order",
+    "menu_item",
+    "item_name",
+    "quantity",
+    "unit_price",
+    "line_price"
+  ],
+  "optional_order_fields": [
+    "requested_for",
+    "pickup_date",
+    "terms_version",
+    "terms_accepted_at"
+  ],
+  "order_additions": {},
+  "required_properties": {},
+  "optional_properties": {
+    "x_1234_cafenow.direct.building_location": "Fallback if Vendor.location is blank",
+    "x_1234_cafenow.direct.terms_url": "Actual same-portal terms page query",
+    "x_1234_cafenow.direct.terms_version": "Version actually displayed"
+  },
+  "deferred": [
+    "submission_key",
+    "booking_key",
+    "submission_status",
+    "durable duplicate prevention",
+    "capacity concurrency enforcement",
+    "time cutoff enforcement"
+  ],
+  "security": "Keep existing owner/vendor read isolation and protected direct CRUD; inactive Submitted parents are hidden by service predicates during line creation."
+}

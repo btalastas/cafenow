@@ -1,0 +1,38 @@
+<section class="cn-my-support" aria-label="My requests and complaints" ng-attr-aria-busy="{{c.busy}}">
+  <h1>My Requests &amp; Complaints</h1>
+  <p ng-if="!c.data.authorized">Sign in with an authorized CafeNow employee or vendor-admin account.</p>
+  <div ng-if="c.data.authorized">
+    <p>View your submissions and select a reference number to read the details.</p>
+    <a class="btn btn-primary" ng-href="{{c.data.submit_url}}">New complaint or request</a>
+    <form class="cn-my-support__filters" ng-submit="c.load(1)">
+      <label>Reference number <input class="form-control" type="search" ng-model="c.search" maxlength="40"></label>
+      <label ng-if="c.data.sources.length > 1">Submitted as
+        <select class="form-control" ng-model="c.audience" ng-options="source.value as source.label for source in c.data.sources"><option value="">All my submissions</option></select>
+      </label>
+      <button class="btn btn-default" type="submit" ng-disabled="c.busy">Search / Refresh</button>
+    </form>
+    <p class="alert alert-danger" role="alert" ng-if="c.data.error || c.transportError || c.detailError">{{c.detailError || c.transportError || c.data.error}}</p>
+    <p ng-if="!c.data.error && !c.data.rows.length">No readable submissions match this view.</p>
+    <div class="cn-my-support__table" ng-if="c.data.rows.length">
+      <table class="table table-striped"><caption>Your complaints and requests, newest first</caption>
+        <thead><tr><th scope="col">Reference</th><th scope="col">Submitted as</th><th scope="col">Type</th><th scope="col">Summary</th><th scope="col">Category</th><th scope="col">Vendor</th><th scope="col">Created</th></tr></thead>
+        <tbody><tr ng-repeat="row in c.data.rows track by row.key">
+          <td><button class="btn btn-link" type="button" ng-click="c.open(row)" ng-disabled="c.busy">{{row.number || 'View submission'}}</button></td>
+          <td>{{row.source}}</td><td>{{row.kind}}</td><td>{{row.summary}}</td><td>{{row.category}}</td><td>{{row.vendor}}</td><td>{{row.created}}</td>
+        </tr></tbody>
+      </table>
+    </div>
+    <nav aria-label="Submission pages">
+      <button class="btn btn-default" type="button" ng-click="c.load(c.data.page - 1)" ng-disabled="c.busy || c.data.page <= 1">Previous</button>
+      <span>Page {{c.data.page}}</span>
+      <button class="btn btn-default" type="button" ng-click="c.load(c.data.page + 1)" ng-disabled="c.busy || !c.data.has_more">Next</button>
+    </nav>
+    <section class="cn-my-support__detail" ng-if="c.selected" aria-label="Selected submission" aria-live="polite">
+      <button class="btn btn-default" type="button" ng-click="c.selected = null">Close details</button>
+      <h2>{{c.selected.number}}</h2><p><strong>{{c.selected.summary}}</strong></p>
+      <p>{{c.selected.audience}} · {{c.selected.kind}} · {{c.selected.category}}</p>
+      <p ng-if="c.selected.vendor">Vendor: {{c.selected.vendor}}</p><p>Created: {{c.selected.created}}</p>
+      <p class="cn-my-support__description">{{c.selected.description}}</p>
+    </section>
+  </div>
+</section>

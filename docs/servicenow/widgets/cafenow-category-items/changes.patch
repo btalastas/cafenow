@@ -1,0 +1,331 @@
+--- original/template.html
++++ cafenow_category_items/template.html
+@@ -1,5 +1,7 @@
+ <div id="sc_category_page"  class="m-t-sm " ng-class="{'hidden-xs' : hideItemWidget, 'm-l-sm': !isMobile}">
+   <h4 ng-if="data.error">{{data.error}}</h4>
++  <div ng-if="quickAddMessage" role="status" aria-live="polite" class="alert"
++       ng-class="quickAddFailed ? 'alert-danger' : 'alert-success'">{{quickAddMessage}}</div>
+   <div ng-init="spSearch.targetCatalog()">
+     <div class="row">
+       <div class="col-xs-9">
+@@ -64,6 +66,7 @@
+             <tr>
+               <th id="id-header-item" scope="col">${Item}</th>
+               <th id="id-header-description" scope="col">${Description}</th>
++              <th id="id-header-quick-add" scope="col">${Add to Cart}</th>
+             	  <th id="id-header-price" scope="col" ng-if="data.showPrices">${Price}</th>
+             </tr>
+           </thead>
+@@ -79,6 +82,21 @@
+                 </a>
+             	  </td>
+             	  <td headers="id-header-description id-item-{{item.sys_id}}" class="catalog-text-wrap">{{::item.short_description}}</td>
++              <td headers="id-header-quick-add id-item-{{item.sys_id}}">
++<div class="cafenow-quick-add" ng-if="item.cafenow_can_quick_add"
++     ng-init="item.cafenow_quantity = item.cafenow_quantity === undefined ? 1 : item.cafenow_quantity">
++  <label class="sr-only" for="cafenow-qty-table-{{item.sys_id}}">${Quantity} {{item.name}}</label>
++  <input id="cafenow-qty-table-{{item.sys_id}}" type="number" min="1" step="1"
++         class="form-control input-sm" style="display:inline-block;width:75px;vertical-align:middle"
++         ng-model="item.cafenow_quantity" ng-disabled="quickAddInFlight" />
++  <button type="button" class="btn btn-primary btn-sm" ng-click="quickAdd($event, item)"
++          ng-disabled="quickAddInFlight || !item.cafenow_quantity || item.cafenow_quantity < 1 || item.cafenow_quantity % 1 !== 0"
++          aria-label="${Add to Cart} {{item.name}}">
++    <span ng-if="!(quickAddInFlight && quickAddItemId == item.sys_id)">${Add to Cart}</span>
++    <span ng-if="quickAddInFlight && quickAddItemId == item.sys_id">${Adding...}</span>
++  </button>
++</div>
++              </td>
+             	  <td headers="id-header-price id-item-{{item.sys_id}}" ng-if="data.showPrices">{{::item.price}}</td>
+             </tr>
+           </tbody>
+@@ -101,6 +119,21 @@
+               <a aria-label="${View Details} {{::item.name}}" ng-if="item.sys_class_name == 'sc_cat_item_content' && (item.content_type == 'external' || item.content_type == 'dynamic')" ng-click="onClick($event, item)" ng-href="{{getItemHREF(item)}}" target="_blank" class="pull-left text-muted">${View Details}</a>
+               <span ng-if="data.showPrices && item.hasPrice" class="pull-right item-price font-bold">{{::item.price}}</span> &nbsp;
+             </div>
++            <div class="b bg-white wrapper-sm" ng-if="item.cafenow_can_quick_add">
++<div class="cafenow-quick-add" ng-if="item.cafenow_can_quick_add"
++     ng-init="item.cafenow_quantity = item.cafenow_quantity === undefined ? 1 : item.cafenow_quantity">
++  <label class="sr-only" for="cafenow-qty-card-{{item.sys_id}}">${Quantity} {{item.name}}</label>
++  <input id="cafenow-qty-card-{{item.sys_id}}" type="number" min="1" step="1"
++         class="form-control input-sm" style="display:inline-block;width:75px;vertical-align:middle"
++         ng-model="item.cafenow_quantity" ng-disabled="quickAddInFlight" />
++  <button type="button" class="btn btn-primary btn-sm" ng-click="quickAdd($event, item)"
++          ng-disabled="quickAddInFlight || !item.cafenow_quantity || item.cafenow_quantity < 1 || item.cafenow_quantity % 1 !== 0"
++          aria-label="${Add to Cart} {{item.name}}">
++    <span ng-if="!(quickAddInFlight && quickAddItemId == item.sys_id)">${Add to Cart}</span>
++    <span ng-if="quickAddInFlight && quickAddItemId == item.sys_id">${Adding...}</span>
++  </button>
++</div>
++            </div>
+       		</li>
+       	</ul>
+       </div>
+--- original/client.js
++++ cafenow_category_items/client.js
+@@ -1,4 +1,48 @@
+-function($scope, spUtil, spScUtil, spAriaUtil, i18n, $rootScope, $location, $timeout, $window) {
++api.controller = function($scope, spUtil, spScUtil, spAriaUtil, i18n, $rootScope, $location, $timeout, $window) {
++    $scope.quickAddInFlight = false;
++    $scope.quickAddMessage = '';
++    $scope.quickAddFailed = false;
++
++    $scope.quickAdd = function($event, item) {
++        $event.preventDefault();
++        $event.stopPropagation();
++        if ($scope.quickAddInFlight)
++            return;
++        var quantity = Number(item.cafenow_quantity);
++        if (!isFinite(quantity) || quantity < 1 || quantity % 1 !== 0 || quantity > 2147483647) {
++            $scope.quickAddFailed = true;
++            $scope.quickAddMessage = 'Enter a positive whole-number quantity.';
++            return;
++        }
++        $scope.quickAddInFlight = true;
++        $scope.quickAddItemId = item.sys_id;
++        $scope.quickAddMessage = '';
++        // get() keeps the action response separate from the category list's data.
++        $scope.server.get({
++            action: 'cafenow_quick_add',
++            item_id: item.sys_id,
++            quantity: quantity
++        }).then(function(response) {
++            var result = response.data && response.data.quick_add;
++            $scope.quickAddFailed = !result || result.success !== true;
++            $scope.quickAddMessage = result && result.message ? result.message :
++                'The cart update could not be confirmed. Check your cart before trying again.';
++            if (result && result.success === true) {
++                // Same native-cart refresh events used by the supplied Catalog Item widget.
++                $rootScope.$broadcast('$sp.service_catalog.cart.add_item');
++                $rootScope.$broadcast('$sp.service_catalog.cart.update');
++            }
++            spAriaUtil.sendLiveMessage($scope.quickAddMessage);
++        }, function() {
++            $scope.quickAddFailed = true;
++            $scope.quickAddMessage = 'The cart update could not be confirmed. Check your cart before trying again.';
++            spAriaUtil.sendLiveMessage($scope.quickAddMessage);
++        }).finally(function() {
++            $scope.quickAddInFlight = false;
++            $scope.quickAddItemId = '';
++        });
++    };
++
+     loadPage();
+ 
+     if ($scope.options.scroll_to_category_page == 'true')
+@@ -282,4 +326,4 @@
+     }
+ 
+     /*=============== End link handling ===============*/
+-}+};
+--- original/server.js
++++ cafenow_category_items/server.js
+@@ -1,4 +1,185 @@
+ (function() {
++    // CafeNow quick-add action. Inserted inside the supplied server IIFE.
++    // Uses the current user's DEFAULT native catalog cart, not cafeCart.
++    if (input && input.action === 'cafenow_quick_add') {
++        data.quick_add = {success: false, message: ''};
++        try {
++            cafeNowQuickAdd();
++        } catch (quickAddError) {
++            gs.error('CafeNow quick-add failed: ' + String(quickAddError.message || quickAddError));
++            data.quick_add.message = gs.getMessage('The cart update could not be confirmed. Check your cart before trying again.');
++        }
++        return;
++    }
++
++    function cafeNowQuickAdd() {
++        if (gs.getUserName() === 'guest') {
++            cafeNowReject('Sign in before adding food to your cart.');
++            return;
++        }
++
++        var itemId = String(input.item_id || '');
++        var quantity = Number(input.quantity);
++        if ((typeof input.quantity !== 'number' && typeof input.quantity !== 'string') ||
++                !/^[0-9a-f]{32}$/i.test(itemId) || !isFinite(quantity) ||
++                quantity < 1 || quantity % 1 !== 0 || quantity > 2147483647) {
++            cafeNowReject('Choose a food and a positive whole-number quantity.');
++            return;
++        }
++
++        var food = cafeNowGetFood(itemId);
++        if (!food) {
++            cafeNowReject('This food is unavailable or its Menu/Vendor mapping is missing. Use View Details or contact the CafeNow team.');
++            return;
++        }
++
++        // Evaluate configured variables on the server, not values supplied by the browser.
++        var model = $sp.getCatalogItem(itemId);
++        if (!model || !model._fields || model.can_order === false || model.can_order === 'false') {
++            cafeNowReject('Quick add cannot inspect this food\'s options. Use View Details.');
++            return;
++        }
++        var variables = cafeNowGetDefaults(model._fields, food, quantity);
++        if (variables === null)
++            return;
++
++        var cart = new sn_sc.CartJS();
++        var cartItems = cart.getCartItems();
++        while (cartItems.next()) {
++            var existingFood = cafeNowGetFood(String(cartItems.getValue('cat_item')));
++            if (!existingFood || existingFood.vendor !== food.vendor) {
++                cafeNowReject('Your cart contains another vendor or an unrelated item. Finish that checkout or remove those items before adding this food.');
++                return;
++            }
++        }
++
++        var previousQuantity = cafeNowCartQuantity(cart, itemId);
++        if (previousQuantity + quantity > 2147483647) {
++            cafeNowReject('The combined quantity is too large. Update the quantity in your cart.');
++            return;
++        }
++
++        // Native catalog logic supplies pricing; the browser supplies no price or vendor.
++        var result = cart.addToCart({
++            sysparm_id: itemId,
++            sysparm_quantity: String(quantity),
++            variables: variables
++        });
++        if (typeof result === 'string')
++            result = JSON.parse(result);
++        if (!result || result.error || result.errMsg || result.errCode || result.error_message ||
++                cafeNowCartQuantity(cart, itemId) < previousQuantity + quantity) {
++            cafeNowReject('The cart update could not be confirmed. Check your cart before trying again.');
++            return;
++        }
++
++        data.quick_add.success = true;
++        data.quick_add.item_name = food.name;
++        data.quick_add.quantity = quantity;
++        data.quick_add.message = gs.getMessage('Added {0} x {1} to your cart.', [String(quantity), food.name]);
++    }
++
++    function cafeNowGetFood(itemId) {
++        var item = new GlideRecordSecure('sc_cat_item');
++        if (!item.get(itemId) || item.getValue('sys_class_name') !== 'sc_cat_item' ||
++                item.getValue('active') !== '1' || !item.isValidField('u_cafenow_menu_item'))
++            return null;
++        if ((item.isValidField('no_cart') && item.getValue('no_cart') === '1') ||
++                (item.isValidField('hide_sp') && item.getValue('hide_sp') === '1') ||
++                (item.isValidField('visible_standalone') && item.getValue('visible_standalone') === '0') ||
++                (item.isValidField('request_method') && item.getValue('request_method') === 'submit'))
++            return null;
++
++        var nativeItem = new sn_sc.CatItem(itemId);
++        if (!nativeItem.canView())
++            return null;
++
++        // Membership in an accessible catalog associated with this portal is required.
++        var portalCatalogs = String($sp.getCatalogs().value || '').split(',');
++        var membership = new GlideRecordSecure('sc_cat_item_catalog');
++        membership.addQuery('sc_cat_item', itemId);
++        membership.addQuery('sc_catalog', 'IN', portalCatalogs.join(','));
++        membership.query();
++        var catalogAllowed = false;
++        while (membership.next()) {
++            if (new sn_sc.Catalog(String(membership.getValue('sc_catalog'))).canView()) {
++                catalogAllowed = true;
++                break;
++            }
++        }
++        if (!catalogAllowed)
++            return null;
++
++        var menuId = item.getValue('u_cafenow_menu_item');
++        var menu = new GlideRecordSecure('x_1234_cafenow_menu');
++        if (!menuId || !menu.get(menuId))
++            return null;
++        // Respect availability flags if they are later added to Menu.
++        var flags = ['active', 'available', 'published'];
++        for (var i = 0; i < flags.length; i++) {
++            if (menu.isValidField(flags[i]) && menu.getValue(flags[i]) !== '1')
++                return null;
++        }
++        var vendorId = menu.getValue('vendor');
++        var vendor = new GlideRecordSecure('x_1234_cafenow_vendor');
++        if (!vendorId || !vendor.get(vendorId) || vendor.getValue('active') !== '1')
++            return null;
++        return {vendor: vendorId, menu: menuId, name: item.getValue('name')};
++    }
++
++    function cafeNowGetDefaults(fields, food, quantity) {
++        var values = {};
++        for (var key in fields) {
++            if (!Object.prototype.hasOwnProperty.call(fields, key))
++                continue;
++            var field = fields[key];
++            if (!field)
++                continue;
++            var name = field.name || key;
++            var value = field.value;
++            if (name === 'vendor_ref')
++                value = food.vendor;
++            else if (name === 'meal_option')
++                value = food.menu;
++            else if (name === 'quantity')
++                value = String(quantity);
++            else if (name === 'accept_terms')
++                value = 'false'; // Quick add never provides consent.
++            else if (name === 'pickup_window' || name === 'pickup_window_ref' ||
++                    name === 'pickup_date' || name === 'cutoff_datetime')
++                value = ''; // These are selected/derived by checkout, not by adding a food.
++
++            var scalar = typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean';
++            var valueText = scalar ? String(value) : '';
++            var fieldType = String(field.type || '').toLowerCase();
++            var checkbox = fieldType === 'boolean' || fieldType === 'checkbox' || fieldType === '7' || name === 'accept_terms';
++            var empty = !scalar || valueText.replace(/^\s+|\s+$/g, '') === '' ||
++                (checkbox && valueText !== 'true' && valueText !== '1');
++            if ((field.mandatory === true || field.mandatory === 1 || field.mandatory === 'true' || field.mandatory === '1') && empty) {
++                data.quick_add.message = gs.getMessage('Complete the required option "{0}" using View Details. Checkout-only questions must first be configured as optional on the food form.', [String(field.label || name)]);
++                return null;
++            }
++            if (scalar)
++                values[name] = valueText;
++        }
++        return values;
++    }
++
++    function cafeNowCartQuantity(cart, itemId) {
++        var total = 0;
++        var rows = cart.getCartItems();
++        while (rows.next()) {
++            if (String(rows.getValue('cat_item')) === itemId)
++                total += Number(rows.getValue('quantity')) || 0;
++        }
++        return total;
++    }
++
++    function cafeNowReject(message) {
++        data.quick_add.message = gs.getMessage(message);
++    }
++
++
+ 	if (input && input.category_id)
+ 		data.category_id = input.category_id;
+ 	else
+@@ -48,7 +229,7 @@
+ 
+ 	data.show_more = false;
+ 
+-	if (GlideStringUtil.nil(data.category_id)) {
++	if (gs.nil(data.category_id)) {
+ 		if (options.use_popular_items_v2 == "true" && options.popular_items_created != 0)
+ 			data.popularItemsWidget = $sp.getWidget("sc_popular_items_v2",{
+ 				"popular_items_created": options.popular_items_created,
+@@ -153,6 +334,9 @@
+ 				item.type = catItemDetails.type;
+ 				item.order = catItemDetails.order;
+ 				item.sys_class_name = catItemDetails.sys_class_name;
++                item.cafenow_can_quick_add = itemRecord.getValue('sys_class_name') === 'sc_cat_item' &&
++                    itemRecord.isValidField('u_cafenow_menu_item') &&
++                    !!itemRecord.getValue('u_cafenow_menu_item');
+ 				item.titleTag = catItemDetails.name;
+ 				item.legacy = catItemDetails.legacy;
+ 				if (item.type == 'order_guide') {
+@@ -239,4 +423,4 @@
+ 		return isAttrTrue(options.isServiceWorkspace) && !isAttrTrue(options.legacy_catalog);
+ 	}
+ 
+-})();+})();

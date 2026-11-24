@@ -34,7 +34,15 @@ Daily path: VTB card → detailed task → requirement/process → acceptance ev
 
 Today's selection guide: [November 3 team to-do](docs/planning/TODO-2026-11-03.md), covering tables, role/module user stories and access/ACL work. This dated checklist supports the shared VTB; live assignments and progress remain on the board.
 
+Current ordering direction: [Direct Vendor/Menu portal migration](docs/planning/DIRECT-MENU-PORTAL-MIGRATION.md), requested November 9 after the user created Order Line. New ordering work should use Vendor/Menu -> custom cart/pickup -> ORD and Order Lines. The [November 9 export review](docs/planning/DIRECT-MENU-EXPORT-REVIEW-2026-11-09.md) now identifies current pages/widgets/fields. [Individual direct-ordering source and setup](docs/servicenow/widgets/cafenow-direct-ordering/README.md) are prepared; no deployment XML or live cutover is verified.
+
+Historical catalog sources: [November 5 ordering guide](docs/planning/MVP-FEATURE-TASKS-AND-PROCESSES.md#ordering-variables-and-menu-import---november-5-2026), [November 6 ordering/export review](docs/planning/ORDERING-REVIEW-2026-11-06.md) and [prepared catalog-based checkout](docs/servicenow/widgets/cafenow-cart-checkout/README.md). Preserve these artifacts; they describe the earlier Catalog Item/native-cart/Request/RITM route and must not be installed unchanged for direct Menu ordering.
+
+Employee order display: [CafeNow employee order views](docs/servicenow/widgets/cafenow-order-views/README.md) supplies a new reusable widget for the recent My Orders list, paginated All My Orders table and read-only individual Order with Lines. Prepared November 10; install on the existing pages and verify own-record ACL behavior before cutover. No live deployment is claimed.
+
 ## Proposal and reference sources
+
+Vendor menu maintenance: [CafeNow Vendor Menu widget](docs/servicenow/widgets/cafenow-vendor-menu/README.md) lists own-vendor items and supplies vendor-admin add/edit forms using existing Menu fields. Prepared November 11; install and verify Menu ACLs, currency and vendor isolation in development. No live deployment is claimed.
 
 | Location | Purpose |
 | --- | --- |

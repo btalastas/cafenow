@@ -1,0 +1,68 @@
+{
+  "note": "Setup manifest only; not an automatically executable ServiceNow import. Verify actual generated table and field names.",
+  "tables": [
+    {
+      "name": "x_1234_cafenow_checkout",
+      "label": "CafeNow Checkout",
+      "extends": null,
+      "fields": {
+        "token": "String(32), mandatory, UNIQUE",
+        "cart_key": "String(80), mandatory, UNIQUE",
+        "user": "Reference sys_user, mandatory",
+        "cart": "Reference sc_cart",
+        "vendor": "Reference x_1234_cafenow_vendor, mandatory",
+        "pickup_window": "Reference x_1234_cafenow_pickup_window, mandatory",
+        "pickup_date": "Date, mandatory",
+        "window_label": "String(160)",
+        "snapshot": "String(64)",
+        "items_json": "String(32000)",
+        "terms_version": "String(80)",
+        "accepted_at": "Date/Time",
+        "instructions": "String(1000)",
+        "state": "Choice(String): processing, submitted, fulfilled, rejected, unknown",
+        "request": "Reference sc_request",
+        "request_number": "String(40)",
+        "order": "Reference x_1234_cafenow_order"
+      },
+      "indexes": [["token", "UNIQUE"], ["cart_key", "UNIQUE"], ["user", "state"]],
+      "access": "Technical checkout metadata: no employee/vendor direct table CRUD; service-only writes, restricted application administrators inspect/reconcile. Do not expose on portal forms."
+    },
+    {
+      "name": "x_1234_cafenow_pickup_reservation",
+      "label": "CafeNow Pickup Reservation",
+      "extends": null,
+      "fields": {
+        "slot_key": "String(160), mandatory, UNIQUE",
+        "checkout": "Reference x_1234_cafenow_checkout, mandatory, UNIQUE",
+        "vendor": "Reference x_1234_cafenow_vendor, mandatory",
+        "pickup_window": "Reference x_1234_cafenow_pickup_window, mandatory",
+        "pickup_date": "Date, mandatory",
+        "seat": "Integer, mandatory"
+      },
+      "indexes": [["slot_key", "UNIQUE"], ["checkout", "UNIQUE"], ["vendor", "pickup_date", "pickup_window"]],
+      "access": "No employee/vendor direct table CRUD; reservations are server-managed and cannot be edited to bypass capacity."
+    }
+  ],
+  "existing_order_additions": {
+    "pickup_date": "Date. Verify whether one already exists before adding.",
+    "checkout_context": "Reference x_1234_cafenow_checkout with a UNIQUE database index for nonblank values. Preserve existing Order records."
+  },
+  "existing_references": {
+    "Order.source_request": "Reference sc_request; verify already present",
+    "Order.time_slot_v2": "User-reported Pickup Window reference; configure order_window_field to actual technical name (older export used pickup_window)",
+    "sc_req_item.x_1234_cafenow_cafenow": "Existing Order reference in retained export; verify before installing Flow action"
+  },
+  "system_properties": {
+    "x_1234_cafenow.checkout.catalog_id": "Actual CafeNow sc_catalog sys_id; required even for cart preview",
+    "x_1234_cafenow.checkout.timezone": "America/New_York (confirmed November 9)",
+    "x_1234_cafenow.checkout.window_time_storage": "Confirm raw values against a known window: wall_clock for raw 11:30:00 meaning 11:30 New York; utc_1970 for raw 1970-01-01 16:30:00 meaning 11:30 New York. Empty/unsupported modes block window loading.",
+    "x_1234_cafenow.checkout.terms_url": "Actual portal page query such as ?id=cafenow_terms; create/review the page before enabling",
+    "x_1234_cafenow.checkout.terms_version": "Version for the actual displayed terms; bump whenever terms change",
+    "x_1234_cafenow.checkout.building_location": "Actual cmn_location sys_id for the pilot building; required by Order form",
+    "x_1234_cafenow.checkout.order_window_field": "time_slot_v2 OR the verified technical Order Pickup Window reference",
+    "x_1234_cafenow.checkout.order_user_field": "opened_by OR verified recipient reference; default opened_by means self ordering only",
+    "x_1234_cafenow.checkout.enabled": "false initially; true after setup and verification",
+    "x_1234_cafenow.checkout.storage_verified": "false initially; true only after real duplicate-index and reservation tests",
+    "x_1234_cafenow.checkout.enforce_order_guard": "false during setup; true before enabling dedicated checkout for employees"
+  }
+}

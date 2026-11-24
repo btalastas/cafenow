@@ -1,0 +1,9 @@
+[
+  {
+    "name": "max_orders",
+    "label": "Maximum orders displayed (1-50)",
+    "type": "integer",
+    "default_value": "5",
+    "section": "Behavior"
+  }
+]

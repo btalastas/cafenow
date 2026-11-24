@@ -1,0 +1,7 @@
+.cn-support { background: #fff; border: 1px solid #dbe6df; border-radius: 10px; padding: 24px; margin: 12px 0; color: #243a2d; }
+.cn-support form { max-width: 760px; }
+.cn-support label { display: block; margin: 18px 0 6px; }
+.cn-support .help-block { margin-top: 8px; }
+.cn-support button { margin-top: 16px; }
+.cn-support fieldset { min-width: 0; }
+@media (max-width: 500px) { .cn-support { padding: 16px; } }

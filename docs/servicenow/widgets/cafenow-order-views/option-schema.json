@@ -1,0 +1,8 @@
+[
+  {"name":"view","label":"Order view","type":"choice","default_value":"all","choices":[
+    {"label":"My Orders - recent list","value":"recent"},
+    {"label":"My Open Orders - home status tracker","value":"open"},
+    {"label":"All My Orders - table","value":"all"},
+    {"label":"Individual Order - read-only details","value":"details"}
+  ]}
+]

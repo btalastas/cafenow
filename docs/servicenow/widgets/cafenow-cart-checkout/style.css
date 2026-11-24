@@ -1,0 +1,16 @@
+.cn-checkout { max-width: 960px; margin: 24px auto; padding: 24px; background: #fff; border: 1px solid #dce6df; border-radius: 12px; color: #24372e; }
+.cn-header, .cn-item-title, .cn-footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.cn-header h2 { margin: 0 0 8px; font-size: 26px; font-weight: 700; }
+.cn-header p { margin: 0; }
+.cn-header { margin-bottom: 24px; }
+.cn-items { list-style: none; margin: 0; padding: 0; }
+.cn-items > li { padding: 20px 0; border-bottom: 1px solid #e1e9e4; }
+.cn-item-title h3 { font-size: 18px; margin: 0 0 12px; }
+.cn-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.cn-controls .form-control { width: 90px; }
+.cn-total { margin: 24px 0; text-align: right; font-size: 20px; }
+.cn-pickup { border-top: 1px solid #dce6df; margin-top: 20px; padding-top: 16px; }
+.cn-pickup > label, .cn-pickup > p { margin-top: 16px; }
+.cn-terms { display: flex; gap: 10px; align-items: flex-start; }
+.cn-footer { margin-top: 24px; }
+@media (max-width: 600px) { .cn-checkout { margin: 12px 0; padding: 16px; } .cn-item-title, .cn-footer { align-items: flex-start; flex-direction: column; } .cn-footer .btn { width: 100%; } }

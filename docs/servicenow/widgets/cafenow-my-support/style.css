@@ -1,0 +1,14 @@
+.cn-my-support { margin: 20px 0; padding: 24px; background: #fff; color: #173c3b; border: 1px solid #d3e2dc; border-radius: 12px; }
+.cn-my-support h1 { font-size: 28px; margin: 0 0 16px; }
+.cn-my-support__filters { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+.cn-my-support__filters label { margin: 0; }
+.cn-my-support__table { overflow-x: auto; }
+.cn-my-support th, .cn-my-support td { vertical-align: top; }
+.cn-my-support td { max-width: 300px; overflow-wrap: anywhere; }
+.cn-my-support caption { color: #173c3b; }
+.cn-my-support .btn-link { padding: 0; color: #005e48; text-decoration: underline; white-space: normal; text-align: left; }
+.cn-my-support nav span { margin: 0 12px; }
+.cn-my-support__detail { border-top: 1px solid #d3e2dc; margin-top: 24px; padding-top: 20px; }
+.cn-my-support__description { white-space: pre-wrap; overflow-wrap: anywhere; }
+.cn-my-support button:focus-visible, .cn-my-support a:focus-visible { outline: 3px solid #006b45; outline-offset: 3px; }
+@media (max-width: 640px) { .cn-my-support { padding: 16px; } .cn-my-support h1 { font-size: 24px; } }

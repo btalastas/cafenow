@@ -1,0 +1,592 @@
+{
+  "status": "prepared_replacement_content_not_installed",
+  "source_sha256": {
+    "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml": "85fa9759d04debc8410c97fcb6c3c2b84020537dce68ab7b8b2925d2c619c915",
+    "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml": "1a903524aca343788a4bed6de5c97a6e542cc90f42e863ab7520fabed97fcad7",
+    "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml": "1d930dbffe66f720cb2029b7f44403fbbdf0f78529bd550653c82cbac24bca19"
+  },
+  "exported_kb_knowledge_record_counts": {
+    "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml": 15,
+    "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml": 0,
+    "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml": 0
+  },
+  "knowledge_base_references_not_live_verified": [
+    {
+      "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+      "sys_id": "5602e4aa189813107f44e367c73ecbb6"
+    }
+  ],
+  "articles": [
+    {
+      "article_sys_id_from_menu_reference": "2a7b51a618d053107f44e367c73ecb2d",
+      "exported_menu_label": "How to Accept and Manage Incoming Orders",
+      "proposed_short_description": "How to Accept and Manage Incoming Orders",
+      "proposed_category": "Vendor Operations",
+      "body_file": "articles/accept-incoming-orders.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001014",
+      "exported_short_description": "How to Accept and Manage Incoming Orders",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "3cfc3333451053107f440bdbe2f12b45",
+      "exported_category": "Vendor Operations",
+      "exported_category_sys_id": "cd08f66a751013107f4428dce17b0435",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "fcf1faaa60c9152b700a274dec08d1b837c23edeee5e68363c3e1684174a19a1",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "2a7b51a618d053107f44e367c73ecb2d",
+          "exported_menu_label": "How to Accept and Manage Incoming Orders",
+          "menu_item_sys_id": "da29f6036d5c13107f4484f0f2a4c61b",
+          "menu_updated_on": "2026-11-06 20:54:40",
+          "article_display_value": "KB0001014 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "2a7b51a618d053107f44e367c73ecb2d",
+          "exported_menu_label": "How to Accept and Manage Incoming Orders",
+          "menu_item_sys_id": "da29f6036d5c13107f4484f0f2a4c61b",
+          "menu_updated_on": "2026-11-06 16:50:10",
+          "article_display_value": "KB0001014 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "163101a218dc13107f44e367c73ecb63",
+      "exported_menu_label": "How to Add Items to Your Shopping Cart",
+      "proposed_short_description": "How to Add Items to Your Shopping Cart",
+      "proposed_category": "Ordering and Payments",
+      "body_file": "articles/add-items-to-cart.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001007",
+      "exported_short_description": "How to Add Items to Your Shopping Cart",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "21bdfbb3451053107f440bdbe2f12b48",
+      "exported_category": "Ordering and Payments",
+      "exported_category_sys_id": "3998e9a6185453107f44e367c73ecbaa",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "9dbbf8f1da979d9736cea27927df0406abfe952da333c1bee6b3fe4d82635d21",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "163101a218dc13107f44e367c73ecb63",
+          "exported_menu_label": "How to Add Items to Your Shopping Cart",
+          "menu_item_sys_id": "acd7760f6d1c13107f4484f0f2a4c631",
+          "menu_updated_on": "2026-11-06 20:53:09",
+          "article_display_value": "KB0001007 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "163101a218dc13107f44e367c73ecb63",
+          "exported_menu_label": "How to Add Items to Your Shopping Cart",
+          "menu_item_sys_id": "acd7760f6d1c13107f4484f0f2a4c631",
+          "menu_updated_on": "2026-11-06 16:44:57",
+          "article_display_value": "KB0001007 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "a4016526181453107f44e367c73ecb46",
+      "exported_menu_label": "CafeNow Administrator – Management Guide",
+      "proposed_short_description": "CafeNow Administrator - Management Guide",
+      "proposed_category": "Administration",
+      "body_file": "articles/administrator-guide.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001017",
+      "exported_short_description": "CafeNow Administrator – Management Guide",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "c48a33bb45dc13107f440bdbe2f12b78",
+      "exported_category": "Administration",
+      "exported_category_sys_id": "79d9be6e751013107f4428dce17b04e7",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "748316a30a207e695246358f0d2f157d80086bed4a778297be99459415e6beab",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "a4016526181453107f44e367c73ecb46",
+          "exported_menu_label": "CafeNow Administrator – Management Guide",
+          "menu_item_sys_id": "f42b36c76d5c13107f4484f0f2a4c661",
+          "menu_updated_on": "2026-11-06 20:53:56",
+          "article_display_value": "KB0001017 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "a4016526181453107f44e367c73ecb46",
+          "exported_menu_label": "CafeNow Administrator – Management Guide",
+          "menu_item_sys_id": "f42b36c76d5c13107f4484f0f2a4c661",
+          "menu_updated_on": "2026-11-06 16:58:59",
+          "article_display_value": "KB0001017 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "05f974ee185c13107f44e367c73ecb48",
+      "exported_menu_label": "Understanding Food Allergens and Nutrition",
+      "proposed_short_description": "Understanding Food Allergens and Nutrition",
+      "proposed_category": "Employee Help",
+      "body_file": "articles/allergens-and-nutrition.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001006",
+      "exported_short_description": "Understanding Food Allergens and Nutrition",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "52cdffb3451053107f440bdbe2f12bba",
+      "exported_category": "Employee Help",
+      "exported_category_sys_id": "d097e526185453107f44e367c73ecb00",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "ea62a8dd22e00b2747264539dccaaa39f08d03fce7026a9e560a5ab945329092",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "05f974ee185c13107f44e367c73ecb48",
+          "exported_menu_label": "Understanding Food Allergens and Nutrition",
+          "menu_item_sys_id": "50a7facb6d1c13107f4484f0f2a4c6c7",
+          "menu_updated_on": "2026-11-06 20:53:42",
+          "article_display_value": "KB0001006 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "05f974ee185c13107f44e367c73ecb48",
+          "exported_menu_label": "Understanding Food Allergens and Nutrition",
+          "menu_item_sys_id": "50a7facb6d1c13107f4484f0f2a4c6c7",
+          "menu_updated_on": "2026-11-06 16:43:35",
+          "article_display_value": "KB0001006 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "e494bce2185c13107f44e367c73ecbba",
+      "exported_menu_label": "Browse Food Vendors and Menus",
+      "proposed_short_description": "Browse Food Vendors and Menus",
+      "proposed_category": "Employee Help",
+      "body_file": "articles/browse-vendors-and-menus.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001005",
+      "exported_short_description": " How to Browse Food Vendors and Menus",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "9fdd77f3451053107f440bdbe2f12b68",
+      "exported_category": "Employee Help",
+      "exported_category_sys_id": "d097e526185453107f44e367c73ecb00",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "5a9ceafa51dd031548f8aaedbac4c6688a01f9f38abb3536c466941d8373bdc5",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "e494bce2185c13107f44e367c73ecbba",
+          "exported_menu_label": "Browse Food Vendors and Menus",
+          "menu_item_sys_id": "3e07fe4b6d1c13107f4484f0f2a4c65e",
+          "menu_updated_on": "2026-11-06 20:52:30",
+          "article_display_value": "KB0001005 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "e494bce2185c13107f44e367c73ecbba",
+          "exported_menu_label": "Browse Food Vendors and Menus",
+          "menu_item_sys_id": "3e07fe4b6d1c13107f4484f0f2a4c65e",
+          "menu_updated_on": "2026-11-06 16:41:11",
+          "article_display_value": "KB0001005 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "8d65d1e6189053107f44e367c73ecb9b",
+      "exported_menu_label": "How to Cancel an Order",
+      "proposed_short_description": "How to Cancel an Order",
+      "proposed_category": "Ordering and Payments",
+      "body_file": "articles/cancel-order.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001011",
+      "exported_short_description": "How to Cancel an Order",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "dc6db773451053107f440bdbe2f12ba8",
+      "exported_category": "Ordering and Payments",
+      "exported_category_sys_id": "3998e9a6185453107f44e367c73ecbaa",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "7f63b234f75966754457e8b1813ec7f9b91900225e6f4890d6683ac6ea4d6228",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "8d65d1e6189053107f44e367c73ecb9b",
+          "exported_menu_label": "How to Cancel an Order",
+          "menu_item_sys_id": "3f20f6076dd813107f4484f0f2a4c6ae",
+          "menu_updated_on": "2026-11-06 20:52:46",
+          "article_display_value": "KB0001011 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "8d65d1e6189053107f44e367c73ecb9b",
+          "exported_menu_label": "How to Cancel an Order",
+          "menu_item_sys_id": "3f20f6076dd813107f4484f0f2a4c6ae",
+          "menu_updated_on": "2026-11-06 16:19:19",
+          "article_display_value": "KB0001011 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "0b5ad02a185813107f44e367c73ecb0e",
+      "exported_menu_label": "Getting Started with CafeNow",
+      "proposed_short_description": "Getting Started with CafeNow",
+      "proposed_category": "Employee Help",
+      "body_file": "articles/getting-started.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001001",
+      "exported_short_description": "Getting Started with CafeNow",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "490efff3451053107f440bdbe2f12b0b",
+      "exported_category": "Employee Help",
+      "exported_category_sys_id": "d097e526185453107f44e367c73ecb00",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "cd75373ab29b56223df84ef09b4caca817a28829933b996b0dc16b7573f0f5f6",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "0b5ad02a185813107f44e367c73ecb0e",
+          "exported_menu_label": "Getting Started with CafeNow",
+          "menu_item_sys_id": "2367fe8b6d1c13107f4484f0f2a4c673",
+          "menu_updated_on": "2026-11-06 20:52:09",
+          "article_display_value": "KB0001001 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "0b5ad02a185813107f44e367c73ecb0e",
+          "exported_menu_label": "Getting Started with CafeNow",
+          "menu_item_sys_id": "2367fe8b6d1c13107f4484f0f2a4c673",
+          "menu_updated_on": "2026-11-06 16:42:39",
+          "article_display_value": "KB0001001 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "9ece15ae18d053107f44e367c73ecb29",
+      "exported_menu_label": "How to Manage Menu Items and Availability",
+      "proposed_short_description": "How to Manage Menu Items and Availability",
+      "proposed_category": "Menu Management",
+      "body_file": "articles/manage-menu.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001016",
+      "exported_short_description": "How to Manage Menu Items and Availability",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "36ac33ff45dc13107f440bdbe2f12bea",
+      "exported_category": "Menu Management",
+      "exported_category_sys_id": "a409322e751013107f4428dce17b04a5",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "b041eb5b7d32b5fa9499338d9a45ce1a64776c6471a6eae1d256e6bf27e2ca9e",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "9ece15ae18d053107f44e367c73ecb29",
+          "exported_menu_label": "How to Manage Menu Items and Availability",
+          "menu_item_sys_id": "4feaf6876d5c13107f4484f0f2a4c6c1",
+          "menu_updated_on": "2026-11-06 20:54:10",
+          "article_display_value": "KB0001016 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "9ece15ae18d053107f44e367c73ecb29",
+          "exported_menu_label": "How to Manage Menu Items and Availability",
+          "menu_item_sys_id": "4feaf6876d5c13107f4484f0f2a4c6c1",
+          "menu_updated_on": "2026-11-06 16:58:05",
+          "article_display_value": "KB0001016 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "c86ecd26185053107f44e367c73ecbb5",
+      "exported_menu_label": "How to Place a Food Order",
+      "proposed_short_description": "How to Place a Food Order",
+      "proposed_category": "Ordering and Payments",
+      "body_file": "articles/place-food-order.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001008",
+      "exported_short_description": "How to Place a Food Order",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "98adb7b3451053107f440bdbe2f12b1c",
+      "exported_category": "Ordering and Payments",
+      "exported_category_sys_id": "3998e9a6185453107f44e367c73ecbaa",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "7274c90e4d742b865a1b05b83062283c671071bcda97576efc8331019010fa61",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "c86ecd26185053107f44e367c73ecbb5",
+          "exported_menu_label": "How to Place a Food Order",
+          "menu_item_sys_id": "2c28764f6d1c13107f4484f0f2a4c694",
+          "menu_updated_on": "2026-11-06 20:52:20",
+          "article_display_value": "KB0001008 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "c86ecd26185053107f44e367c73ecbb5",
+          "exported_menu_label": "How to Place a Food Order",
+          "menu_item_sys_id": "2c28764f6d1c13107f4484f0f2a4c694",
+          "menu_updated_on": "2026-11-06 16:45:43",
+          "article_display_value": "KB0001008 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "176474e2185c13107f44e367c73ecbe9",
+      "exported_menu_label": "Register and Access CafeNow",
+      "proposed_short_description": "Register and Access CafeNow",
+      "proposed_category": "Employee Help",
+      "body_file": "articles/register-and-access.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001004",
+      "exported_short_description": " How to Register and Access CafeNow",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "b3edbbf3451053107f440bdbe2f12b08",
+      "exported_category": "Employee Help",
+      "exported_category_sys_id": "d097e526185453107f44e367c73ecb00",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "31f6e2424f484daa7b85d0283fdf545b535e5a6968f7f26949c184cc2488c9b0",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "176474e2185c13107f44e367c73ecbe9",
+          "exported_menu_label": "Register and Access CafeNow",
+          "menu_item_sys_id": "1b3676c76d1c13107f4484f0f2a4c67a",
+          "menu_updated_on": "2026-11-06 20:51:32",
+          "article_display_value": "KB0001004 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "176474e2185c13107f44e367c73ecbe9",
+          "exported_menu_label": "Register and Access CafeNow",
+          "menu_item_sys_id": "1b3676c76d1c13107f4484f0f2a4c67a",
+          "menu_updated_on": "2026-11-06 16:39:01",
+          "article_display_value": "KB0001004 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "4232d1ee185053107f44e367c73ecbb9",
+      "exported_menu_label": "How to Select a Pickup Time",
+      "proposed_short_description": "How to Select a Pickup Time",
+      "proposed_category": "Ordering and Payments",
+      "body_file": "articles/select-pickup-time.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001009",
+      "exported_short_description": "How to Select a Pickup Time",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "c49d33b3451053107f440bdbe2f12bf6",
+      "exported_category": "Ordering and Payments",
+      "exported_category_sys_id": "3998e9a6185453107f44e367c73ecbaa",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "69a1caf7b72ebb87f6f8af8020fbf67e8a1e98a73aa610c9ee7b05a55be0fc16",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "4232d1ee185053107f44e367c73ecbb9",
+          "exported_menu_label": "How to Select a Pickup Time",
+          "menu_item_sys_id": "ce48ba4f6d1c13107f4484f0f2a4c64b",
+          "menu_updated_on": "2026-11-06 20:53:30",
+          "article_display_value": "KB0001009 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "4232d1ee185053107f44e367c73ecbb9",
+          "exported_menu_label": "How to Select a Pickup Time",
+          "menu_item_sys_id": "ce48ba4f6d1c13107f4484f0f2a4c64b",
+          "menu_updated_on": "2026-11-06 16:46:20",
+          "article_display_value": "KB0001009 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "e797552e189053107f44e367c73ecbaa",
+      "exported_menu_label": "How to Submit Feedback or Report an Issue",
+      "proposed_short_description": "How to Submit Feedback or Report an Issue",
+      "proposed_category": "Troubleshooting",
+      "body_file": "articles/submit-feedback-or-issue.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001012",
+      "exported_short_description": "How to Submit Feedback or Report an Issue",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "9a1d7b33451053107f440bdbe2f12bec",
+      "exported_category": "Troubleshooting",
+      "exported_category_sys_id": "311736e6751013107f4428dce17b047b",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "5317b6ef73850d489ba3815e4ffe2fe97999e91149db6614fd892a7845fcf5f3",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "e797552e189053107f44e367c73ecbaa",
+          "exported_menu_label": "How to Submit Feedback or Report an Issue",
+          "menu_item_sys_id": "deb87e8f6d1c13107f4484f0f2a4c6eb",
+          "menu_updated_on": "2026-11-06 20:53:19",
+          "article_display_value": "KB0001012 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "e797552e189053107f44e367c73ecbaa",
+          "exported_menu_label": "How to Submit Feedback or Report an Issue",
+          "menu_item_sys_id": "deb87e8f6d1c13107f4484f0f2a4c6eb",
+          "menu_updated_on": "2026-11-06 16:48:17",
+          "article_display_value": "KB0001012 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "7fc31126189053107f44e367c73ecb2f",
+      "exported_menu_label": "How to Track Your Food Order",
+      "proposed_short_description": "How to Track Your Food Order",
+      "proposed_category": "Ordering and Payments",
+      "body_file": "articles/track-food-order.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001010",
+      "exported_short_description": "How to Track Your Food Order",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "b37d3f73451053107f440bdbe2f12ba7",
+      "exported_category": "Ordering and Payments",
+      "exported_category_sys_id": "3998e9a6185453107f44e367c73ecbaa",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "25f2a1bf2ec56142188c3eea029056a47f0e560a8d435ee798fb47b05f4ab233",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "7fc31126189053107f44e367c73ecb2f",
+          "exported_menu_label": "How to Track Your Food Order",
+          "menu_item_sys_id": "1b68728f6d1c13107f4484f0f2a4c6c6",
+          "menu_updated_on": "2026-11-06 20:51:54",
+          "article_display_value": "KB0001010 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "7fc31126189053107f44e367c73ecb2f",
+          "exported_menu_label": "How to Track Your Food Order",
+          "menu_item_sys_id": "1b68728f6d1c13107f4484f0f2a4c6c6",
+          "menu_updated_on": "2026-11-06 16:47:03",
+          "article_display_value": "KB0001010 v0.01"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "7fc31126189053107f44e367c73ecb2f",
+          "exported_menu_label": "How to Track Your Food Order",
+          "menu_item_sys_id": "4788b68f6d1c13107f4484f0f2a4c659",
+          "menu_updated_on": "2026-11-06 16:47:13",
+          "article_display_value": "KB0001010 v0.01"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "7fc31126189053107f44e367c73ecb2f",
+          "exported_menu_label": "How to Track Your Food Order",
+          "menu_item_sys_id": "7398ba8f6d1c13107f4484f0f2a4c61a",
+          "menu_updated_on": "2026-11-06 16:47:32",
+          "article_display_value": "KB0001010 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "92fc5d6a18d053107f44e367c73ecb6a",
+      "exported_menu_label": "How to Update Order Preparation Status",
+      "proposed_short_description": "How to Update Order Preparation Status",
+      "proposed_category": "Vendor Operations",
+      "body_file": "articles/update-order-status.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001015",
+      "exported_short_description": "How to Update Order Preparation Status",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "43bcb7ff45dc13107f440bdbe2f12b8a",
+      "exported_category": "Vendor Operations",
+      "exported_category_sys_id": "cd08f66a751013107f4428dce17b0435",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "c14c1b047ecd51d00afbca313f22408e105ae3f2d6b8f6bf921e787731681e8b",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "92fc5d6a18d053107f44e367c73ecb6a",
+          "exported_menu_label": "How to Update Order Preparation Status",
+          "menu_item_sys_id": "a5ba3e476d5c13107f4484f0f2a4c628",
+          "menu_updated_on": "2026-11-06 20:54:30",
+          "article_display_value": "KB0001015 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "92fc5d6a18d053107f44e367c73ecb6a",
+          "exported_menu_label": "How to Update Order Preparation Status",
+          "menu_item_sys_id": "a5ba3e476d5c13107f4484f0f2a4c628",
+          "menu_updated_on": "2026-11-06 16:57:02",
+          "article_display_value": "KB0001015 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    },
+    {
+      "article_sys_id_from_menu_reference": "cea91d6218d053107f44e367c73ecbec",
+      "exported_menu_label": "Vendor Portal – Getting Started",
+      "proposed_short_description": "Vendor Portal - Getting Started",
+      "proposed_category": "Vendor Operations",
+      "body_file": "articles/vendor-getting-started.html",
+      "current_body_available": true,
+      "current_article_category_available": true,
+      "body_source": "kb_knowledge (kb_knowledge_base=5602e4aa189813107f44e367c73ecbb6).xml",
+      "number": "KB0001013",
+      "exported_short_description": "Vendor Portal – Getting Started",
+      "exported_workflow_state": "published",
+      "exported_version_reference": "9d0d3733451053107f440bdbe2f12b75",
+      "exported_category": "Vendor Operations",
+      "exported_category_sys_id": "cd08f66a751013107f4428dce17b0435",
+      "exported_knowledge_base_sys_id": "5602e4aa189813107f44e367c73ecbb6",
+      "exported_body_sha256": "3f31a8d09045305fdf7e9bcd8057fdb379618e1105458be6017919e293e9aa09",
+      "references": [
+        {
+          "source": "sys_remote_update_set_4cb09e8854e813107f44ff1829e40dc0.xml",
+          "article_sys_id": "cea91d6218d053107f44e367c73ecbec",
+          "exported_menu_label": "Vendor Portal – Getting Started",
+          "menu_item_sys_id": "8809fecf6d1c13107f4484f0f2a4c6bb",
+          "menu_updated_on": "2026-11-06 20:54:21",
+          "article_display_value": "KB0001013 v1.0"
+        },
+        {
+          "source": "sys_remote_update_set_cf1b4f8f6ddc13107f4484f0f2a4c618.xml",
+          "article_sys_id": "cea91d6218d053107f44e367c73ecbec",
+          "exported_menu_label": "Vendor Portal – Getting Started",
+          "menu_item_sys_id": "8809fecf6d1c13107f4484f0f2a4c6bb",
+          "menu_updated_on": "2026-11-06 16:49:32",
+          "article_display_value": "KB0001013 v0.01"
+        }
+      ],
+      "review_notes": "Verify the live article identity, current revision, audience, category and all UI steps before updating. No publication or migration is performed."
+    }
+  ]
+}

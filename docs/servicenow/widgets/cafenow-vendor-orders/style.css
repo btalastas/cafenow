@@ -1,0 +1,12 @@
+.vendor-queue { color: #24332c; }
+.queue-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.queue-header h2 { margin: 0 0 6px; font-size: 26px; font-weight: 700; }
+.queue-header p, .queue-note { color: #526359; }
+.queue-header p { margin: 0; }
+.window-group { border: 1px solid #d4dfd8; border-radius: 10px; margin: 18px 0; overflow: hidden; background: #fff; }
+.window-group h3 { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 18px; margin: 0; padding: 16px; background: #edf5ef; }
+.window-count { font-size: 14px; font-weight: 400; }
+.order-list { list-style: none; padding: 0; margin: 0; }
+.order-list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 14px 16px; border-top: 1px solid #e4ebe6; }
+.order-state { color: #345944; }
+@media (max-width: 480px) { .queue-header { align-items: flex-start; } .queue-header h2 { font-size: 22px; } }

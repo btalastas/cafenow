@@ -1,0 +1,9 @@
+.cafenow-orders .panel-heading { display: flow-root; }
+.cafenow-orders .panel-title { padding-top: 7px; font-size: 18px; }
+.cafenow-orders .cafenow-order { padding: 14px 0; border-bottom: 1px solid #ddd; }
+.cafenow-orders .cafenow-order:first-child { padding-top: 0; }
+.cafenow-orders .cafenow-order:last-child { border-bottom: 0; }
+.cafenow-orders dl { margin: 10px 0 0; }
+.cafenow-orders dt { font-weight: 600; }
+.cafenow-orders dd { margin-bottom: 6px; overflow-wrap: anywhere; }
+.cafenow-orders .label { display: inline-block; margin-left: 8px; white-space: normal; }

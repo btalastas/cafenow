@@ -1,0 +1,68 @@
+<section class="cn-orders panel panel-default" aria-label="CafeNow orders" ng-attr-aria-busy="{{c.busy || false}}">
+  <div class="panel-heading cn-heading">
+    <h2 class="panel-title">{{c.data.view === 'open' ? 'My Open Orders' : (c.data.view === 'recent' ? 'My Orders' : (c.data.view === 'all' ? 'All My Orders' : 'Order Details'))}}</h2>
+    <a ng-if="c.data.view !== 'all' && c.data.signed_in" ng-href="{{c.data.all_url}}">{{c.data.view === 'details' ? 'Back to all my orders' : 'View all'}}</a>
+  </div>
+  <div class="panel-body" ng-if="c.data.error || c.failed">
+    <p role="alert">{{c.data.error || 'Orders could not be refreshed. Please try again.'}}</p>
+  </div>
+  <div ng-if="c.data.signed_in && !c.data.error">
+    <ul class="list-group" ng-if="c.data.view === 'recent' || c.data.view === 'open'">
+      <li class="list-group-item" ng-repeat="order in c.data.orders track by order.sys_id">
+        <a ng-href="{{order.url}}">{{order.number}}</a>
+        <div class="cn-muted">{{order.vendor || 'Vendor unavailable'}} &middot; {{order.state}}</div>
+        <div class="cn-muted" ng-if="order.pickup_date || order.pickup">{{order.pickup_date}} {{order.pickup}}</div>
+      </li>
+    </ul>
+    <form class="cn-search" ng-if="c.data.view === 'all'" ng-submit="c.load(1)">
+      <label for="cn-order-search-{{$id}}">Search by order number</label>
+      <div class="input-group">
+        <input id="cn-order-search-{{$id}}" class="form-control" type="search" ng-model="c.search" maxlength="40" placeholder="e.g. ORD0001086">
+        <span class="input-group-btn"><button class="btn btn-default" type="submit" ng-disabled="c.busy">Search</button></span>
+      </div>
+    </form>
+    <div class="table-responsive" ng-if="c.data.view === 'all' && c.data.orders.length">
+      <table class="table table-striped">
+        <caption class="sr-only">Your orders, newest first</caption>
+        <thead><tr><th scope="col">Order</th><th scope="col">Vendor</th><th scope="col">Pickup date</th><th scope="col">Pickup window</th><th scope="col">Status</th><th scope="col">Total</th></tr></thead>
+        <tbody><tr ng-repeat="order in c.data.orders track by order.sys_id">
+          <td><a ng-href="{{order.url}}">{{order.number}}</a></td><td>{{order.vendor || '-'}}</td>
+          <td>{{order.pickup_date || '-'}}</td><td>{{order.pickup || '-'}}</td><td>{{order.state}}</td><td>{{order.total || '-'}}</td>
+        </tr></tbody>
+      </table>
+    </div>
+    <p class="cn-empty" ng-if="c.data.view !== 'details' && !c.data.orders.length" role="status">{{c.data.view === 'open' ? 'You have no open orders.' : (c.data.search ? 'No orders match this order number.' : 'No orders to display.')}}</p>
+    <div class="panel-footer" ng-if="c.data.view === 'open'">
+      <button class="btn btn-default" ng-click="c.load(1)" ng-disabled="c.busy">Refresh status</button>
+      <span class="cn-muted" role="status">{{c.busy ? 'Refreshing...' : 'Refresh to check the latest status.'}}</span>
+      <p ng-if="c.data.has_more">Showing your five newest open orders. View all for your full order history.</p>
+    </div>
+    <div class="panel-footer cn-heading" ng-if="c.data.view === 'all'">
+      <button class="btn btn-default" ng-click="c.load(c.data.page - 1)" ng-disabled="c.busy || c.data.page <= 1">Previous</button>
+      <span role="status">Page {{c.data.page}}</span>
+      <button class="btn btn-default" ng-click="c.load(c.data.page + 1)" ng-disabled="c.busy || !c.data.has_more || c.data.page >= 1000">Next</button>
+    </div>
+    <div class="panel-body" ng-if="c.data.view === 'details' && c.data.order">
+      <h3>{{c.data.order.number}}</h3>
+      <p class="cn-status">{{c.data.order.state}}</p>
+      <dl class="cn-fields">
+        <div><dt>Vendor</dt><dd>{{c.data.order.vendor || '-'}}</dd></div>
+        <div><dt>Ordered by</dt><dd>{{c.data.order.employee || '-'}}</dd></div>
+        <div><dt>Pickup date</dt><dd>{{c.data.order.pickup_date || '-'}}</dd></div>
+        <div><dt>Pickup window</dt><dd>{{c.data.order.pickup || '-'}}</dd></div>
+        <div><dt>Pickup location</dt><dd>{{c.data.order.location || '-'}}</dd></div>
+        <div><dt>Placed</dt><dd>{{c.data.order.placed || '-'}}</dd></div>
+      </dl>
+      <h4>Items ordered</h4>
+      <div class="table-responsive" ng-if="c.data.lines.length">
+        <table class="table table-striped">
+          <caption class="sr-only">Food items for {{c.data.order.number}}</caption>
+          <thead><tr><th scope="col">Item</th><th scope="col">Quantity</th><th scope="col">Unit price</th><th scope="col">Line total</th></tr></thead>
+          <tbody><tr ng-repeat="line in c.data.lines track by line.sys_id"><td>{{line.name}}</td><td>{{line.quantity}}</td><td>{{line.unit_price}}</td><td>{{line.line_price}}</td></tr></tbody>
+        </table>
+      </div>
+      <p ng-if="!c.data.lines.length">No readable item details are available for this order.</p>
+      <p class="cn-total">Order total: <strong>{{c.data.order.total || 'Unavailable'}}</strong></p>
+    </div>
+  </div>
+</section>

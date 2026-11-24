@@ -1,0 +1,27 @@
+.cn-direct { background: #fff; padding: 20px; border: 1px solid #dbe6df; border-radius: 10px; margin: 12px 0; color: #243a2d; }
+.cn-direct h2 { font-size: 24px; margin: 0 0 16px; }
+.cn-direct h3 { font-size: 18px; margin: 0 0 10px; }
+.cn-vendors, .cn-menu, .cn-lines { list-style: none; padding: 0; }
+.cn-vendors li { border-bottom: 1px solid #e4eae6; }
+.cn-vendors a { display: block; padding: 14px 8px; }
+.cn-menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.cn-menu li { border: 1px solid #dbe6df; border-radius: 8px; padding: 18px; }
+.cn-food-image { display: block; width: 100%; height: 160px; object-fit: contain; background: #f4f7f5; border-radius: 6px; margin-bottom: 12px; }
+.cn-lines .cn-food-image { width: 100px; max-width: 100%; height: 80px; }
+.cn-menu .btn { display: block; margin-top: 14px; }
+.cn-lines li { border-bottom: 1px solid #e4eae6; padding: 16px 0; }
+.cn-quantity { display: inline-block; width: 80px; margin: 0 8px; }
+.cn-total { font-size: 21px; font-weight: 700; margin: 20px 0; }
+.cn-checkout { margin-top: 20px; padding-top: 20px; border-top: 1px solid #dbe6df; }
+.cn-checkout > p, .cn-checkout > label { margin-top: 16px; }
+.cn-cart-terms { margin-top: 28px; padding-top: 20px; border-top: 1px solid #dbe6df; }
+.cn-cart-terms ul { padding-left: 22px; }
+.cn-cart-terms li { margin-bottom: 12px; line-height: 1.6; }
+@media (max-width: 500px) { .cn-direct { padding: 14px; } .cn-menu { grid-template-columns: 1fr; } .cn-quantity { display: block; margin: 8px 0; } }
+
+.cn-menu-quantity { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+.cn-menu-quantity .btn { display: inline-block; margin-top: 0; }
+.cn-menu-quantity .cn-quantity { width: 70px; margin: 0; }
+.cn-menu-quantity input[type="number"] { -moz-appearance: textfield; appearance: textfield; }
+.cn-menu-quantity input[type="number"]::-webkit-inner-spin-button,
+.cn-menu-quantity input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }

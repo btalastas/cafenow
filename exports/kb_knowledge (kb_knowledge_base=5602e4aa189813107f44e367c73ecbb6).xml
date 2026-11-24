@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-11-13 15:50:06">
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>176474e2185c13107f44e367c73ecbe9</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001004 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>1</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793814781187,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":2737592,"timeTakenToPublish":388367694}</instrumentation_metadata>
+<kb_category display_value="Employee Help">d097e526185453107f44e367c73ecb00</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Instructions for accessing the CafeNow Employee Portal. Employees need an authorized account to access</meta_description>
+<number>KB0001004</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description> How to Register and Access CafeNow</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001004">33defcea189c13107f44e367c73ecb57</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 18:38:38</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>176474e2185c13107f44e367c73ecbe9</sys_id>
+<sys_mod_count>10</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:45:48</sys_updated_on>
+<sys_view_count>30</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+</style>
+<p><span class="ece-inline-style" style="line-height: 115%; font-family: Aptos, serif; font-size: 10pt;; line-height: 115%; font-family: Aptos, serif; font-size: 10pt;"><span id="i5k6" style="font-size: 12pt;">Instructions for accessing the CafeNow Employee Porta</span>l.</span></p><p><span class="ece-inline-style" style="font-size: 12pt; line-height: 115%; font-family: Aptos, serif;; font-size: 12pt; line-height: 115%; font-family: Aptos, serif;">Employees need an authorized account to access CafeNow and place food orders</span><br /></p><div></div><hr class="ece-divider" /><div class="ece-row"></div><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Steps to Access</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Open the CafeNow Employee Portal.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select Sign In.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Enter your authorized username and password.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select Log In.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;">You will be redirected to the CafeNow homepage</li></ul></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div></div><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">First-Time Access</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Contact your organization administrator if an account has not been provisioned.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Obtain authorized login credentials.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Sign in and verify your employee profile information.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Troubleshooting</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Verify your username and password.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Check whether your account is active.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Contact the administrator if your account is locked.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Request password assistance through your organization&#39;s approved process.</span></li></ul></div></div></div><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Security</span></h3><p><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Do not share login credentials with other employees</span>.</p></div></div></div><hr class="ece-divider" /><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">b3edbbf3451053107f440bdbe2f12b08</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>163101a218dc13107f44e367c73ecb63</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001007 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793818135430,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":3297918,"timeTakenToPublish":384955251}</instrumentation_metadata>
+<kb_category display_value="Ordering and Payments">3998e9a6185453107f44e367c73ecbaa</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview : How to review ingredients, allergen information and nutritional details before ordering. Steps</meta_description>
+<number>KB0001007</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>How to Add Items to Your Shopping Cart</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001007">d7cdc9a2185053107f44e367c73ecb9a</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 19:43:53</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>163101a218dc13107f44e367c73ecb63</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:44:50</sys_updated_on>
+<sys_view_count>5</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview : </span></h3><table border="1" cellpadding="0" cellspacing="0" class="MsoTableLightShadingAccent1" id="i98uy" style="border-collapse: collapse; border-width: medium; border-style: none; border-color: currentcolor; border-image: none;"><tbody><tr><td id="i9fi6" style="width: 3.45in; padding: 0in 5.4pt; border-width: 1pt medium; border-style: solid none; border-color: rgb(79, 129, 189) currentcolor;" valign="top"><p class="ece-inline-style" style="margin: 0in; line-height: normal; font-size: 9pt; font-family: Aptos, serif;; margin: 0in; line-height: normal; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;"><strong><span class="ece-inline-style" style="color: rgb(54, 95, 145);; color: rgb(54, 95, 145);">How to review ingredients, allergen information and nutritional details before ordering.</span></strong></span></p></td></tr></tbody></table></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Steps</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Log in and select your preferred food vendor.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Browse the menu and open a food item.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select the required quantity and choose Add to Cart.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Repeat for additional items from the same vendor.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Open the cart to review your selection.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Managing Your Cart</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Increase or decrease item quantities.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Remove unwanted items.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review individual item prices and subtotal.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Continue browsing the vendor menu.</span></li></ul><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Before Checkout</span></h3><p><span class="ece-inline-style" style="font-size: 12pt; line-height: 115%; font-family: Aptos, serif;; font-size: 12pt; line-height: 115%; font-family: Aptos, serif;">Verify selected items, quantities, prices, vendor selection and total order amount</span><br /></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 id="iuhn2s" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span id="i7zy3g" style="font-size: 14pt;">MVP Limitation</span></h3><p id="iyfmk9" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span id="iys3ny" style="font-size: 12pt;">For the initial MVP, each order is associated with one vendor. To order from another vendor, submit a separate order.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">21bdfbb3451053107f440bdbe2f12b48</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>c86ecd26185053107f44e367c73ecbb5</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001008 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793821583064,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":294472,"timeTakenToPublish":381486481}</instrumentation_metadata>
+<kb_category display_value="Ordering and Payments">3998e9a6185453107f44e367c73ecbaa</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview Step-by-step instructions for submitting a food order Steps Log in to the Employee Portal. Select</meta_description>
+<number>KB0001008</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>How to Place a Food Order</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001008">3b7f89e6185053107f44e367c73ecb61</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 19:51:17</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>c86ecd26185053107f44e367c73ecbb5</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:44:29</sys_updated_on>
+<sys_view_count>7</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview</span></h3><p><span class="ece-inline-style" style="font-size: 14pt; line-height: 115%; font-family: Aptos, serif;; font-size: 14pt; line-height: 115%; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Step-by-step instructions for submitting a food order</span></span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style"><span class="ece-inline-style">Steps</span></h3><ul class="ece-inline-style"><li class="ece-inline-style"><span class="ece-inline-style">Log in to the Employee Portal.</span></li><li class="ece-inline-style"><span class="ece-inline-style">Select a vendor and browse its menu.</span></li><li class="ece-inline-style"><span class="ece-inline-style">Add items to your cart and review quantities.</span></li><li class="ece-inline-style"><span class="ece-inline-style">Proceed to checkout.</span></li><li class="ece-inline-style"><span class="ece-inline-style">Select your pickup date and time.</span></li><li class="ece-inline-style"><span class="ece-inline-style">Add special instructions if applicable.</span></li><li class="ece-inline-style"><span class="ece-inline-style">Review the order total and select Submit Order.</span></li></ul><p class="ece-inline-style"><span class="ece-inline-style">.</span><span class="ece-inline-style"></span></p><p class="ece-inline-style"><span class="ece-inline-style"><br /></span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Order Confirmation</span></h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;; line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">After successful submission, a unique order number is generated, the order is saved, the vendor is notified and the order appears under My Orders</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><p class="ece-inline-style" id="c14413-3"><span class="ece-inline-style" id="c14416-3"></span></p><h3 class="ece-inline-style"><span class="ece-inline-style">Order Statuses</span></h3><ul class="ece-inline-style" style="list-style-position: inside;; list-style-position: inside;"><li class="ece-inline-style"><span class="ece-inline-style">Submitted</span></li><li class="ece-inline-style"><span class="ece-inline-style">Accepted</span></li><li class="ece-inline-style"><span class="ece-inline-style">Preparing</span></li><li class="ece-inline-style"><span class="ece-inline-style">Ready for Pickup</span></li><li class="ece-inline-style"><span class="ece-inline-style">Completed</span></li><li class="ece-inline-style"><span class="ece-inline-style">Rejected</span></li><li class="ece-inline-style"><span class="ece-inline-style" id="c14747-3">Cancelled</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"></div><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div><hr class="ece-divider" />]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">98adb7b3451053107f440bdbe2f12b1c</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>7fc31126189053107f44e367c73ecb2f</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001010 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793823007968,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":385658,"timeTakenToPublish":380027189}</instrumentation_metadata>
+<kb_category display_value="Ordering and Payments">3998e9a6185453107f44e367c73ecbaa</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview: Learn how to monitor your food order from submission to collection. Steps Log in to CafeNow</meta_description>
+<number>KB0001010</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>How to Track Your Food Order</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001010">024591e6189053107f44e367c73ecb47</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 20:16:33</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>7fc31126189053107f44e367c73ecb2f</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:43:55</sys_updated_on>
+<sys_view_count>8</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview:<span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;"> <span class="ece-inline-style" style="line-height: 115%; font-family: Aptos, serif;; line-height: 115%; font-family: Aptos, serif;">Learn how to monitor your food order from submission to collection.</span></span></span></h3></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Steps</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Log in to CafeNow and navigate to My Orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select the order you want to track.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review the order number, vendor, current status, and pickup time</span>.</li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Order Status Definition</span>s</h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Submitted – Your order has been successfully submitted.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Accepted – The vendor has accepted your order.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Preparing – The vendor is preparing your food.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Ready for Pickup – Your food is ready for collection.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Completed – Your order has been collected and closed.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Rejected – The vendor could not accept your order.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Cancelled – The order has been cancelled.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Notifications</span></h3><p><span class="ece-inline-style" style="font-size: 12pt; line-height: 115%; font-family: Aptos, serif;; font-size: 12pt; line-height: 115%; font-family: Aptos, serif;">CafeNow may notify employees when the vendor accepts the order, updates preparation status or marks the order ready.</span><br /></p></div></div></div><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); ; margin: 10pt 0in 0in;"><span class="ece-inline-style" style="font-size: 14pt; ; font-size: 14pt;">Need Help?</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif; ; margin: 0in 0in 10pt;"><span class="ece-inline-style" style="font-size: 12pt; ; font-size: 12pt;">If your order status does not change as expected, contact the vendor or CafeNow support team via Email CafeNowsupportstaff&#64;example.com</span></p><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif; ; margin: 0in 0in 10pt;"><span class="ece-inline-style" style="font-size: 12pt; ; font-size: 12pt;"></span>.</p></div></div></div><hr class="ece-divider" />]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">b37d3f73451053107f440bdbe2f12ba7</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>4232d1ee185053107f44e367c73ecbb9</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001009 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793822591703,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":390441,"timeTakenToPublish":380460461}</instrumentation_metadata>
+<kb_category display_value="Ordering and Payments">3998e9a6185453107f44e367c73ecbaa</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview: Instructions for choosing a convenient food pickup time Pickup scheduling helps distribute</meta_description>
+<number>KB0001009</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>How to Select a Pickup Time</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001009">adb359e2189053107f44e367c73ecb25</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 20:09:42</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>4232d1ee185053107f44e367c73ecbb9</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:44:12</sys_updated_on>
+<sys_view_count>4</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview: <span class="ece-inline-style" style="font-size: 9pt; line-height: 115%; font-family: Aptos, serif;; font-size: 9pt; line-height: 115%; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Instructions for choosing a convenient food pickup time</span></span></span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Pickup scheduling helps distribute cafeteria demand and reduce congestion during scheduled breaks</span>.</p><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;"><span class="ece-inline-style" style="font-size: 9pt; line-height: 115%; font-family: Aptos, serif;; font-size: 9pt; line-height: 115%; font-family: Aptos, serif;">.</span></span></h3></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Steps</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Add food items to your cart and proceed to checkout.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Open the pickup scheduling section.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select an available pickup date and time slot.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Verify the selected time and submit your order.</span></li></ul></div></div></div><hr class="ece-divider" /><div></div><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Pickup Slot Information</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Pickup slots depend on availability and vendor preparation capacity. A slot may become unavailable when its maximum booking capacity is reached.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Important</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Selecting a pickup time does not mean the order is automatically ready. Wait for the Ready for Pickup notification before collecting your meal.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">c49d33b3451053107f440bdbe2f12bf6</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>8d65d1e6189053107f44e367c73ecb9b</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001011 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793823422452,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":516096,"timeTakenToPublish":379581378}</instrumentation_metadata>
+<kb_category display_value="Ordering and Payments">3998e9a6185453107f44e367c73ecbaa</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview: Instructions for requesting cancellation of a food order. Employees may need to cancel an order</meta_description>
+<number>KB0001011</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>How to Cancel an Order</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001011">03575dea189053107f44e367c73ecbc7</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 20:25:38</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>8d65d1e6189053107f44e367c73ecb9b</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:43:23</sys_updated_on>
+<sys_view_count>10</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview</span>: <span class="ece-inline-style" style="font-size: 9pt; line-height: 115%; font-family: Aptos, serif;; font-size: 9pt; line-height: 115%; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Instructions for requesting cancellation of a food order.</span></span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Employees may need to cancel an order due to a change in plans or an incorrect selection.</span></p><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 9pt; line-height: 115%; font-family: Aptos, serif;; font-size: 9pt; line-height: 115%; font-family: Aptos, serif;">.</span></h3></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Steps</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Log in and open My Orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select the relevant order and review its status.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select Cancel Order if cancellation is available.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Provide a cancellation reason and submit the request.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Check the updated order status.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Important</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Cancellation availability depends on order status and vendor processing rules. If the order is already being prepared or marked ready, contact the vendor directly.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Refund Information</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">For the initial MVP, payment and refund processing may be handled outside CafeNow. Contact the administrator or vendor for assistance where applicable.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">dc6db773451053107f440bdbe2f12ba8</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>e797552e189053107f44e367c73ecbaa</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001012 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793824006655,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":484159,"timeTakenToPublish":378923150}</instrumentation_metadata>
+<kb_category display_value="Troubleshooting">311736e6751013107f4428dce17b047b</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview: Learn how to submit feedback, complaints or application issues. Steps Log in to CafeNow and</meta_description>
+<number>KB0001012</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>How to Submit Feedback or Report an Issue</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001012">7579d16218d053107f44e367c73ecbad</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 20:34:50</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>e797552e189053107f44e367c73ecbaa</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:42:09</sys_updated_on>
+<sys_view_count>7</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview: <span class="ece-inline-style" style="font-size: 12pt; line-height: 115%; font-family: Aptos, serif;; font-size: 12pt; line-height: 115%; font-family: Aptos, serif;">Learn how to submit feedback, complaints or application issues.</span></span></h3></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Steps</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Log in to CafeNow and navigate to Feedback &amp; Support.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select a feedback category.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Enter a description and include the order number if applicable.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Submit your feedback.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Suggested Categories</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Food quality</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Order delay</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Incorrect order</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Vendor service</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Application issue</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Menu information</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Other</span></li></ul></div></div></div><hr class="ece-divider" /><div></div><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">What Happens Next?</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Your feedback is recorded and made available to the authorized administrator for review</span>.</p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Urgent Safety Concerns</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">For urgent food allergy or food safety concerns, contact the vendor directly rather than relying on a feedback submission.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">9a1d7b33451053107f440bdbe2f12bec</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>a4016526181453107f44e367c73ecb46</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001017 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793826468177,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":989020,"timeTakenToPublish":375781100}</instrumentation_metadata>
+<kb_category display_value="Administration">79d9be6e751013107f4428dce17b04e7</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview: Administrative instructions for managing the CafeNow application. Administrators oversee application</meta_description>
+<number>KB0001017</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>CafeNow Administrator – Management Guide</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001017">8ec4ad6e181453107f44e367c73ecb45</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 21:24:17</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>a4016526181453107f44e367c73ecb46</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:30:49</sys_updated_on>
+<sys_view_count>25</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview: <span class="ece-inline-style" style="line-height: 115%; font-family: Aptos, serif;; line-height: 115%; font-family: Aptos, serif;">Administrative instructions for managing the CafeNow application.</span></span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Administrators oversee application operations, vendor access, employee accounts, order records, and system configuration</span>.</p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Vendor Management</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Create and review vendor records.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Activate or deactivate vendors.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Assign vendor managers.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;">Verify vendor-specific access</li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Menu Management</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review menu records and item details.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Monitor availability.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;">Ensure prices and allergen information are maintained</li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Order Management</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Monitor submitted orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review rejected and cancelled orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Investigate delayed orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Support vendors and employees.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Pickup Slot Management</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Configure pickup slots and maximum booking capacity.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Monitor bookings.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Disable unavailable slots.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">User and Security Management</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Provision authorized accounts.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Assign appropriate roles.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review access permissions.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Maintain table and record-level security.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Reporting</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Total orders</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Orders by vendor</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Pending orders</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Orders in preparation</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Completed orders</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Rejected orders</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;">Pickup slot utilization</li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Security Guidelines</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Ensure employees can access only their own orders and vendors can access only their own vendor records and orders. Follow organizational access control and change management policies.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">c48a33bb45dc13107f440bdbe2f12b78</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>cea91d6218d053107f44e367c73ecbec</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001013 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793824540472,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":419027,"timeTakenToPublish":378368886}</instrumentation_metadata>
+<kb_category display_value="Vendor Operations">cd08f66a751013107f4428dce17b0435</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview: Introduction to the CafeNow Vendor Portal. The Vendor Portal allows cafeteria vendors to manage</meta_description>
+<number>KB0001013</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>Vendor Portal – Getting Started</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001013">5c4bd56618d053107f44e367c73ecb7a</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 20:42:39</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>cea91d6218d053107f44e367c73ecbec</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:41:49</sys_updated_on>
+<sys_view_count>4</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview: <span class="ece-inline-style" style="line-height: 115%; font-family: Aptos, serif;; line-height: 115%; font-family: Aptos, serif;">Introduction to the CafeNow Vendor Portal.</span></span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">The Vendor Portal allows cafeteria vendors to manage incoming food orders, update preparation statuses, and maintain menu availability.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Vendor Responsibilities</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Monitor incoming orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Accept or reject orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Prepare food according to order details.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Update preparation status and mark completed orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Maintain accurate menu information and item availability.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Getting Started</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Open the CafeNow Vendor Portal.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Sign in using your authorized vendor account.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Access the Vendor Dashboard.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review incoming orders and select an order to view its details</span>.</li></ul><p>.</p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Important</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Vendor accounts must only access their own vendor&#39;s records. Do not share account credentials with other vendors</span>.</p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">9d0d3733451053107f440bdbe2f12b75</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>92fc5d6a18d053107f44e367c73ecb6a</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001015 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793825410337,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":421550,"timeTakenToPublish":377425022}</instrumentation_metadata>
+<kb_category display_value="Vendor Operations">cd08f66a751013107f4428dce17b0435</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview: Instructions for updating the preparation and collection status of an order. Steps Log in to</meta_description>
+<number>KB0001015</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>How to Update Order Preparation Status</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001015">5d9e596e18d053107f44e367c73ecbe5</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 20:57:11</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>92fc5d6a18d053107f44e367c73ecb6a</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:40:35</sys_updated_on>
+<sys_view_count>4</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview:</span> <span class="ece-inline-style" style="font-size: 12pt; line-height: 115%; font-family: Aptos, serif;; font-size: 12pt; line-height: 115%; font-family: Aptos, serif;">Instructions for updating the preparation and collection status of an order.</span></h3></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Steps</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Log in to the Vendor Portal and open Incoming Orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select an accepted order.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">When preparation begins, select Start Preparing.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">When preparation is complete, select Mark Ready for Pickup.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">When the employee collects the food, select Complete Order</span>.</li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Status Sequence</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Submitted → Accepted → Preparing → Ready for Pickup → Completed.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Notifications</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">When an order is marked Ready for Pickup, the system can automatically notify the employee.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 id="i2p2l" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span id="in17c" style="font-size: 14pt;">Important</span></h3><p id="iqhbj" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span id="i7ugc" style="font-size: 12pt;">Only mark an order Ready for Pickup when the food is fully prepared and available for collection</span>.</p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">43bcb7ff45dc13107f440bdbe2f12b8a</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>0b5ad02a185813107f44e367c73ecb0e</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001001 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793807948361,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":5134995,"timeTakenToPublish":395222102}</instrumentation_metadata>
+<kb_category display_value="Employee Help">d097e526185453107f44e367c73ecb00</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Introduction to the CafeNow Smart Cafeteria Ordering System. CafeNow lets employees browse food vendors,</meta_description>
+<number>KB0001001</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>Getting Started with CafeNow</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001001">30fda826181c13107f44e367c73ecb07</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 17:24:43</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>0b5ad02a185813107f44e367c73ecb0e</sys_id>
+<sys_mod_count>12</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:46:10</sys_updated_on>
+<sys_view_count>19</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;"></span><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;"><span class="ece-inline-style" style="line-height: 115%; font-family: Aptos, serif; font-size: 12pt;; line-height: 115%; font-family: Aptos, serif; font-size: 12pt;">Introduction to the CafeNow Smart Cafeteria Ordering System.</span></h3></div><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;; line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;"><span class="ece-inline-style" style="padding-bottom: 0px; font-size: 12pt;; padding-bottom: 0px; font-size: 12pt;">CafeNow lets employees browse food vendors, explore menus, place orders, and pick up meals at scheduled pickup times. It is designed to reduce cafeteria queues and help employees make better use of their breaks.</span></p></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt; align-self: flex-start; text-align: center;; font-size: 14pt; align-self: flex-start; text-align: center;">Available Vendors</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; text-align: left;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; text-align: left;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Pizza Store</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Shawarma Store</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Sandwich Store</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Rice Bowl Store</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Tim Hortons</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Getting Started</span></h3><ul class="ece-inline-style" style="margin-top: 0px; list-style-position: inside; margin-bottom: 1pt;; margin-top: 0px; list-style-position: inside; margin-bottom: 1pt;"><li class="ece-inline-style" style="line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Open the CafeNow Employee Portal.</span></li><li class="ece-inline-style" style="line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Sign in using your authorized account.</span></li><li class="ece-inline-style" style="line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Browse the available food vendors and select one.</span></li><li class="ece-inline-style" style="line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Explore menu items and review descriptions, prices, ingredients and allergen information.</span></li><li class="ece-inline-style" style="line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Add items to your shopping cart.</span></li><li class="ece-inline-style" style="line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select an available pickup time.</span></li><li class="ece-inline-style" style="line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Submit your order.</span></li><li class="ece-inline-style" style="line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;; line-height: 115%; font-size: 12pt; font-family: Aptos, serif; margin: 0in 0in 1pt 0px;">Track your order until it is ready for pickup</li></ul></div></div></div><hr class="ece-divider" /><hr class="ece-divider" /><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"></h3></div><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Benefits</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Avoid long cafeteria queues.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Order food before your scheduled break.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Browse multiple vendors in one place.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review food information before ordering.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select convenient pickup times.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Receive order status notifications.</span></li></ul></div></div></div><hr class="ece-divider" /><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in; ; margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt; ; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">490efff3451053107f440bdbe2f12b0b</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>9ece15ae18d053107f44e367c73ecb29</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001016 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793825885795,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":460726,"timeTakenToPublish":376931403}</instrumentation_metadata>
+<kb_category display_value="Menu Management">a409322e751013107f4428dce17b04a5</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview:Instructions for adding and maintaining food items in the CafeNow menu. Menu Item Information</meta_description>
+<number>KB0001016</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>How to Manage Menu Items and Availability</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001016">c7806da2181453107f44e367c73ecb0c</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 21:05:46</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>9ece15ae18d053107f44e367c73ecb29</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:40:17</sys_updated_on>
+<sys_view_count>6</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview:<span class="ece-inline-style" style="font-size: 12pt; line-height: 115%; font-family: Aptos, serif;; font-size: 12pt; line-height: 115%; font-family: Aptos, serif;">Instructions for adding and maintaining food items in the CafeNow menu.</span></span></h3></div></div></div><div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Menu Item Information</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Item name and description</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Price and image</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Category</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Ingredients and allergen information</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Calories, protein, carbohydrates, and fat</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Sodium and sugar</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Availability status</span></li></ul></div></div></div><hr class="ece-divider" /><div></div><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Updating a Menu Item</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Log in to the Vendor Portal and open Menu Management.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select the required item.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Update relevant information and verify the price and description.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Save the changes.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Managing Availability</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Open the menu item.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Change its availability to Unavailable and save.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">When available again, update its status.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Important</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Ingredient, allergen and nutrition information must be verified against actual recipes and supplier information</span>.</p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">36ac33ff45dc13107f440bdbe2f12bea</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>e494bce2185c13107f44e367c73ecbba</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001005 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793814819615,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":2706188,"timeTakenToPublish":388311429}</instrumentation_metadata>
+<kb_category display_value="Employee Help">d097e526185453107f44e367c73ecb00</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview Learn how to explore participating food vendors and their menus. CafeNow provides a centralized</meta_description>
+<number>KB0001005</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description> How to Browse Food Vendors and Menus</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001005">a5eef02e189c13107f44e367c73ecb16</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 18:38:45</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>e494bce2185c13107f44e367c73ecbba</sys_id>
+<sys_mod_count>8</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:45:31</sys_updated_on>
+<sys_view_count>8</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview</span></h3><p><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;"><span id="i18f3" style="line-height: 115%; font-family: Aptos, serif;">Learn how to explore participating food vendors and their menus.</span></span></p><p><span class="ece-inline-style" style="font-size: 14pt; line-height: 115%; font-family: Aptos, serif;; font-size: 14pt; line-height: 115%; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">CafeNow provides a centralized menu for participating cafeteria vendors</span></span><br /></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Steps</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Log in to CafeNow.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Navigate to Vendors.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Browse the available vendor cards and select a vendor.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">View its food categories.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select a category or use search.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select a food item to view its details.</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Menu Information</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Food item name and description.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Price and food image.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Calories, protein, carbohydrates and fat.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Sodium and sugar.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Ingredients and allergen information.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Availability status.</span></li></ul></div></div></div><hr class="ece-divider" /><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Important</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Menu availability and prices may change. Review the latest information displayed before ordering.</span></p></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">9fdd77f3451053107f440bdbe2f12b68</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>2a7b51a618d053107f44e367c73ecb2d</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001014 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793825018050,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":367097,"timeTakenToPublish":377873335}</instrumentation_metadata>
+<kb_category display_value="Vendor Operations">cd08f66a751013107f4428dce17b0435</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview: Instructions for reviewing and accepting employee food orders Steps Log in to the Vendor Portal</meta_description>
+<number>KB0001014</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>How to Accept and Manage Incoming Orders</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001014">1cec156a18d053107f44e367c73ecb74</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 20:49:45</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>2a7b51a618d053107f44e367c73ecb2d</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:41:31</sys_updated_on>
+<sys_view_count>3</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview: <span class="ece-inline-style" style="font-size: 12pt; line-height: 115%; font-family: Aptos, serif;; font-size: 12pt; line-height: 115%; font-family: Aptos, serif;">Instructions for reviewing and accepting employee food orders</span></span></h3></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Steps</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Log in to the Vendor Portal and open Incoming Orders.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review new orders and select an order.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review food items, quantities, and requested pickup time.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select Accept Order if it can be fulfilled.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select Reject Order if it cannot be fulfilled.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Provide a reason when rejecting an order</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Order Information</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Order number</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Employee information</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Ordered items and quantities</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Special instructions</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Pickup date and time</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Order status</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Important</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review orders promptly so employees receive timely confirmation</span>.</p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">3cfc3333451053107f440bdbe2f12b45</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>05f974ee185c13107f44e367c73ecb48</article_id>
+<article_type>text</article_type>
+<author display_value="Margaret Idika">e445c235019813107f448b63de6dd79a</author>
+<base_version display_value=""/>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0001006 v1.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1793816230057,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":1860820,"timeTakenToPublish":386880092}</instrumentation_metadata>
+<kb_category display_value="Employee Help">d097e526185453107f44e367c73ecb00</kb_category>
+<kb_knowledge_base display_value="CafeNow KB">5602e4aa189813107f44e367c73ecbb6</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Overview CaféNow displays ingredient, allergen, and nutritional information to help employees make informed</meta_description>
+<number>KB0001006</number>
+<ownership_group display_value=""/>
+<published>2026-11-09</published>
+<rating/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value=""/>
+<roles/>
+<scheduled_publish_date/>
+<short_description>Understanding Food Allergens and Nutrition</short_description>
+<sn_grc_source/>
+<sn_grc_target_table/>
+<source display_value=""/>
+<summary display_value="KB0001006">5301c56218dc13107f44e367c73ecb3d</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>Margaret.I</sys_created_by>
+<sys_created_on>2026-11-04 18:48:10</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>05f974ee185c13107f44e367c73ecb48</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_updated_by>ssk.cafenow</sys_updated_by>
+<sys_updated_on>2026-11-09 05:45:10</sys_updated_on>
+<sys_view_count>5</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>.ece-cell {
+  align-items:flex-start;
+  display:flex;
+  flex:1 1 0;
+  justify-content:flex-start;
+  min-block-size:75px;
+}
+
+.ece-row {
+  align-items:stretch;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:10px;
+}
+
+.ece-divider {
+  background-color:#c6cbcb;
+  block-size:2px;
+  border:0;
+  display:block;
+  inline-size:100%;
+  margin:20px 0;
+}
+</style>
+<div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Overview</span></h3><table border="1" cellpadding="0" cellspacing="0" class="MsoTableLightShadingAccent1" id="ija6kh"><tbody><tr><td><div></div></td><td><div></div></td></tr></tbody></table><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">CaféNow displays ingredient, allergen, and nutritional information to help employees make informed food selections</span>.</p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">How to Review</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Open the CaféNow Employee Portal.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Select a food vendor and open a food item.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Review ingredients and listed allergens.</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;">Review calories, protein, carbohydrates, fat, sodium and sugar</li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Common Allergens</span></h3><ul class="ece-inline-style" style="margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;; margin-bottom: 1pt; margin-top: 0px; list-style-position: inside;"><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Milk</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Eggs</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Wheat and gluten-containing ingredients</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Peanuts and tree nuts</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Soy</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Sesame</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Fish and shellfish</span></li><li class="ece-inline-style" style="margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;; margin: 0in 0in 1pt 0px; line-height: 115%; font-size: 12pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Mustard</span></li></ul></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);; margin: 10pt 0in 0in; line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80);"><span class="ece-inline-style" style="font-size: 14pt;; font-size: 14pt;">Important Food Safety Notice</span></h3><p class="ece-inline-style" style="margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;; margin: 0in 0in 10pt; line-height: 115%; font-size: 9pt; font-family: Aptos, serif;"><span class="ece-inline-style" style="font-size: 12pt;; font-size: 12pt;">Displayed allergen information is not a guarantee that an item is free from cross-contact. Employees with food allergies must contact the vendor directly to confirm ingredients, preparation methods and cross-contact risks. Never assume an item is allergen-free simply because an allergen is not listed.</span></p></div></div></div><hr class="ece-divider" /><div class="ece-row"><div class="ece-cell"><div><h3 class="ece-inline-style" style="line-height: 115%; break-after: avoid; font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(7, 91, 80); margin: 10pt 0in 0in;">Need Help?</h3><p class="ece-inline-style" style="line-height: 115%; font-size: 9pt; font-family: Aptos, serif; margin: 0in 0in 10pt;">Contact the CafeNow support team  via Email CafeNowsupportstaff&#64;example.com  or consult the relevant knowledge articles.</p></div></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="1.0">52cdffb3451053107f440bdbe2f12bba</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+</unload>

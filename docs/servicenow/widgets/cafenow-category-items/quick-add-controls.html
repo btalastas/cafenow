@@ -1,0 +1,13 @@
+<div class="cafenow-quick-add" ng-if="item.cafenow_can_quick_add"
+     ng-init="item.cafenow_quantity = item.cafenow_quantity === undefined ? 1 : item.cafenow_quantity">
+  <label class="sr-only" for="cafenow-qty-VIEW-{{item.sys_id}}">${Quantity} {{item.name}}</label>
+  <input id="cafenow-qty-VIEW-{{item.sys_id}}" type="number" min="1" step="1"
+         class="form-control input-sm" style="display:inline-block;width:75px;vertical-align:middle"
+         ng-model="item.cafenow_quantity" ng-disabled="quickAddInFlight" />
+  <button type="button" class="btn btn-primary btn-sm" ng-click="quickAdd($event, item)"
+          ng-disabled="quickAddInFlight || !item.cafenow_quantity || item.cafenow_quantity < 1 || item.cafenow_quantity % 1 !== 0"
+          aria-label="${Add to Cart} {{item.name}}">
+    <span ng-if="!(quickAddInFlight && quickAddItemId == item.sys_id)">${Add to Cart}</span>
+    <span ng-if="quickAddInFlight && quickAddItemId == item.sys_id">${Adding...}</span>
+  </button>
+</div>

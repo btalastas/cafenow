@@ -1,0 +1,50 @@
+<section class="cn-direct" aria-label="${CafeNow}" ng-attr-aria-busy="{{c.busy}}">
+  <p ng-if="!c.data.signed_in">${Sign in to use CafeNow.}</p>
+  <p class="alert alert-danger" role="alert" ng-if="c.data.error">{{c.data.error}}</p>
+  <p class="alert alert-danger" role="alert" ng-if="c.localError">{{c.localError}}</p>
+  <div class="alert alert-success" role="status" ng-if="c.data.submitted"><h2>${Order placed:} {{c.data.order_number}}</h2><a ng-href="{{c.data.order_url}}">${View your order and food items}</a></div>
+  <p class="alert alert-warning" ng-if="c.uncertain">${Check My Orders or contact an administrator before placing another order.} <a href="?id=cafenow_my_orders">${My Orders}</a></p>
+
+  <div ng-if="c.data.signed_in && !c.data.submitted">
+    <div ng-if="c.data.view === 'vendors'">
+      <h2>${Choose a vendor}</h2>
+      <ul class="cn-vendors"><li ng-repeat="vendor in c.data.vendors track by vendor.sys_id"><a ng-href="{{vendor.url}}">{{vendor.name}}</a></li></ul>
+      <p ng-if="!c.data.vendors.length && !c.data.error">${No vendors are available.}</p>
+    </div>
+    <div ng-if="c.data.view === 'menu'">
+      <h2>${Menu}</h2><p ng-if="!c.data.selected_vendor">${Choose a vendor to view its food.}</p>
+      <label for="cn-food-search">${Find food}</label><input id="cn-food-search" class="form-control" type="search" ng-model="c.search">
+      <ul class="cn-menu"><li ng-repeat="food in c.data.menu | filter:{name:c.search} track by food.sys_id"><img class="cn-food-image" ng-if="food.image_url" ng-src="{{food.image_url}}" alt="{{food.name}}" loading="lazy"><h3>{{food.name}}</h3><p>{{food.description}}</p><strong>{{food.unit_display}}</strong><p ng-if="!food.available">${Currently unavailable}</p><div class="cn-menu-quantity"><button type="button" class="btn btn-default" aria-label="${Decrease quantity for} {{food.name}}" ng-click="c.stepQuantity(food, -1)" ng-disabled="c.busy || c.uncertain || !food.available || (c.menuQuantities[food.sys_id] || 1) <= 1">&minus;</button><label ng-attr-for="cn-menu-qty-{{$id}}">${Quantity}</label><input class="form-control cn-quantity" ng-attr-id="cn-menu-qty-{{$id}}" type="number" min="1" max="99" step="1" ng-init="c.menuQuantities[food.sys_id] = 1" ng-model="c.menuQuantities[food.sys_id]" ng-disabled="c.busy || c.uncertain || !food.available"><button type="button" class="btn btn-default" aria-label="${Increase quantity for} {{food.name}}" ng-click="c.stepQuantity(food, 1)" ng-disabled="c.busy || c.uncertain || !food.available || c.menuQuantities[food.sys_id] >= 99">+</button></div><button type="button" class="btn btn-primary" ng-click="c.add(food)" ng-disabled="c.busy || c.uncertain || !food.available">${Add to cart}</button></li></ul>
+      <p ng-if="c.data.selected_vendor && !c.data.menu.length && !c.data.error">${No active menu items are available for this vendor.}</p>
+    </div>
+    <div ng-if="c.data.view === 'cart' || c.data.view === 'sidebar'">
+      <h2>${Your cart}</h2><p>{{c.data.cart_vendor_name}}</p>
+      <ul class="cn-lines"><li ng-repeat="item in c.data.items track by item.menu_id"><img class="cn-food-image" ng-if="item.image_url" ng-src="{{item.image_url}}" alt="{{item.name}}" loading="lazy"><h3>{{item.name}}</h3><p>${Unit price:} {{item.unit_display}} <span ng-if="item.quantity > 1">&middot; ${Item subtotal:} {{item.line_display}}</span></p><form name="quantityForm" ng-submit="c.update(item)"><label ng-attr-for="cn-qty-{{$id}}">${Quantity}</label><input class="form-control cn-quantity" ng-attr-id="cn-qty-{{$id}}" type="number" min="1" max="99" step="1" required ng-model="item.edit_quantity" ng-disabled="c.busy || c.uncertain"><button class="btn btn-default" type="submit" ng-disabled="c.busy || c.uncertain || quantityForm.$invalid">${Update}</button><button class="btn btn-link" type="button" ng-click="c.remove(item)" ng-disabled="c.busy || c.uncertain">${Remove}</button></form></li></ul>
+      <p ng-if="!c.cart.length">${Your cart is empty.}</p><p class="cn-total">${Order total:} {{c.data.total_display}}</p>
+      <button class="btn btn-link" type="button" ng-if="c.cart.length" ng-click="c.confirmClear = true" ng-disabled="c.busy || c.uncertain">${Clear cart}</button>
+      <div ng-if="c.confirmClear"><p>${Remove all food from this cart?}</p><button class="btn btn-danger" type="button" ng-click="c.clear()">${Clear cart}</button><button class="btn btn-default" type="button" ng-click="c.confirmClear = false">${Keep cart}</button></div>
+      <a class="btn btn-primary" href="?id=cafenow_cart" ng-if="c.data.view === 'sidebar' && c.cart.length">${Review cart and checkout}</a>
+      <a href="?id=cafe_menu">${Continue ordering}</a>
+    </div>
+    <form name="checkoutForm" class="cn-checkout" ng-if="c.data.view === 'cart' && c.data.items.length" ng-submit="c.submit()">
+      <h3>${Pickup}</h3><p>{{c.data.pickup_date}} · {{c.data.timezone}}</p>
+      <label for="cn-window">${Choose a pickup window}</label><select id="cn-window" class="form-control" required ng-model="c.choice.window_id" ng-options="window.sys_id as window.label for window in c.data.windows" ng-disabled="c.busy || c.uncertain"><option value="">${Select a time}</option></select>
+      <p ng-if="!c.data.windows.length">${No active pickup windows are available for this vendor.}</p>
+      <p ng-if="c.data.terms_url"><a ng-href="{{c.data.terms_url}}" target="_blank" rel="noopener">${Read Terms & Conditions}</a></p>
+      <label><input type="checkbox" required ng-model="c.choice.accept_terms" ng-disabled="c.busy || c.uncertain"> ${I agree to the Terms & Conditions.}</label>
+      <p ng-if="c.data.notice">{{c.data.notice}}</p>
+      <button type="submit" class="btn btn-primary" ng-disabled="c.busy || c.uncertain || !c.data.can_submit || checkoutForm.$invalid">{{c.busy ? '${Submitting...}' : '${Place order}'}}</button>
+    </form>
+    <div ng-if="c.data.view === 'orders'"><h2>${My Orders}</h2><ul class="cn-lines"><li ng-repeat="order in c.data.orders track by order.sys_id"><a ng-href="{{order.url}}">{{order.number}}</a> <span>{{order.state}}</span></li></ul><p ng-if="!c.data.orders.length && !c.data.error">${No orders to show.}</p></div>
+    <div ng-if="c.data.view === 'details' && c.data.order"><h2>{{c.data.order.number}}</h2><p>{{c.data.order.state}}</p><p>{{c.data.order.pickup}}</p><ul class="cn-lines"><li ng-repeat="line in c.data.lines track by line.sys_id"><strong>{{line.name}}</strong><p>${Quantity:} {{line.quantity}} · {{line.unit_display}} · {{line.line_display}}</p></li></ul><p>{{c.data.order.total}}</p><a href="?id=cafenow_my_orders">${My Orders}</a></div>
+  </div>
+  <section class="cn-cart-terms" ng-if="c.data.signed_in && c.data.view === 'cart'" aria-label="${Terms and Conditions}">
+    <h3>${Terms & Conditions}</h3>
+    <ul>
+      <li><strong>${Ordering cutoff:}</strong> ${Place your order at least 20 minutes before your selected pickup window starts. For an 11:30 AM pickup window, place your order by 11:10 AM.}</li>
+      <li><strong>${Pickup reminder:}</strong> ${Check My Orders for your order status and selected pickup window. Collect your food from the correct vendor during that window once your order is Ready for Pickup.}</li>
+      <li><strong>${At collection:}</strong> ${Have your CafeNow order number ready to help the vendor identify your order. If you expect to be late, contact the vendor.}</li>
+    </ul>
+    <a href="?id=cafenow_my_orders">${Check My Orders}</a>
+  </section>
+</section>

@@ -1,0 +1,20 @@
+--- original-server.js
++++ server.js
+@@ -77,7 +77,7 @@
+                 options[embeddedWidgetOption] = localInput[embeddedWidgetOption];
+         });
+         data.orderItemModal = $sp.getWidget('widget-modal', {
+-            embeddedWidgetId: 'sc-checkout',
++            embeddedWidgetId: 'cafenow-checkout',
+             embeddedWidgetOptions: {
+                 cart: {
+                     name: localInput.cart
+@@ -125,7 +125,7 @@
+                 options[embeddedWidgetOption] = localInput[embeddedWidgetOption];
+         });
+         data.orderItemModal = $sp.getWidget('widget-modal', {
+-            embeddedWidgetId: 'sc-checkout',
++            embeddedWidgetId: 'cafenow-checkout',
+             embeddedWidgetOptions: {
+                 cart: {
+                     name: localInput.cart

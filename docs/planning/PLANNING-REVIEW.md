@@ -1,5 +1,13 @@
 # CafeNow planning review - November 1, 2026
 
+## November 6 export and checkout review
+
+The [ordering review](ORDERING-REVIEW-2026-11-06.md) reconciles all existing planning guides with the application XML and current user journey. The core relationships fit the requirement; the main mismatch is collecting per-food variables for a desired once-per-checkout pickup selection. The Menu import already maps Catalog Item -> Menu and associates CafeNow Ordering. The exported Order flow has one Create Order step outside item loops, but blank Vendor/Pickup Window mappings. Separate session-storage and native catalog carts, competing pickup variables, date-scoped capacity and Request/RITM timing remain integration risks. Inspect the actual catalog checkout before adding more helpers. User journey is confirmed; proposed checkout customization, flow fixes and runtime results remain unverified. Older assessment sections below are dated planning baselines, not current implementation findings.
+
+## November 5 ordering update
+
+The current working direction is individual food Catalog Items, cart RITMs as item details, and one CafeNow Order as fulfillment authority for a same-day single-vendor checkout. See the [detailed guide](MVP-FEATURE-TASKS-AND-PROCESSES.md#ordering-variables-and-menu-import---november-5-2026). Remaining risks are complete-checkout detection, duplicate/concurrent processing, capacity recovery, recipient/window consistency, RITM access/status mapping and import price authority. These refine existing P03/D01/S01/C/I/B/T work; implementation and acceptance remain unverified. The assessment below is the retained November 1 baseline.
+
 ## Assessment
 
 CafeNow has a candidate requirements baseline, 47 pickup tasks, component examples, business-process guidance and a proposed first-week cadence. The user reports P01–P03 on the VTB. Approval, final deadline, actual capacity and architecture remain unresolved; no application implementation or executed acceptance evidence is established here.

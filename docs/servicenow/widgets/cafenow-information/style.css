@@ -1,0 +1,15 @@
+.cn-information { max-width: 900px; margin: 28px auto; padding: 28px; background: #fff; border: 1px solid #d3e2dc; border-radius: 12px; color: #173c3b; font-size: 16px; line-height: 1.7; overflow-wrap: anywhere; }
+.cn-information h1 { margin: 0 0 24px; color: #003b3e; font-size: 30px; font-weight: 700; }
+.cn-information h3 { margin: 28px 0 12px; color: #003b3e; font-size: 21px; font-weight: 700; line-height: 1.4; }
+.cn-information p { margin: 0 0 14px; }
+.cn-information a { color: #005e48; text-decoration: underline; }
+.cn-information a:focus-visible { outline: 3px solid #006b45; outline-offset: 3px; }
+.cn-information__notice { background: #f0f6f4; border-left: 4px solid #006b45; padding: 18px; }
+@media (max-width: 640px) { .cn-information { padding: 20px 16px; margin: 16px 0; } .cn-information h1 { font-size: 26px; } }
+
+.cn-information__section { border-top: 1px solid #bed3cd; }
+.cn-information__heading { margin: 0; font-size: 20px; }
+.cn-information__heading button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 8px; border: 0; background: transparent; color: #003b3e; text-align: left; font: inherit; font-weight: 700; cursor: pointer; }
+.cn-information__heading button:hover { background: #f0f6f4; }
+.cn-information__heading button:focus-visible { outline: 3px solid #006b45; outline-offset: -3px; }
+.cn-information__content { padding: 8px 8px 24px; }

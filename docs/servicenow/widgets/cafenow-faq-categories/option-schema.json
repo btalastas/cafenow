@@ -1,0 +1,15 @@
+[
+  {
+    "name": "kb_knowledge_base",
+    "label": "CafeNow FAQ knowledge base sys_id",
+    "type": "string",
+    "hint": "Paste the 32-character sys_id of the existing CafeNow knowledge base. Required; no default base is assumed."
+  },
+  {
+    "name": "category_page",
+    "label": "Category article page ID",
+    "type": "string",
+    "default_value": "kb_category",
+    "hint": "Verify this existing page displays KB Category Page articles for the kb_category query parameter."
+  }
+]

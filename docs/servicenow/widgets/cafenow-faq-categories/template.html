@@ -1,0 +1,10 @@
+<section class="cn-faq-categories" ng-if="c.data.authorized" aria-label="FAQ categories">
+  <h2>Categories</h2>
+  <p ng-if="c.data.message" role="status">{{c.data.message}}</p>
+  <ul ng-if="c.data.ready && c.data.categories.length">
+    <li ng-repeat="category in c.data.categories track by category.sys_id">
+      <a ng-href="{{category.url}}">{{category.label}}</a>
+    </li>
+  </ul>
+  <p ng-if="c.data.ready && !c.data.categories.length">No FAQ categories are available for your roles.</p>
+</section>

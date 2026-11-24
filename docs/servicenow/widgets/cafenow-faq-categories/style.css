@@ -1,0 +1,8 @@
+.cn-faq-categories { background: #f0f6f4; color: #173c3b; border: 1px solid #d3e2dc; border-radius: 10px; margin: 16px 0; padding: 20px; }
+.cn-faq-categories h2 { color: #003b3e; font-size: 21px; margin: 0 0 12px; }
+.cn-faq-categories ul { margin: 0; padding: 0; list-style: none; }
+.cn-faq-categories li + li { border-top: 1px solid #d3e2dc; }
+.cn-faq-categories a { display: block; padding: 12px 4px; color: #005e48; text-decoration: underline; overflow-wrap: anywhere; }
+.cn-faq-categories a:hover { background: #e1eee8; color: #003b3e; }
+.cn-faq-categories a:focus-visible { outline: 3px solid #006b45; outline-offset: 2px; }
+.cn-faq-categories p { margin: 12px 0 0; }

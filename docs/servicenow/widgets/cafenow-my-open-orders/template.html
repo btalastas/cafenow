@@ -1,0 +1,32 @@
+<section class="panel panel-default cafenow-orders" aria-label="${My Open Orders}" ng-attr-aria-busy="{{c.loading}}">
+  <div class="panel-heading clearfix">
+    <h2 class="panel-title pull-left">${My Open Orders}</h2>
+    <button type="button" class="btn btn-default btn-sm pull-right" ng-if="c.data.signed_in"
+            ng-click="c.refresh()" ng-disabled="c.loading">
+      <span class="fa fa-refresh" aria-hidden="true"></span> ${Refresh}
+    </button>
+  </div>
+  <div class="panel-body" aria-live="polite">
+    <p ng-if="!c.data.signed_in">${Sign in to view your open orders.}</p>
+    <p class="text-danger" role="alert" ng-if="c.data.error">{{c.data.error}}</p>
+    <p class="text-danger" role="alert" ng-if="c.refreshError">${Refresh failed. The list may be out of date. Try again.}</p>
+    <p ng-if="c.data.signed_in && !c.data.error && !c.data.orders.length">${You have no open CafeNow orders.}</p>
+    <ul class="list-unstyled" ng-if="c.data.orders.length">
+      <li class="cafenow-order" ng-repeat="order in c.data.orders track by order.sys_id">
+        <div class="clearfix">
+          <strong><a ng-href="{{order.url}}">{{order.number}}</a></strong>
+          <span class="label label-info pull-right">{{order.state_label}}</span>
+        </div>
+        <dl>
+          <dt ng-if="order.vendor">${Vendor}</dt><dd ng-if="order.vendor">{{order.vendor}}</dd>
+          <dt ng-if="order.pickup_window">${Pickup window}</dt><dd ng-if="order.pickup_window">{{order.pickup_window}}</dd>
+          <dt ng-if="order.created">${Submitted}</dt><dd ng-if="order.created">{{order.created}}</dd>
+        </dl>
+      </li>
+    </ul>
+    <p class="text-muted" ng-if="c.data.has_more">{{c.data.more_message}}</p>
+  </div>
+  <div class="panel-footer" ng-if="c.data.signed_in">
+    <a ng-href="{{c.data.all_orders_url}}">${View all orders} <span class="fa fa-angle-right" aria-hidden="true"></span></a>
+  </div>
+</section>
